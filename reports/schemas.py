@@ -51,5 +51,6 @@ class UnifiedReportJSON(BaseSchema):
     kp: dict[str, Any]
     lal_kitab_intelligence: dict[str, Any]
     fusion: dict[str, Any]
+    consultation_brain: dict[str, Any]
     summary: ReportSummarySchema
     metadata: dict[str, Any]

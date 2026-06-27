@@ -171,6 +171,16 @@ def test_unified_report_json_contract():
             "observations": [],
             "metadata": {"engine": "intelligence_fusion_v1"},
         },
+        consultation_brain={
+            "generated_at": generated_at.isoformat(),
+            "executive_summary": "Overview.",
+            "sections": [],
+            "priorities": [],
+            "strengths": [],
+            "risks": [],
+            "overall_confidence": 0.72,
+            "metadata": {"engine": "consultation_brain_v1"},
+        },
         summary=ReportSummary(
             lagna_sign="Aries",
             moon_sign="Aries",
@@ -260,6 +270,9 @@ def test_report_orchestrator_generates_all_sections(orchestrator, sample_birth_d
     assert "astro_intelligence" in payload["metadata"]["components"]
     assert "vedic" in payload["metadata"]["components"]
     assert "fusion" in payload["metadata"]["components"]
+    assert payload["consultation_brain"]["metadata"]["engine"] == "consultation_brain_v1"
+    assert len(payload["consultation_brain"]["sections"]) == 12
+    assert "consultation_brain" in payload["metadata"]["components"]
     assert "problem_analysis" in payload["metadata"]["components"]
 
 

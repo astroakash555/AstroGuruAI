@@ -1,0 +1,150 @@
+export type Gender = "male" | "female" | "other" | "unspecified";
+
+export interface BirthDetail {
+  id: string;
+  date_of_birth: string;
+  birth_time: string;
+  birth_place: string;
+  birth_datetime: string;
+  timezone: string;
+  latitude: string;
+  longitude: string;
+  is_primary: boolean;
+}
+
+export interface Client {
+  id: string;
+  name: string;
+  gender: Gender;
+  email: string | null;
+  phone: string | null;
+  preferred_language: string;
+  timezone: string;
+  notes: string | null;
+  is_active: boolean;
+  birth_detail: BirthDetail | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface PaginatedResponse<T> {
+  items: T[];
+  total: number;
+  page: number;
+  page_size: number;
+  pages: number;
+}
+
+export interface ClientCreatePayload {
+  name: string;
+  gender: Gender;
+  date_of_birth: string;
+  birth_time: string;
+  birth_place: string;
+  email?: string;
+  phone?: string;
+  timezone?: string;
+  latitude?: string;
+  longitude?: string;
+  preferred_language?: string;
+  notes?: string;
+}
+
+export type ClientUpdatePayload = Partial<ClientCreatePayload> & { is_active?: boolean };
+
+export interface ReportPdfMeta {
+  generated: boolean;
+  filename?: string;
+  path?: string;
+  download_url?: string;
+}
+
+export interface ReportSummary {
+  report_id: string;
+  client_id?: string;
+  birth_detail_id?: string;
+  version: string;
+  problem_text?: string;
+  lagna_sign?: string;
+  moon_sign?: string;
+  generated_at: string;
+  has_pdf: boolean;
+}
+
+export interface ReportDetail {
+  report_id: string;
+  client_id?: string;
+  birth_detail_id?: string;
+  version: string;
+  problem_text?: string;
+  unified_report: Record<string, unknown>;
+  interpretation: Record<string, unknown>;
+  remedy_generation: Record<string, unknown>;
+  client_report: Record<string, unknown>;
+  pdf?: ReportPdfMeta | null;
+  generated_at: string;
+  updated_at: string;
+}
+
+export interface ReportGeneratePayload {
+  client_id?: string;
+  birth_detail_id?: string;
+  date_of_birth?: string;
+  birth_time?: string;
+  birth_place?: string;
+  timezone?: string;
+  latitude?: string | number;
+  longitude?: string | number;
+  problem_text?: string;
+  target_date?: string;
+  include_pdf?: boolean;
+}
+
+export interface ReportGenerateResponse {
+  report_id: string;
+  version: string;
+  unified_report: Record<string, unknown>;
+  interpretation: Record<string, unknown>;
+  remedy_generation: Record<string, unknown>;
+  client_report: Record<string, unknown>;
+  pdf?: ReportPdfMeta | null;
+  generated_at: string;
+}
+
+export interface ChatMessage {
+  role: "user" | "assistant";
+  content: string;
+}
+
+export interface ChatRequest {
+  report_id: string;
+  user_message: string;
+  conversation_history?: ChatMessage[];
+}
+
+export interface ChatResponse {
+  report_id: string;
+  answer: string;
+  conversation_history: ChatMessage[];
+  model: string;
+  source: string;
+  token_usage: {
+    prompt_tokens?: number;
+    completion_tokens?: number;
+    total_tokens?: number;
+  };
+  generated_at: string;
+  query_id?: string;
+  metadata: Record<string, unknown>;
+}
+
+export interface HealthResponse {
+  status: string;
+  app_name: string;
+  environment: string;
+}
+
+export interface AuthUser {
+  email: string;
+  name: string;
+}

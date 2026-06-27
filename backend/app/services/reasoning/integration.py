@@ -8,6 +8,7 @@ from typing import Any
 
 from astrology_engine.core.types import LagnaKundali
 from backend.app.services.reasoning.fusion import FusionContext, IntelligenceFusionEngine
+from backend.app.services.reasoning.fusion.models import FusionResult
 from backend.app.services.reasoning.kp.analyzer import KPIntelligenceAnalyzer
 from backend.app.services.reasoning.lal_kitab.analyzer import LalKitabIntelligenceAnalyzer
 from backend.app.services.reasoning.models import HouseSnapshot, HousesInput, PlanetPositionSnapshot, PlanetPositionsInput
@@ -28,6 +29,7 @@ class IntelligencePipelineResult:
     kp: dict[str, Any]
     lal_kitab: dict[str, Any]
     fusion: dict[str, Any]
+    fusion_result: FusionResult
 
 
 class IntelligenceReportIntegration:
@@ -85,6 +87,7 @@ class IntelligenceReportIntegration:
             kp=kp_result_to_dict(kp_result),
             lal_kitab=lal_kitab_result_to_dict(lal_kitab_result),
             fusion=fusion_result_to_dict(fusion_result),
+            fusion_result=fusion_result,
         )
 
 

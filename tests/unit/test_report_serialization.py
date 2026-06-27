@@ -38,6 +38,16 @@ def _minimal_report(summary: ReportSummary) -> UnifiedReportResult:
             "observations": [],
             "metadata": {"engine": "intelligence_fusion_v1"},
         },
+        consultation_brain={
+            "generated_at": datetime(2024, 6, 15, 12, 0, tzinfo=timezone.utc).isoformat(),
+            "executive_summary": "Overview.",
+            "sections": [],
+            "priorities": [],
+            "strengths": [],
+            "risks": [],
+            "overall_confidence": 0.5,
+            "metadata": {"engine": "consultation_brain_v1"},
+        },
         summary=summary,
         metadata={"orchestrator": "report_orchestrator_v2"},
     )

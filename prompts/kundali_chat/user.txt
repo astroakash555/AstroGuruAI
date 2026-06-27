@@ -1,0 +1,12 @@
+Use the saved unified report context below to answer the client's latest question.
+
+Report context JSON:
+{{report_context}}
+
+Previous conversation:
+{{conversation_history}}
+
+Latest client question:
+{{user_message}}
+
+Provide a direct conversational answer grounded in the report evidence above.

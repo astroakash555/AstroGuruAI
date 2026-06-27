@@ -65,5 +65,6 @@ class UnifiedReportResult:
     kp: dict[str, Any]
     lal_kitab_intelligence: dict[str, Any]
     fusion: dict[str, Any]
+    consultation_brain: dict[str, Any]
     summary: ReportSummary
     metadata: dict[str, Any] = field(default_factory=dict)

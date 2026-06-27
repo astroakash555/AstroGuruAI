@@ -39,14 +39,14 @@ class GeminiClient:
     def is_available(self) -> bool:
         return bool(self.config.enabled and self.config.api_key)
 
-    async def generate(self, context: PromptContext) -> InferenceResult:
+    async def generate(self, context: PromptContext, *, json_response: bool = True) -> InferenceResult:
         if not self.is_available:
             raise RuntimeError("Gemini is not enabled or API key is missing.")
 
         await self.rate_limiter.acquire()  # type: ignore[union-attr]
 
         async def _call():
-            return await asyncio.to_thread(self._generate_sync, context)
+            return await asyncio.to_thread(self._generate_sync, context, json_response)
 
         raw = await with_retry(
             _call,
@@ -75,7 +75,7 @@ class GeminiClient:
             validate_required_keys(payload, required_keys)
         return payload
 
-    def _generate_sync(self, context: PromptContext) -> InferenceResult:
+    def _generate_sync(self, context: PromptContext, json_response: bool = True) -> InferenceResult:
         try:
             import google.generativeai as genai
         except ImportError as exc:
@@ -91,8 +91,9 @@ class GeminiClient:
         generation_config = {
             "temperature": self.config.temperature,
             "max_output_tokens": self.config.max_output_tokens,
-            "response_mime_type": "application/json",
         }
+        if json_response:
+            generation_config["response_mime_type"] = "application/json"
 
         logger.info(
             "Gemini request started model=%s metadata=%s",

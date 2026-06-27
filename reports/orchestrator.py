@@ -21,6 +21,7 @@ from lal_kitab_engine import LalKitabEngine
 from lal_kitab_engine.serializers.serializer import to_json_dict as lal_kitab_to_json_dict
 from remedy_engine.engine import RemedyMatchContext
 from remedy_engine.serializers.serializer import to_json_dict as remedy_to_json_dict
+from backend.app.services.consultation import ConsultationEngine, consultation_result_to_dict
 from backend.app.services.reasoning.integration import (
     IntelligenceReportIntegration,
     chart_inputs_from_lagna,
@@ -120,6 +121,9 @@ class ReportOrchestrator:
             houses=houses,
             reference_datetime=report_input.reference_datetime,
         )
+        consultation_brain = consultation_result_to_dict(
+            ConsultationEngine().generate(intelligence_pipeline.fusion_result)
+        )
 
         remedy_context = RemedyMatchContext(
             root_cause_planets=intelligence_result.root_cause_planets,
@@ -167,6 +171,7 @@ class ReportOrchestrator:
             kp=intelligence_pipeline.kp,
             lal_kitab_intelligence=intelligence_pipeline.lal_kitab,
             fusion=intelligence_pipeline.fusion,
+            consultation_brain=consultation_brain,
             summary=summary,
             metadata={
                 "orchestrator": "report_orchestrator_v2",
@@ -188,6 +193,7 @@ class ReportOrchestrator:
                         "kp",
                         "lal_kitab_intelligence",
                         "fusion",
+                        "consultation_brain",
                         "remedy_recommendations",
                     )
                     if component
