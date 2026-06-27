@@ -23,6 +23,14 @@ class ValidationError(AppError):
     """Raised for domain-level validation failures."""
 
 
+class UnauthorizedError(AppError):
+    """Raised when authentication fails or is missing."""
+
+
+class ForbiddenError(AppError):
+    """Raised when the user lacks permission for a resource."""
+
+
 def not_found_error(resource: str, identifier: str) -> HTTPException:
     """Build a standardized 404 HTTP exception."""
     return HTTPException(
@@ -37,3 +45,11 @@ def conflict_error(message: str) -> HTTPException:
         status_code=status.HTTP_409_CONFLICT,
         detail=message,
     )
+
+
+def unauthorized_error(message: str = "Authentication required.") -> HTTPException:
+    return HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=message)
+
+
+def forbidden_error(message: str = "You do not have permission to access this resource.") -> HTTPException:
+    return HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=message)

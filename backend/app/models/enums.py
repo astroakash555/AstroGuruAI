@@ -117,6 +117,16 @@ class QueryStatus(str, enum.Enum):
     FAILED = "failed"
 
 
+class UserRole(str, enum.Enum):
+    ADMIN = "admin"
+    USER = "user"
+
+
+class AuthTokenType(str, enum.Enum):
+    PASSWORD_RESET = "password_reset"
+    EMAIL_VERIFICATION = "email_verification"
+
+
 class RelationshipType(str, enum.Enum):
     SELF = "self"
     SPOUSE = "spouse"

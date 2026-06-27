@@ -21,6 +21,7 @@ const navItems = [
   { to: "/birth-details", label: "Birth Details", icon: FileText },
   { to: "/reports/generate", label: "Generate Report", icon: FileText },
   { to: "/chat", label: "AI Chat", icon: Bot },
+  { to: "/profile", label: "Profile", icon: Settings },
   { to: "/settings", label: "Settings", icon: Settings },
 ];
 
@@ -59,7 +60,7 @@ export function AppLayout() {
         </nav>
         <div className="mt-auto hidden border-t p-4 lg:block">
           <div className="mb-3">
-            <p className="text-sm font-medium">{user?.name ?? "Astrologer"}</p>
+            <p className="text-sm font-medium">{user?.full_name ?? "Astrologer"}</p>
             <p className="text-xs text-muted-foreground">{user?.email}</p>
           </div>
           <Button variant="outline" className="w-full" onClick={logout}>
@@ -70,7 +71,7 @@ export function AppLayout() {
       </aside>
       <main className="flex-1 lg:pl-64">
         <div className="border-b bg-card px-4 py-4 lg:hidden">
-          <p className="text-sm font-medium">{user?.name}</p>
+          <p className="text-sm font-medium">{user?.full_name}</p>
         </div>
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <Outlet />

@@ -10,6 +10,7 @@ from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
+from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from ai_engine.interpreters.astro import AstroInterpretationEngine, AstroInterpretationInput
@@ -21,7 +22,8 @@ from reports.orchestrator import ReportOrchestrator
 from reports.pdf import PDFReportGenerator
 from reports.types import ReportInput
 
-from backend.app.core.exceptions import NotFoundError
+from backend.app.core.exceptions import ForbiddenError, NotFoundError
+from backend.app.models.client import Client
 from backend.app.models.report import Report
 from backend.app.repositories.report_repository import ReportRepository
 
@@ -62,9 +64,14 @@ class ReportService:
         include_pdf: bool = False,
         client_id: uuid.UUID | None = None,
         birth_detail_id: uuid.UUID | None = None,
+        owner_id: uuid.UUID | None = None,
+        scoped_owner_id: uuid.UUID | None = None,
     ) -> dict[str, Any]:
         if self._repository is None or self._session is None:
             raise RuntimeError("Report persistence is not configured for ReportService.")
+
+        if client_id is not None:
+            await self._ensure_client_access(client_id, scoped_owner_id=scoped_owner_id)
 
         birth_data = build_birth_data_from_report(
             date_of_birth=date_of_birth,
@@ -115,6 +122,7 @@ class ReportService:
         version = unified_json.get("version", "unified_report_v2")
 
         persisted = await self._repository.create_report(
+            owner_id=owner_id,
             client_id=client_id,
             birth_detail_id=birth_detail_id,
             version=version,
@@ -190,6 +198,7 @@ class ReportService:
     async def list_reports(
         self,
         *,
+        scoped_owner_id: uuid.UUID | None = None,
         client_id: uuid.UUID | None = None,
         page: int = 1,
         page_size: int = 20,
@@ -197,7 +206,11 @@ class ReportService:
         if self._repository is None:
             raise RuntimeError("Report persistence is not configured for ReportService.")
 
+        if client_id is not None:
+            await self._ensure_client_access(client_id, scoped_owner_id=scoped_owner_id)
+
         reports, total = await self._repository.list_reports(
+            owner_id=scoped_owner_id,
             client_id=client_id,
             page=page,
             page_size=page_size,
@@ -214,23 +227,48 @@ class ReportService:
             "pages": pages,
         }
 
-    async def get_report(self, report_id: uuid.UUID) -> dict[str, Any]:
+    async def get_report(
+        self,
+        report_id: uuid.UUID,
+        *,
+        scoped_owner_id: uuid.UUID | None = None,
+    ) -> dict[str, Any]:
         if self._repository is None:
             raise RuntimeError("Report persistence is not configured for ReportService.")
 
-        report = await self._repository.get_report(report_id)
+        report = await self._repository.get_report(report_id, owner_id=scoped_owner_id)
         if report is None:
             raise NotFoundError(f"Report with id '{report_id}' was not found.")
         return self._report_to_detail(report)
 
-    async def delete_report(self, report_id: uuid.UUID) -> None:
+    async def delete_report(
+        self,
+        report_id: uuid.UUID,
+        *,
+        scoped_owner_id: uuid.UUID | None = None,
+    ) -> None:
         if self._repository is None or self._session is None:
             raise RuntimeError("Report persistence is not configured for ReportService.")
 
-        deleted = await self._repository.delete_report(report_id)
+        deleted = await self._repository.delete_report(report_id, owner_id=scoped_owner_id)
         if not deleted:
             raise NotFoundError(f"Report with id '{report_id}' was not found.")
         await self._session.commit()
+
+    async def _ensure_client_access(
+        self,
+        client_id: uuid.UUID,
+        *,
+        scoped_owner_id: uuid.UUID | None,
+    ) -> None:
+        if self._session is None:
+            return
+        result = await self._session.execute(select(Client).where(Client.id == client_id))
+        client = result.scalar_one_or_none()
+        if client is None:
+            raise NotFoundError(f"Client with id '{client_id}' was not found.")
+        if scoped_owner_id is not None and client.owner_id != scoped_owner_id:
+            raise ForbiddenError("You do not have permission to access this client.")
 
     @classmethod
     def _pdf_payload_from_path(cls, pdf_path: str | None) -> dict[str, Any] | None:

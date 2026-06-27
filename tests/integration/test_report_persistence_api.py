@@ -14,6 +14,7 @@ from backend.app.main import create_app
 from backend.app.models.report import Report
 from backend.app.repositories.report_repository import ReportRepository
 from backend.app.services.report_service import ReportService
+from tests.helpers import override_current_user
 
 
 @pytest.fixture
@@ -45,7 +46,7 @@ def mock_persistence_stack(persisted_report_id):
 
 
 @pytest.fixture
-async def persistence_client(mock_persistence_stack):
+async def persistence_client(mock_persistence_stack, test_user):
     session, repository, _ = mock_persistence_stack
 
     with patch("backend.app.services.report_service.ReportOrchestrator") as orchestrator_cls, \
@@ -81,6 +82,7 @@ async def persistence_client(mock_persistence_stack):
 
         app = create_app()
         app.dependency_overrides[get_report_service] = lambda: service
+        override_current_user(app, test_user)
         transport = ASGITransport(app=app)
         async with AsyncClient(transport=transport, base_url="http://test") as client:
             yield client, service, repository, session
@@ -115,10 +117,22 @@ async def test_generate_report_api_returns_persisted_report_id(persistence_clien
 
 
 @pytest.mark.asyncio
-async def test_generate_report_api_passes_client_ids_to_repository(persistence_client):
-    client, _, repository, _ = persistence_client
+async def test_generate_report_api_passes_client_ids_to_repository(persistence_client, test_user):
+    client, _, repository, session = persistence_client
     client_id = str(uuid.uuid4())
     birth_detail_id = str(uuid.uuid4())
+
+    from backend.app.models.client import Client
+    from backend.app.models.enums import Gender
+
+    lookup_result = MagicMock()
+    lookup_result.scalar_one_or_none.return_value = Client(
+        id=uuid.UUID(client_id),
+        owner_id=test_user.id,
+        full_name="Test Client",
+        gender=Gender.UNSPECIFIED,
+    )
+    session.execute.return_value = lookup_result
 
     response = await client.post(
         "/api/v1/dashboard/reports/generate",

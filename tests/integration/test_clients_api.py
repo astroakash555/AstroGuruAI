@@ -12,6 +12,7 @@ from backend.app.api.v1.endpoints.clients import get_client_service
 from backend.app.models.enums import Gender
 from backend.app.schemas.client import ClientListResponse, ClientResponse
 from backend.app.services.client_service import ClientService
+from tests.helpers import override_current_user
 
 
 @pytest.fixture
@@ -61,8 +62,9 @@ def mock_client_service(sample_client_response: ClientResponse) -> AsyncMock:
 
 
 @pytest.fixture
-async def client_with_service(app, mock_client_service: AsyncMock):
+async def client_with_service(app, mock_client_service: AsyncMock, test_user):
     app.dependency_overrides[get_client_service] = lambda: mock_client_service
+    override_current_user(app, test_user)
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as test_client:
         yield test_client

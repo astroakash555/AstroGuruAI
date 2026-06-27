@@ -30,6 +30,7 @@ async def test_create_report_persists_entity(mock_session):
     generated_at = datetime(2024, 6, 15, 12, 0, tzinfo=timezone.utc)
 
     created = await repository.create_report(
+        owner_id=None,
         client_id=client_id,
         birth_detail_id=None,
         version="unified_report_v2",
@@ -103,7 +104,12 @@ async def test_get_reports_by_client(mock_session):
 
     fetched = await repository.get_reports_by_client(client_id)
     assert fetched == reports
-    repository.list_reports.assert_awaited_once_with(client_id=client_id, page=1, page_size=100)
+    repository.list_reports.assert_awaited_once_with(
+        owner_id=None,
+        client_id=client_id,
+        page=1,
+        page_size=100,
+    )
 
 
 @pytest.mark.asyncio

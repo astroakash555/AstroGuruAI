@@ -40,9 +40,9 @@ class ChatService:
         self._llm = llm_provider or GeminiChatLLMProvider()
         self._prompts = prompt_builder or ChatPromptBuilder()
 
-    async def chat(self, request: ChatRequest) -> ChatResponse:
+    async def chat(self, request: ChatRequest, *, scoped_owner_id: UUID | None = None) -> ChatResponse:
         """Load a report, answer the user message, and return updated history."""
-        report = await self._reports.get_report(request.report_id)
+        report = await self._reports.get_report(request.report_id, owner_id=scoped_owner_id)
         if report is None:
             raise NotFoundError(f"Report {request.report_id} was not found.")
 

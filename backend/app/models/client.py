@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
+import uuid
 from typing import TYPE_CHECKING
 
-from sqlalchemy import Boolean, Index, String, Text
-from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy import Boolean, ForeignKey, Index, String, Text
+from sqlalchemy.dialects.postgresql import JSONB, UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from backend.app.db.base import Base
@@ -18,6 +19,7 @@ if TYPE_CHECKING:
     from backend.app.models.generated_pdf import GeneratedPDF
     from backend.app.models.remedy import Remedy
     from backend.app.models.report import Report
+    from backend.app.models.user import User
     from backend.app.models.user_query import UserQuery
 
 
@@ -35,8 +37,14 @@ class Client(UUIDPrimaryKeyMixin, TimestampMixin, Base):
         Index("ix_clients_phone", "phone"),
         Index("ix_clients_is_active", "is_active"),
         Index("ix_clients_created_at", "created_at"),
+        Index("ix_clients_owner_id", "owner_id"),
     )
 
+    owner_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("users.id", ondelete="CASCADE"),
+        nullable=True,
+    )
     full_name: Mapped[str] = mapped_column(String(255), nullable=False)
     email: Mapped[str | None] = mapped_column(String(320), unique=True, nullable=True)
     phone: Mapped[str | None] = mapped_column(String(32), unique=True, nullable=True)
@@ -95,6 +103,7 @@ class Client(UUIDPrimaryKeyMixin, TimestampMixin, Base):
         "Report",
         back_populates="client",
     )
+    owner: Mapped[User | None] = relationship("User", back_populates="clients")
 
     def __repr__(self) -> str:
         return f"<Client id={self.id} full_name={self.full_name!r}>"

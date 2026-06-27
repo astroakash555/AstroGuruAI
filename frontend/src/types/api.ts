@@ -145,6 +145,28 @@ export interface HealthResponse {
 }
 
 export interface AuthUser {
+  id: string;
   email: string;
-  name: string;
+  full_name: string;
+  role: "admin" | "user";
+  is_active: boolean;
+  is_verified: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface AuthTokens {
+  access_token: string;
+  refresh_token: string;
+  token_type: string;
+  expires_in: number;
+}
+
+export interface AuthSession {
+  user: AuthUser;
+  tokens: AuthTokens;
+}
+
+export interface MessageResponse {
+  message: string;
 }

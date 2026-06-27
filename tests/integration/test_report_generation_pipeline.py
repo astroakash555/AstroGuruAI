@@ -18,6 +18,7 @@ from reports.intelligence_schemas import FusionReportSchema
 from reports.orchestrator import ReportOrchestrator
 from reports.schemas import UnifiedReportJSON
 from reports.types import ReportInput
+from tests.helpers import override_current_user
 
 
 GENERATE_URL = "/api/v1/dashboard/reports/generate"
@@ -90,7 +91,7 @@ class TestReportOrchestratorIntelligence:
 
 
 @pytest.fixture
-async def pipeline_client(tmp_path):
+async def pipeline_client(tmp_path, test_user):
     pytest.importorskip("swisseph")
 
     session = AsyncMock()
@@ -146,6 +147,7 @@ async def pipeline_client(tmp_path):
 
         app = create_app()
         app.dependency_overrides[get_report_service] = lambda: service
+        override_current_user(app, test_user)
         transport = ASGITransport(app=app)
         async with AsyncClient(transport=transport, base_url="http://test") as client:
             yield client, service, repository, session, report_id

@@ -12,6 +12,7 @@ from httpx import ASGITransport, AsyncClient
 from backend.app.api.v1.endpoints.dashboard import get_report_service
 from backend.app.core.exceptions import NotFoundError
 from backend.app.main import create_app
+from tests.helpers import override_current_user
 
 
 @pytest.fixture
@@ -65,9 +66,10 @@ def mock_report_service():
 
 
 @pytest.fixture
-async def history_client(mock_report_service):
+async def history_client(mock_report_service, test_user):
     app = create_app()
     app.dependency_overrides[get_report_service] = lambda: mock_report_service
+    override_current_user(app, test_user)
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as client:
         yield client
@@ -91,7 +93,7 @@ async def test_list_reports_endpoint(history_client, mock_report_service):
 
 
 @pytest.mark.asyncio
-async def test_get_report_endpoint(history_client, mock_report_service):
+async def test_get_report_endpoint(history_client, mock_report_service, test_user):
     report_id = uuid.uuid4()
     mock_report_service.get_report.return_value = {
         "report_id": str(report_id),
@@ -111,7 +113,7 @@ async def test_get_report_endpoint(history_client, mock_report_service):
     response = await history_client.get(f"/api/v1/dashboard/reports/{report_id}")
     assert response.status_code == 200
     assert response.json()["report_id"] == str(report_id)
-    mock_report_service.get_report.assert_awaited_once_with(report_id)
+    mock_report_service.get_report.assert_awaited_once_with(report_id, scoped_owner_id=test_user.id)
 
 
 @pytest.mark.asyncio
@@ -127,12 +129,12 @@ async def test_get_report_not_found(history_client, mock_report_service):
 
 
 @pytest.mark.asyncio
-async def test_delete_report_endpoint(history_client, mock_report_service):
+async def test_delete_report_endpoint(history_client, mock_report_service, test_user):
     report_id = uuid.uuid4()
     response = await history_client.delete(f"/api/v1/dashboard/reports/{report_id}")
 
     assert response.status_code == 204
-    mock_report_service.delete_report.assert_awaited_once_with(report_id)
+    mock_report_service.delete_report.assert_awaited_once_with(report_id, scoped_owner_id=test_user.id)
 
 
 @pytest.mark.asyncio

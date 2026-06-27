@@ -12,6 +12,7 @@ from httpx import ASGITransport, AsyncClient
 from backend.app.api.v1.endpoints.chat import get_chat_service
 from backend.app.main import create_app
 from backend.app.services.chat.models import ChatMessage, ChatResponse, ChatTokenUsage
+from tests.helpers import override_current_user
 
 
 @pytest.fixture
@@ -36,9 +37,10 @@ def mock_chat_service():
 
 
 @pytest.fixture
-async def chat_client(mock_chat_service):
+async def chat_client(mock_chat_service, test_user):
     app = create_app()
     app.dependency_overrides[get_chat_service] = lambda: mock_chat_service
+    override_current_user(app, test_user)
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as client:
         yield client

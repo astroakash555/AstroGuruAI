@@ -6,9 +6,10 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from ai_engine.prompts.loader import PromptLoader
-from backend.app.api.deps import get_db, get_settings_dep
+from backend.app.api.deps import get_current_user, get_db, get_settings_dep, user_owner_id
 from backend.app.core.config import Settings
 from backend.app.core.exceptions import NotFoundError, not_found_error
+from backend.app.models.user import User
 from backend.app.repositories.report_repository import ReportRepository
 from backend.app.repositories.user_query_repository import UserQueryRepository
 from backend.app.schemas.chat import ChatRequestSchema, ChatResponseSchema, ChatTokenUsageSchema
@@ -39,6 +40,7 @@ def get_chat_service(
 )
 async def chat_about_report(
     payload: ChatRequestSchema,
+    current_user: User = Depends(get_current_user),
     service: ChatService = Depends(get_chat_service),
 ) -> ChatResponseSchema:
     try:
@@ -50,7 +52,8 @@ async def chat_about_report(
                     ChatMessage(role=message.role, content=message.content)
                     for message in payload.conversation_history
                 ),
-            )
+            ),
+            scoped_owner_id=user_owner_id(current_user),
         )
     except NotFoundError as exc:
         raise not_found_error("Report", str(payload.report_id)) from exc

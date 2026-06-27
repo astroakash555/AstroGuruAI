@@ -10,9 +10,10 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from fastapi.responses import FileResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_db, get_settings_dep
+from backend.app.api.deps import get_current_user, get_db, get_settings_dep, user_owner_id
 from backend.app.core.config import Settings
-from backend.app.core.exceptions import NotFoundError, not_found_error
+from backend.app.core.exceptions import ForbiddenError, NotFoundError, forbidden_error, not_found_error
+from backend.app.models.user import User
 from backend.app.repositories.report_repository import ReportRepository
 from backend.app.schemas.dashboard import (
     HoroscopeRequest,
@@ -58,6 +59,7 @@ def get_naming_service() -> NamingService:
 )
 async def generate_report(
     payload: ReportGenerateRequest,
+    current_user: User = Depends(get_current_user),
     service: ReportService = Depends(get_report_service),
 ) -> ReportGenerateResponse:
     if not payload.date_of_birth or not payload.birth_time or not payload.birth_place:
@@ -71,19 +73,26 @@ async def generate_report(
             detail="latitude and longitude are required for report generation.",
         )
 
-    result = await service.generate_report(
-        date_of_birth=payload.date_of_birth,
-        birth_time=payload.birth_time,
-        birth_place=payload.birth_place,
-        birth_timezone=payload.timezone,
-        latitude=payload.latitude,
-        longitude=payload.longitude,
-        problem_text=payload.problem_text,
-        target_date=payload.target_date,
-        include_pdf=payload.include_pdf,
-        client_id=payload.client_id,
-        birth_detail_id=payload.birth_detail_id,
-    )
+    try:
+        result = await service.generate_report(
+            date_of_birth=payload.date_of_birth,
+            birth_time=payload.birth_time,
+            birth_place=payload.birth_place,
+            birth_timezone=payload.timezone,
+            latitude=payload.latitude,
+            longitude=payload.longitude,
+            problem_text=payload.problem_text,
+            target_date=payload.target_date,
+            include_pdf=payload.include_pdf,
+            client_id=payload.client_id,
+            birth_detail_id=payload.birth_detail_id,
+            owner_id=current_user.id,
+            scoped_owner_id=user_owner_id(current_user),
+        )
+    except ForbiddenError as exc:
+        raise forbidden_error(exc.message) from exc
+    except NotFoundError as exc:
+        raise not_found_error("Client", str(payload.client_id)) from exc
     return ReportGenerateResponse(**result)
 
 
@@ -96,13 +105,20 @@ async def list_reports(
     client_id: uuid.UUID | None = Query(default=None),
     page: int = Query(default=1, ge=1),
     page_size: int = Query(default=20, ge=1, le=100),
+    current_user: User = Depends(get_current_user),
     service: ReportService = Depends(get_report_service),
 ) -> ReportListResponse:
-    result = await service.list_reports(
-        client_id=client_id,
-        page=page,
-        page_size=page_size,
-    )
+    try:
+        result = await service.list_reports(
+            scoped_owner_id=user_owner_id(current_user),
+            client_id=client_id,
+            page=page,
+            page_size=page_size,
+        )
+    except ForbiddenError as exc:
+        raise forbidden_error(exc.message) from exc
+    except NotFoundError as exc:
+        raise not_found_error("Client", str(client_id)) from exc
     return ReportListResponse(**result)
 
 
@@ -113,10 +129,11 @@ async def list_reports(
 )
 async def get_report(
     report_id: uuid.UUID,
+    current_user: User = Depends(get_current_user),
     service: ReportService = Depends(get_report_service),
 ) -> ReportDetailResponse:
     try:
-        result = await service.get_report(report_id)
+        result = await service.get_report(report_id, scoped_owner_id=user_owner_id(current_user))
     except NotFoundError:
         raise not_found_error("Report", str(report_id)) from None
     return ReportDetailResponse(**result)
@@ -129,10 +146,11 @@ async def get_report(
 )
 async def delete_report(
     report_id: uuid.UUID,
+    current_user: User = Depends(get_current_user),
     service: ReportService = Depends(get_report_service),
 ) -> None:
     try:
-        await service.delete_report(report_id)
+        await service.delete_report(report_id, scoped_owner_id=user_owner_id(current_user))
     except NotFoundError:
         raise not_found_error("Report", str(report_id)) from None
 
@@ -145,6 +163,7 @@ async def delete_report(
 async def generate_pdf(
     client_report: dict,
     unified_report: dict | None = None,
+    current_user: User = Depends(get_current_user),
     service: ReportService = Depends(get_report_service),
 ) -> PDFDownloadResponse:
     result = service.generate_pdf_from_client_report(
@@ -160,6 +179,7 @@ async def generate_pdf(
 )
 async def download_pdf(
     file_name: str,
+    current_user: User = Depends(get_current_user),
     settings: Settings = Depends(get_settings_dep),
 ):
     file_path = Path(settings.reports_output_path) / file_name
@@ -179,6 +199,7 @@ async def download_pdf(
 )
 async def generate_horoscope(
     payload: HoroscopeRequest,
+    current_user: User = Depends(get_current_user),
     service: HoroscopeService = Depends(get_horoscope_service),
 ) -> HoroscopeResponse:
     return HoroscopeResponse(**service.generate_horoscope(**payload.model_dump()))
@@ -191,6 +212,7 @@ async def generate_horoscope(
 )
 async def naming_suggestions(
     payload: NamingRequest,
+    current_user: User = Depends(get_current_user),
     service: NamingService = Depends(get_naming_service),
 ) -> NamingResponse:
     return NamingResponse(**service.suggest_names(**payload.model_dump()))

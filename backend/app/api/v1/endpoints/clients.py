@@ -5,8 +5,16 @@ import uuid
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_db
-from backend.app.core.exceptions import ConflictError, NotFoundError, conflict_error, not_found_error
+from backend.app.api.deps import get_current_user, get_db, user_owner_id
+from backend.app.core.exceptions import (
+    ConflictError,
+    ForbiddenError,
+    NotFoundError,
+    conflict_error,
+    forbidden_error,
+    not_found_error,
+)
+from backend.app.models.user import User
 from backend.app.schemas.client import ClientCreate, ClientListResponse, ClientResponse, ClientUpdate
 from backend.app.services.client_service import ClientService
 
@@ -26,11 +34,12 @@ def get_client_service(session: AsyncSession = Depends(get_db)) -> ClientService
 )
 async def create_client(
     payload: ClientCreate,
+    current_user: User = Depends(get_current_user),
     service: ClientService = Depends(get_client_service),
 ) -> ClientResponse:
     """Create a new client with validated birth details."""
     try:
-        return await service.create_client(payload)
+        return await service.create_client(payload, owner_id=current_user.id)
     except ConflictError as exc:
         raise conflict_error(exc.message) from exc
 
@@ -45,10 +54,12 @@ async def list_clients(
     page_size: int = Query(default=20, ge=1, le=100),
     include_inactive: bool = Query(default=False),
     search: str | None = Query(default=None, max_length=255),
+    current_user: User = Depends(get_current_user),
     service: ClientService = Depends(get_client_service),
 ) -> ClientListResponse:
     """List clients with pagination and optional name search."""
     return await service.list_clients(
+        owner_id=user_owner_id(current_user),
         page=page,
         page_size=page_size,
         include_inactive=include_inactive,
@@ -63,13 +74,16 @@ async def list_clients(
 )
 async def get_client(
     client_id: uuid.UUID,
+    current_user: User = Depends(get_current_user),
     service: ClientService = Depends(get_client_service),
 ) -> ClientResponse:
     """Retrieve a single client by UUID."""
     try:
-        return await service.get_client(client_id)
+        return await service.get_client(client_id, owner_id=user_owner_id(current_user))
     except NotFoundError:
         raise not_found_error("Client", str(client_id)) from None
+    except ForbiddenError as exc:
+        raise forbidden_error(exc.message) from exc
 
 
 @router.patch(
@@ -80,6 +94,7 @@ async def get_client(
 async def update_client(
     client_id: uuid.UUID,
     payload: ClientUpdate,
+    current_user: User = Depends(get_current_user),
     service: ClientService = Depends(get_client_service),
 ) -> ClientResponse:
     """Partially update client and primary birth profile fields."""
@@ -90,11 +105,17 @@ async def update_client(
         )
 
     try:
-        return await service.update_client(client_id, payload)
+        return await service.update_client(
+            client_id,
+            payload,
+            owner_id=user_owner_id(current_user),
+        )
     except NotFoundError:
         raise not_found_error("Client", str(client_id)) from None
     except ConflictError as exc:
         raise conflict_error(exc.message) from exc
+    except ForbiddenError as exc:
+        raise forbidden_error(exc.message) from exc
 
 
 @router.delete(
@@ -104,10 +125,13 @@ async def update_client(
 )
 async def delete_client(
     client_id: uuid.UUID,
+    current_user: User = Depends(get_current_user),
     service: ClientService = Depends(get_client_service),
 ) -> None:
     """Soft-delete a client (sets is_active=false)."""
     try:
-        await service.delete_client(client_id)
+        await service.delete_client(client_id, owner_id=user_owner_id(current_user))
     except NotFoundError:
         raise not_found_error("Client", str(client_id)) from None
+    except ForbiddenError as exc:
+        raise forbidden_error(exc.message) from exc

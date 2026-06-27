@@ -16,6 +16,7 @@ from backend.app.models.mixins import UUIDPrimaryKeyMixin
 if TYPE_CHECKING:
     from backend.app.models.birth_detail import BirthDetail
     from backend.app.models.client import Client
+    from backend.app.models.user import User
 
 
 class Report(UUIDPrimaryKeyMixin, Base):
@@ -27,8 +28,14 @@ class Report(UUIDPrimaryKeyMixin, Base):
         Index("ix_reports_birth_detail_id", "birth_detail_id"),
         Index("ix_reports_generated_at", "generated_at"),
         Index("ix_reports_version", "version"),
+        Index("ix_reports_owner_id", "owner_id"),
     )
 
+    owner_id: Mapped[uuid.UUID | None] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("users.id", ondelete="CASCADE"),
+        nullable=True,
+    )
     client_id: Mapped[uuid.UUID | None] = mapped_column(
         UUID(as_uuid=True),
         ForeignKey("clients.id", ondelete="SET NULL"),
@@ -59,6 +66,7 @@ class Report(UUIDPrimaryKeyMixin, Base):
     )
 
     client: Mapped[Client | None] = relationship("Client", back_populates="reports")
+    owner: Mapped[User | None] = relationship("User", back_populates="reports")
     birth_detail: Mapped[BirthDetail | None] = relationship(
         "BirthDetail",
         back_populates="reports",

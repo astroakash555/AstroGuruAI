@@ -1,51 +1,43 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { getErrorMessage } from "@/lib/api";
-import { loginSchema, type LoginFormValues } from "@/lib/schemas";
-import { useAuth } from "@/providers/auth-provider";
+import { authApi, getErrorMessage } from "@/lib/api";
+import { forgotPasswordSchema, type ForgotPasswordFormValues } from "@/lib/schemas";
 
-export function LoginPage() {
-  const { authenticated, login } = useAuth();
-  const navigate = useNavigate();
-  const location = useLocation();
-  const redirectTo = (location.state as { from?: string } | null)?.from ?? "/dashboard";
+export function ForgotPasswordPage() {
+  const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-  } = useForm<LoginFormValues>({
-    resolver: zodResolver(loginSchema),
-    defaultValues: { email: "", password: "" },
+  } = useForm<ForgotPasswordFormValues>({
+    resolver: zodResolver(forgotPasswordSchema),
   });
-
-  if (authenticated) {
-    return <Navigate to={redirectTo} replace />;
-  }
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-background via-accent/30 to-background p-6">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle>Sign in to AstroGuruAI</CardTitle>
-          <CardDescription>Use your practitioner account to access clients, reports, and chat.</CardDescription>
+          <CardTitle>Reset your password</CardTitle>
+          <CardDescription>We will email reset instructions if the account exists.</CardDescription>
         </CardHeader>
         <CardContent>
           <form
             className="space-y-4"
             onSubmit={handleSubmit(async (values) => {
               setError(null);
+              setMessage(null);
               try {
-                await login(values.email, values.password);
-                navigate(redirectTo);
+                const response = await authApi.forgotPassword(values.email);
+                setMessage(response.message);
               } catch (err) {
                 setError(getErrorMessage(err));
               }
@@ -56,23 +48,16 @@ export function LoginPage() {
               <Input id="email" type="email" autoComplete="email" {...register("email")} />
               {errors.email && <p className="text-sm text-destructive">{errors.email.message}</p>}
             </div>
-            <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
-              <Input id="password" type="password" autoComplete="current-password" {...register("password")} />
-              {errors.password && <p className="text-sm text-destructive">{errors.password.message}</p>}
-            </div>
+            {message && <p className="text-sm text-muted-foreground">{message}</p>}
             {error && <p className="text-sm text-destructive">{error}</p>}
             <Button className="w-full" type="submit" disabled={isSubmitting}>
-              Sign in
+              Send reset link
             </Button>
-            <div className="flex justify-between text-sm">
-              <Link className="text-primary hover:underline" to="/forgot-password">
-                Forgot password?
+            <p className="text-center text-sm">
+              <Link className="text-primary hover:underline" to="/login">
+                Back to sign in
               </Link>
-              <Link className="text-primary hover:underline" to="/signup">
-                Create account
-              </Link>
-            </div>
+            </p>
           </form>
         </CardContent>
       </Card>

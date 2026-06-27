@@ -1,10 +1,9 @@
 import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
 
 import { ErrorBoundary } from "@/components/error-boundary";
 
-function BrokenComponent() {
+function BrokenComponent(): never {
   throw new Error("Test explosion");
 }
 

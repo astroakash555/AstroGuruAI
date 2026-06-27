@@ -19,6 +19,7 @@ class ReportRepository:
     async def create_report(
         self,
         *,
+        owner_id: uuid.UUID | None,
         client_id: uuid.UUID | None,
         birth_detail_id: uuid.UUID | None,
         version: str,
@@ -31,6 +32,7 @@ class ReportRepository:
         generated_at,
     ) -> Report:
         report = Report(
+            owner_id=owner_id,
             client_id=client_id,
             birth_detail_id=birth_detail_id,
             version=version,
@@ -47,13 +49,17 @@ class ReportRepository:
         await self._session.refresh(report)
         return report
 
-    async def get_report(self, report_id: uuid.UUID) -> Report | None:
-        result = await self._session.execute(select(Report).where(Report.id == report_id))
+    async def get_report(self, report_id: uuid.UUID, *, owner_id: uuid.UUID | None = None) -> Report | None:
+        stmt = select(Report).where(Report.id == report_id)
+        if owner_id is not None:
+            stmt = stmt.where(Report.owner_id == owner_id)
+        result = await self._session.execute(stmt)
         return result.scalar_one_or_none()
 
     async def list_reports(
         self,
         *,
+        owner_id: uuid.UUID | None = None,
         client_id: uuid.UUID | None = None,
         page: int = 1,
         page_size: int = 20,
@@ -63,6 +69,8 @@ class ReportRepository:
         offset = (page - 1) * page_size
 
         filters = []
+        if owner_id is not None:
+            filters.append(Report.owner_id == owner_id)
         if client_id is not None:
             filters.append(Report.client_id == client_id)
 
@@ -83,12 +91,22 @@ class ReportRepository:
         result = await self._session.execute(stmt)
         return list(result.scalars().all()), total
 
-    async def get_reports_by_client(self, client_id: uuid.UUID) -> list[Report]:
-        reports, _ = await self.list_reports(client_id=client_id, page=1, page_size=100)
+    async def get_reports_by_client(
+        self,
+        client_id: uuid.UUID,
+        *,
+        owner_id: uuid.UUID | None = None,
+    ) -> list[Report]:
+        reports, _ = await self.list_reports(
+            owner_id=owner_id,
+            client_id=client_id,
+            page=1,
+            page_size=100,
+        )
         return reports
 
-    async def delete_report(self, report_id: uuid.UUID) -> bool:
-        report = await self.get_report(report_id)
+    async def delete_report(self, report_id: uuid.UUID, *, owner_id: uuid.UUID | None = None) -> bool:
+        report = await self.get_report(report_id, owner_id=owner_id)
         if report is None:
             return False
         await self._session.delete(report)

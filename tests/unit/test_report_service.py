@@ -171,5 +171,5 @@ async def test_delete_report_commits(mock_session, mock_repository):
     report_id = uuid.uuid4()
     mock_repository.delete_report.return_value = True
     await service.delete_report(report_id)
-    mock_repository.delete_report.assert_awaited_once_with(report_id)
+    mock_repository.delete_report.assert_awaited_once_with(report_id, owner_id=None)
     mock_session.commit.assert_awaited_once()

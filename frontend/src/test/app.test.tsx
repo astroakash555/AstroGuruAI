@@ -21,12 +21,30 @@ describe("LoginPage", () => {
 });
 
 describe("auth helpers", () => {
-  it("stores demo session token", async () => {
-    const { login, getAuthToken, logout } = await import("@/lib/auth");
-    login({ email: "demo@test.com", name: "Demo" });
-    expect(getAuthToken()).toBe("demo-token");
+  it("stores access and refresh tokens", async () => {
+    const { setAuthSession, getAccessToken, getRefreshToken, logout } = await import("@/lib/auth");
+    setAuthSession({
+      user: {
+        id: "1",
+        email: "demo@test.com",
+        full_name: "Demo",
+        role: "user",
+        is_active: true,
+        is_verified: false,
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      },
+      tokens: {
+        access_token: "access-token",
+        refresh_token: "refresh-token",
+        token_type: "bearer",
+        expires_in: 1800,
+      },
+    });
+    expect(getAccessToken()).toBe("access-token");
+    expect(getRefreshToken()).toBe("refresh-token");
     logout();
-    expect(getAuthToken()).toBeNull();
+    expect(getAccessToken()).toBeNull();
   });
 });
 

@@ -13,7 +13,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
-from backend.app.core.exceptions import ConflictError, NotFoundError
+from backend.app.core.exceptions import ConflictError, ForbiddenError, NotFoundError
 from backend.app.models.birth_detail import BirthDetail
 from backend.app.models.client import Client
 from backend.app.models.enums import RelationshipType
@@ -26,7 +26,7 @@ class ClientService:
     def __init__(self, session: AsyncSession) -> None:
         self._session = session
 
-    async def create_client(self, payload: ClientCreate) -> ClientResponse:
+    async def create_client(self, payload: ClientCreate, *, owner_id: uuid.UUID) -> ClientResponse:
         """Create a client with a primary birth profile."""
         birth_datetime = self._combine_birth_datetime(
             payload.date_of_birth,
@@ -35,6 +35,7 @@ class ClientService:
         )
 
         client = Client(
+            owner_id=owner_id,
             full_name=payload.name,
             gender=payload.gender,
             email=str(payload.email) if payload.email else None,
@@ -68,14 +69,15 @@ class ClientService:
         await self._session.refresh(client, attribute_names=["birth_details"])
         return self._to_response(client)
 
-    async def get_client(self, client_id: uuid.UUID) -> ClientResponse:
+    async def get_client(self, client_id: uuid.UUID, *, owner_id: uuid.UUID | None) -> ClientResponse:
         """Fetch a single client by ID."""
-        client = await self._get_client_or_raise(client_id)
+        client = await self._get_client_or_raise(client_id, owner_id=owner_id)
         return self._to_response(client)
 
     async def list_clients(
         self,
         *,
+        owner_id: uuid.UUID | None,
         page: int = 1,
         page_size: int = 20,
         include_inactive: bool = False,
@@ -87,6 +89,8 @@ class ClientService:
         offset = (page - 1) * page_size
 
         filters = []
+        if owner_id is not None:
+            filters.append(Client.owner_id == owner_id)
         if not include_inactive:
             filters.append(Client.is_active.is_(True))
         if search:
@@ -119,9 +123,15 @@ class ClientService:
             pages=pages,
         )
 
-    async def update_client(self, client_id: uuid.UUID, payload: ClientUpdate) -> ClientResponse:
+    async def update_client(
+        self,
+        client_id: uuid.UUID,
+        payload: ClientUpdate,
+        *,
+        owner_id: uuid.UUID | None,
+    ) -> ClientResponse:
         """Update client fields and primary birth profile."""
-        client = await self._get_client_or_raise(client_id)
+        client = await self._get_client_or_raise(client_id, owner_id=owner_id)
         update_data = payload.model_dump(exclude_unset=True)
 
         if "name" in update_data:
@@ -189,21 +199,36 @@ class ClientService:
         await self._session.refresh(client, attribute_names=["birth_details"])
         return self._to_response(client)
 
-    async def delete_client(self, client_id: uuid.UUID) -> None:
+    async def delete_client(self, client_id: uuid.UUID, *, owner_id: uuid.UUID | None) -> None:
         """Soft-delete a client by marking them inactive."""
-        client = await self._get_client_or_raise(client_id)
+        client = await self._get_client_or_raise(client_id, owner_id=owner_id)
         client.is_active = False
         await self._session.commit()
 
-    async def _get_client_or_raise(self, client_id: uuid.UUID) -> Client:
+    async def ensure_client_access(self, client_id: uuid.UUID, *, owner_id: uuid.UUID | None) -> Client:
+        """Verify the caller can access a client record."""
+        return await self._get_client_or_raise(client_id, owner_id=owner_id)
+
+    async def _get_client_or_raise(
+        self,
+        client_id: uuid.UUID,
+        *,
+        owner_id: uuid.UUID | None,
+    ) -> Client:
         stmt = (
             select(Client)
             .options(selectinload(Client.birth_details))
             .where(Client.id == client_id)
         )
+        if owner_id is not None:
+            stmt = stmt.where(Client.owner_id == owner_id)
         result = await self._session.execute(stmt)
         client = result.scalar_one_or_none()
         if client is None:
+            if owner_id is not None:
+                existing = await self._session.execute(select(Client.id).where(Client.id == client_id))
+                if existing.scalar_one_or_none() is not None:
+                    raise ForbiddenError("You do not have permission to access this client.")
             raise NotFoundError(f"Client with id '{client_id}' was not found.")
         return client
 
