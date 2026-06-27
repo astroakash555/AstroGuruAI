@@ -9,10 +9,12 @@ from backend.app.services.reasoning.fusion.conflict_resolver import (
     conflict_observation_ids,
     detect_conflicts,
 )
+from backend.app.services.reasoning.dasha.analyzer import DashaIntelligenceAnalyzer
 from backend.app.services.reasoning.fusion.evidence import (
     collect_observations,
     deduplicate_observations,
     merge_supporting_evidence,
+    normalize_dasha_observation,
     normalize_kp_observation,
     normalize_lal_kitab_observation,
     normalize_vedic_observation,
@@ -113,7 +115,10 @@ class LalKitabIntelligenceAdapter:
 
 
 class DashaIntelligenceAdapter:
-    """Placeholder adapter for future dasha intelligence integration."""
+    """Adapter wrapping the Dasha intelligence analyzer."""
+
+    def __init__(self, analyzer: DashaIntelligenceAnalyzer | None = None) -> None:
+        self._analyzer = analyzer or DashaIntelligenceAnalyzer()
 
     @property
     def engine_id(self) -> FusionEngineId:
@@ -135,33 +140,14 @@ class DashaIntelligenceAdapter:
         if dasha is None:
             return ()
 
-        observations: list[NormalizedObservation] = []
-        active_periods = (
-            ("mahadasha", dasha.current_mahadasha),
-            ("antardasha", dasha.current_antardasha),
-            ("pratyantar", dasha.current_pratyantar),
+        has_chart = bool(context.planet_positions.planets and context.houses.cusps)
+        result = self._analyzer.analyze(
+            dasha=dasha,
+            planet_positions=context.planet_positions if has_chart else None,
+            houses=context.houses if has_chart else None,
+            reference_datetime=context.reference_datetime,
         )
-        for level, period in active_periods:
-            if period is None:
-                continue
-            observations.append(
-                NormalizedObservation(
-                    observation_id=f"dasha-{level}-{period.lord.lower()}",
-                    engine=FusionEngineId.DASHA,
-                    category=f"dasha:{level}",
-                    title=f"Active {level.replace('_', ' ').title()}: {period.lord}",
-                    explanation=(
-                        f"The native is running {period.lord} {level} under "
-                        f"{dasha.system} dasha."
-                    ),
-                    affected_planets=(period.lord,),
-                    affected_houses=(),
-                    severity=0.68,
-                    confidence=0.88,
-                    metadata={"level": level, "lord": period.lord, "system": dasha.system},
-                )
-            )
-        return tuple(observations)
+        return tuple(normalize_dasha_observation(item) for item in result.observations)
 
 
 class TransitIntelligenceAdapter:

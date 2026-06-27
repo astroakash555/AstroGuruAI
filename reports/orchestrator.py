@@ -21,8 +21,11 @@ from lal_kitab_engine import LalKitabEngine
 from lal_kitab_engine.serializers.serializer import to_json_dict as lal_kitab_to_json_dict
 from remedy_engine.engine import RemedyMatchContext
 from remedy_engine.serializers.serializer import to_json_dict as remedy_to_json_dict
-from reasoning_layer import ReasoningEngine, ReasoningInput
-from reasoning_layer.serializers.serializer import to_json_dict as reasoning_to_json_dict
+from backend.app.services.reasoning.integration import (
+    IntelligenceReportIntegration,
+    chart_inputs_from_lagna,
+    fusion_confidence_score,
+)
 from reports.builders import build_dasha_input_from_chart
 from reports.charts.serializer import charts_from_bundle
 from reports.serializer import to_json_dict, to_json_string
@@ -33,7 +36,8 @@ from reports.utilities import normalize_highest_dosha_severity
 class ReportOrchestrator:
     """
     Combines kundali, navamsha, dasha, yogas, doshas, transits, Lal Kitab, KP,
-    problem analysis, astro intelligence, and remedy recommendations into one report.
+    problem analysis, astro intelligence, fused intelligence, and remedy
+    recommendations into one report.
 
     Output is JSON only — no AI interpretation layer.
     """
@@ -45,14 +49,14 @@ class ReportOrchestrator:
         lal_kitab_engine: LalKitabEngine | None = None,
         kp_engine: KPEngine | None = None,
         intelligence_engine: AstroIntelligenceEngine | None = None,
-        reasoning_engine: ReasoningEngine | None = None,
+        intelligence_integration: IntelligenceReportIntegration | None = None,
     ) -> None:
         self._astrology = astrology_engine or VedicAstrologyEngine()
         self._problem_analyzer = problem_analyzer or ProblemAnalyzer()
         self._lal_kitab = lal_kitab_engine or LalKitabEngine()
         self._kp = kp_engine or KPEngine()
         self._intelligence = intelligence_engine or AstroIntelligenceEngine()
-        self._reasoning = reasoning_engine or ReasoningEngine()
+        self._intelligence_integration = intelligence_integration or IntelligenceReportIntegration()
 
     def generate(self, report_input: ReportInput) -> UnifiedReportResult:
         """Generate a unified structured report from birth data and optional problem text."""
@@ -110,31 +114,12 @@ class ReportOrchestrator:
         intelligence_result = self._intelligence.analyze(intelligence_input)
         intelligence_json = intelligence_to_json_dict(intelligence_result)
 
-        reasoning_input = ReasoningInput(
-            kundali=kundali_json,
-            navamsha=navamsha_json,
-            dasha=dasha_json,
-            yogas=yoga_json,
-            doshas=dosha_json,
-            transits=transit_json,
-            problem_analysis=problem_json,
-            lal_kitab=lal_kitab_json,
-            kp_analysis=kp_json,
-            astro_intelligence=intelligence_json,
-            client_id=report_input.client_id,
-            problem_text=report_input.problem_text,
+        planet_positions, houses = chart_inputs_from_lagna(chart.lagna_kundali)
+        intelligence_pipeline = self._intelligence_integration.run(
+            planet_positions=planet_positions,
+            houses=houses,
+            reference_datetime=report_input.reference_datetime,
         )
-        reasoning_result = self._reasoning.analyze(reasoning_input)
-        reasoning_json = reasoning_to_json_dict(reasoning_result)
-
-        if report_input.client_id:
-            self._reasoning.record_report(
-                client_id=report_input.client_id,
-                problem_domain=reasoning_result.problem_domain,
-                problem_text=report_input.problem_text,
-                outcome=reasoning_result.consensus.final_consensus,
-                payload={"confidence_score": reasoning_result.confidence.overall_score},
-            )
 
         remedy_context = RemedyMatchContext(
             root_cause_planets=intelligence_result.root_cause_planets,
@@ -161,7 +146,7 @@ class ReportOrchestrator:
             lal_kitab_json=lal_kitab_json,
             kp_json=kp_json,
             intelligence_json=intelligence_json,
-            reasoning_json=reasoning_json,
+            intelligence_pipeline=intelligence_pipeline,
         )
 
         return UnifiedReportResult(
@@ -178,7 +163,10 @@ class ReportOrchestrator:
             kp_analysis=kp_json,
             astro_intelligence=intelligence_json,
             remedy_recommendations=remedy_json,
-            reasoning=reasoning_json,
+            vedic=intelligence_pipeline.vedic,
+            kp=intelligence_pipeline.kp,
+            lal_kitab_intelligence=intelligence_pipeline.lal_kitab,
+            fusion=intelligence_pipeline.fusion,
             summary=summary,
             metadata={
                 "orchestrator": "report_orchestrator_v2",
@@ -196,12 +184,19 @@ class ReportOrchestrator:
                         "lal_kitab",
                         "kp_analysis",
                         "astro_intelligence",
-                        "reasoning",
+                        "vedic",
+                        "kp",
+                        "lal_kitab_intelligence",
+                        "fusion",
                         "remedy_recommendations",
                     )
                     if component
                 ],
                 "reference_date": (report_input.target_date or date.today()).isoformat(),
+                "intelligence_engines": intelligence_pipeline.fusion.get("metadata", {}).get(
+                    "active_engines",
+                    [],
+                ),
             },
         )
 
@@ -261,7 +256,7 @@ def _build_summary(
     lal_kitab_json: dict[str, Any],
     kp_json: dict[str, Any],
     intelligence_json: dict[str, Any],
-    reasoning_json: dict[str, Any],
+    intelligence_pipeline,
 ) -> ReportSummary:
     current = dasha_json.get("current", {})
     mahadasha = current.get("mahadasha")
@@ -288,7 +283,7 @@ def _build_summary(
         kp_supported_events=kp_json["summary"]["supported_events"],
         intelligence_severity_score=intelligence_json.get("severity_score"),
         recommended_remedies_count=len(intelligence_json.get("recommended_remedies", [])),
-        reasoning_confidence_score=reasoning_json.get("confidence", {}).get("overall_score"),
+        reasoning_confidence_score=fusion_confidence_score(intelligence_pipeline),
     )
 
 

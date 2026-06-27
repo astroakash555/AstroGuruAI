@@ -47,6 +47,9 @@ class UnifiedReportJSON(BaseSchema):
     kp_analysis: dict[str, Any]
     astro_intelligence: dict[str, Any]
     remedy_recommendations: dict[str, Any]
-    reasoning: dict[str, Any]
+    vedic: dict[str, Any]
+    kp: dict[str, Any]
+    lal_kitab_intelligence: dict[str, Any]
+    fusion: dict[str, Any]
     summary: ReportSummarySchema
     metadata: dict[str, Any]

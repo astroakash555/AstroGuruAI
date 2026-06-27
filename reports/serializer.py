@@ -25,7 +25,10 @@ def to_json_dict(result: UnifiedReportResult) -> dict[str, Any]:
         kp_analysis=result.kp_analysis,
         astro_intelligence=result.astro_intelligence,
         remedy_recommendations=result.remedy_recommendations,
-        reasoning=result.reasoning,
+        vedic=result.vedic,
+        kp=result.kp,
+        lal_kitab_intelligence=result.lal_kitab_intelligence,
+        fusion=result.fusion,
         summary={
             "lagna_sign": result.summary.lagna_sign,
             "moon_sign": result.summary.moon_sign,

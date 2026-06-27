@@ -9,6 +9,7 @@ from backend.app.services.reasoning.fusion.models import (
     FusedObservation,
     NormalizedObservation,
 )
+from backend.app.services.reasoning.dasha.models import ReasoningObservation as DashaObservation
 from backend.app.services.reasoning.kp.models import ReasoningObservation as KPObservation
 from backend.app.services.reasoning.lal_kitab.models import ReasoningObservation as LalKitabObservation
 from backend.app.services.reasoning.vedic.constants import VedicObservation
@@ -54,6 +55,22 @@ def normalize_lal_kitab_observation(observation: LalKitabObservation) -> Normali
         observation_id=observation.observation_id,
         engine=FusionEngineId.LAL_KITAB,
         category=f"lal_kitab:{observation.category.value}",
+        title=observation.title,
+        explanation=observation.explanation,
+        affected_planets=observation.affected_planets,
+        affected_houses=observation.affected_houses,
+        severity=observation.severity,
+        confidence=observation.confidence,
+        metadata=dict(observation.metadata),
+    )
+
+
+def normalize_dasha_observation(observation: DashaObservation) -> NormalizedObservation:
+    """Convert a Dasha observation into the fusion-normalized shape."""
+    return NormalizedObservation(
+        observation_id=observation.observation_id,
+        engine=FusionEngineId.DASHA,
+        category=f"dasha:{observation.category.value}",
         title=observation.title,
         explanation=observation.explanation,
         affected_planets=observation.affected_planets,

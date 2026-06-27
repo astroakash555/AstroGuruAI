@@ -370,8 +370,11 @@ class TestFutureAdapters:
             )
         )
         observations = DashaIntelligenceAdapter().analyze(context)
-        assert len(observations) == 2
-        assert {item.affected_planets[0] for item in observations} == {"Saturn", "Mercury"}
+        assert len(observations) > 2
+        categories = {item.category for item in observations}
+        assert "dasha:mahadasha" in categories
+        assert "dasha:antardasha" in categories
+        assert {item.affected_planets[0] for item in observations if item.category == "dasha:mahadasha"} == {"Saturn"}
 
     def test_transit_adapter_emits_transiting_planets(self) -> None:
         context = fusion_context(

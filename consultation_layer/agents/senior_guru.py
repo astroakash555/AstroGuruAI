@@ -13,7 +13,7 @@ def synthesize_conclusion(
     specialists: tuple[AgentFinding, ...],
     report: dict[str, Any],
 ) -> SeniorGuruConclusion:
-    reasoning = report.get("reasoning", {})
+    reasoning = _reasoning_view(report)
     remedies = report.get("remedy_recommendations", {})
 
     compared = {
@@ -246,4 +246,69 @@ def _find_agent(specialists: tuple[AgentFinding, ...], agent_id: str) -> AgentFi
     for agent in specialists:
         if agent.agent_id == agent_id:
             return agent
+    return None
+
+
+def _reasoning_view(report: dict[str, Any]) -> dict[str, Any]:
+    """Adapt fusion intelligence output for consultation synthesis."""
+    fusion = report.get("fusion")
+    if fusion:
+        return {
+            "problem_domain": _infer_domain_from_fusion(fusion),
+            "root_causes": [
+                {
+                    "cause_type": "fusion_root",
+                    "triggering_planet": _primary_planet_from_root_cause(item),
+                    "severity": item.get("confidence"),
+                    "title": item.get("title"),
+                    "explanation": item.get("explanation"),
+                }
+                for item in fusion.get("root_causes", [])
+            ],
+            "contradictions": [
+                {
+                    "topic": item.get("title"),
+                    "confidence_score": round(float(item.get("confidence", 0.0)) * 100, 1),
+                    "supporting_evidence": [
+                        {"system": engine} for engine in item.get("engines", [])
+                    ],
+                    "opposing_evidence": [],
+                }
+                for item in fusion.get("conflicts", [])
+            ],
+            "confidence": {
+                "overall_score": int(round(float(fusion.get("confidence", 0.0)) * 100)),
+            },
+            "consensus": {
+                "final_consensus": (
+                    "supported" if fusion.get("recommendations") else "mixed_signals"
+                ),
+            },
+            "audit_trail": [
+                {
+                    "rule_source": "intelligence_fusion",
+                    "reason_used": item.get("title", "Fusion observation"),
+                    "reference_id": item.get("fusion_id"),
+                }
+                for item in fusion.get("observations", [])[:5]
+            ],
+            "metadata": fusion.get("metadata", {}),
+        }
+    return report.get("reasoning", {})
+
+
+def _primary_planet_from_root_cause(root_cause: dict[str, Any]) -> str | None:
+    title = str(root_cause.get("title", ""))
+    for planet in ("Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Rahu", "Ketu"):
+        if planet in title:
+            return planet
+    return None
+
+
+def _infer_domain_from_fusion(fusion: dict[str, Any]) -> str | None:
+    for recommendation in fusion.get("recommendations", []):
+        title = str(recommendation.get("title", "")).lower()
+        for domain in ("marriage", "career", "health", "finance", "legal"):
+            if domain in title:
+                return domain
     return None

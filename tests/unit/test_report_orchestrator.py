@@ -159,10 +159,17 @@ def test_unified_report_json_contract():
             "recommended_remedies": [{"remedy_id": "vedic_mars_hanuman_worship"}],
         },
         remedy_recommendations={"matched_remedies": [], "metadata": {"engine": "remedy_engine_v1"}},
-        reasoning={
-            "confidence": {"overall_score": 72},
-            "consensus": {"final_consensus": "mixed_signals"},
-            "metadata": {"engine": "reasoning_layer_v1", "ai_prediction": False},
+        vedic={"metadata": {"engine": "vedic_intelligence_v1"}, "observations": []},
+        kp={"metadata": {"engine": "kp_intelligence_v1"}, "observations": [], "event_timing": []},
+        lal_kitab_intelligence={"metadata": {"engine": "lal_kitab_intelligence_v1"}, "observations": [], "remedies": []},
+        fusion={
+            "analyzed_at": generated_at.isoformat(),
+            "confidence": 0.72,
+            "root_causes": [],
+            "conflicts": [],
+            "recommendations": [],
+            "observations": [],
+            "metadata": {"engine": "intelligence_fusion_v1"},
         },
         summary=ReportSummary(
             lagna_sign="Aries",
@@ -236,15 +243,23 @@ def test_report_orchestrator_generates_all_sections(orchestrator, sample_birth_d
     assert payload["lal_kitab"]["summary"]
     assert payload["kp_analysis"]["summary"]
     assert payload["astro_intelligence"]["severity_score"] >= 0
-    assert payload["reasoning"]["metadata"]["engine"] == "reasoning_layer_v1"
-    assert 0 <= payload["reasoning"]["confidence"]["overall_score"] <= 100
+    assert payload["vedic"]["metadata"]["engine"] == "vedic_intelligence_v1"
+    assert payload["kp"]["metadata"]["engine"] == "kp_intelligence_v1"
+    assert payload["lal_kitab_intelligence"]["metadata"]["engine"] == "lal_kitab_intelligence_v1"
+    assert payload["fusion"]["metadata"]["engine"] == "intelligence_fusion_v1"
+    assert 0.0 <= payload["fusion"]["confidence"] <= 1.0
+    assert isinstance(payload["fusion"]["root_causes"], list)
+    assert isinstance(payload["fusion"]["conflicts"], list)
+    assert isinstance(payload["fusion"]["recommendations"], list)
+    assert payload["summary"]["reasoning_confidence_score"] is not None
     assert payload["remedy_recommendations"]["metadata"]["engine"] == "remedy_engine_v1"
     assert payload["problem_analysis"]["category"]["category"] == "marriage"
     assert payload["summary"]["lagna_sign"]
     assert payload["summary"]["problem_category"] == "marriage"
     assert "lal_kitab" in payload["metadata"]["components"]
     assert "astro_intelligence" in payload["metadata"]["components"]
-    assert "reasoning" in payload["metadata"]["components"]
+    assert "vedic" in payload["metadata"]["components"]
+    assert "fusion" in payload["metadata"]["components"]
     assert "problem_analysis" in payload["metadata"]["components"]
 
 
