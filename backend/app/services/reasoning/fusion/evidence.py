@@ -12,6 +12,7 @@ from backend.app.services.reasoning.fusion.models import (
 from backend.app.services.reasoning.dasha.models import ReasoningObservation as DashaObservation
 from backend.app.services.reasoning.kp.models import ReasoningObservation as KPObservation
 from backend.app.services.reasoning.lal_kitab.models import ReasoningObservation as LalKitabObservation
+from backend.app.services.reasoning.transit.models import ReasoningObservation as TransitObservation
 from backend.app.services.reasoning.vedic.constants import VedicObservation
 
 TITLE_NORMALIZER = re.compile(r"[^a-z0-9]+")
@@ -71,6 +72,22 @@ def normalize_dasha_observation(observation: DashaObservation) -> NormalizedObse
         observation_id=observation.observation_id,
         engine=FusionEngineId.DASHA,
         category=f"dasha:{observation.category.value}",
+        title=observation.title,
+        explanation=observation.explanation,
+        affected_planets=observation.affected_planets,
+        affected_houses=observation.affected_houses,
+        severity=observation.severity,
+        confidence=observation.confidence,
+        metadata=dict(observation.metadata),
+    )
+
+
+def normalize_transit_observation(observation: TransitObservation) -> NormalizedObservation:
+    """Convert a Transit observation into the fusion-normalized shape."""
+    return NormalizedObservation(
+        observation_id=observation.observation_id,
+        engine=FusionEngineId.TRANSIT,
+        category=f"transit:{observation.category.value}",
         title=observation.title,
         explanation=observation.explanation,
         affected_planets=observation.affected_planets,

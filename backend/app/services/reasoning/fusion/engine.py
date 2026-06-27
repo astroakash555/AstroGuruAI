@@ -10,6 +10,7 @@ from backend.app.services.reasoning.fusion.conflict_resolver import (
     detect_conflicts,
 )
 from backend.app.services.reasoning.dasha.analyzer import DashaIntelligenceAnalyzer
+from backend.app.services.reasoning.transit.analyzer import TransitIntelligenceAnalyzer
 from backend.app.services.reasoning.fusion.evidence import (
     collect_observations,
     deduplicate_observations,
@@ -17,6 +18,7 @@ from backend.app.services.reasoning.fusion.evidence import (
     normalize_dasha_observation,
     normalize_kp_observation,
     normalize_lal_kitab_observation,
+    normalize_transit_observation,
     normalize_vedic_observation,
 )
 from backend.app.services.reasoning.fusion.models import (
@@ -151,7 +153,10 @@ class DashaIntelligenceAdapter:
 
 
 class TransitIntelligenceAdapter:
-    """Placeholder adapter for future transit intelligence integration."""
+    """Adapter wrapping the Transit intelligence analyzer."""
+
+    def __init__(self, analyzer: TransitIntelligenceAnalyzer | None = None) -> None:
+        self._analyzer = analyzer or TransitIntelligenceAnalyzer()
 
     @property
     def engine_id(self) -> FusionEngineId:
@@ -163,46 +168,18 @@ class TransitIntelligenceAdapter:
 
     def analyze(self, context: FusionContext) -> tuple[NormalizedObservation, ...]:
         transit = context.transit
-        if transit is None:
+        if transit is None or not transit.planets:
             return ()
 
-        observations: list[NormalizedObservation] = []
-        for snapshot in transit.planets:
-            houses = tuple(
-                house
-                for house in (snapshot.house_from_lagna, snapshot.house_from_moon)
-                if house is not None
-            )
-            observations.append(
-                NormalizedObservation(
-                    observation_id=f"transit-{snapshot.planet.lower()}",
-                    engine=FusionEngineId.TRANSIT,
-                    category="transit:placement",
-                    title=f"Transiting {snapshot.planet} in {snapshot.sign}",
-                    explanation=(
-                        f"Transiting {snapshot.planet} occupies {snapshot.sign}"
-                        + (
-                            f" influencing houses {', '.join(str(house) for house in houses)}."
-                            if houses
-                            else "."
-                        )
-                    ),
-                    affected_planets=(snapshot.planet,),
-                    affected_houses=houses,
-                    severity=0.60,
-                    confidence=0.84,
-                    metadata={
-                        "sign": snapshot.sign,
-                        "is_retrograde": snapshot.is_retrograde,
-                        "reference_datetime": (
-                            transit.reference_datetime.isoformat()
-                            if transit.reference_datetime is not None
-                            else None
-                        ),
-                    },
-                )
-            )
-        return tuple(observations)
+        has_chart = bool(context.planet_positions.planets and context.houses.cusps)
+        result = self._analyzer.analyze(
+            transit=transit,
+            planet_positions=context.planet_positions if has_chart else None,
+            houses=context.houses if has_chart else None,
+            dasha=context.dasha,
+            reference_datetime=context.reference_datetime,
+        )
+        return tuple(normalize_transit_observation(item) for item in result.observations)
 
 
 class IntelligenceFusionEngine:

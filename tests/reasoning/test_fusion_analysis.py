@@ -391,8 +391,10 @@ class TestFutureAdapters:
             )
         )
         observations = TransitIntelligenceAdapter().analyze(context)
-        assert len(observations) == 1
-        assert observations[0].affected_houses == (12, 9)
+        assert len(observations) > 1
+        categories = {item.category for item in observations}
+        assert "transit:planet_transit" in categories
+        assert observations[0].affected_planets[0] == "Saturn"
 
 
 class TestFusionEngineIntegration:

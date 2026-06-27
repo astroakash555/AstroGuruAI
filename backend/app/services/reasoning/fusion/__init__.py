@@ -24,6 +24,7 @@ from backend.app.services.reasoning.fusion.evidence import (
     normalize_kp_observation,
     normalize_lal_kitab_observation,
     normalize_title,
+    normalize_transit_observation,
     normalize_vedic_observation,
     observation_signature,
 )
@@ -83,6 +84,7 @@ __all__ = [
     "normalize_kp_observation",
     "normalize_lal_kitab_observation",
     "normalize_title",
+    "normalize_transit_observation",
     "normalize_vedic_observation",
     "observation_signature",
     "rank_observations",
