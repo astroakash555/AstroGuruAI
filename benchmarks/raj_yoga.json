@@ -1,0 +1,237 @@
+{
+  "category": "raj_yoga",
+  "version": "1.0",
+  "count": 2,
+  "cases": [
+    {
+      "case_id": "raj_yoga_001",
+      "title": "Gaj Kesari yoga activation",
+      "problem_text": "Rise to leadership position",
+      "actual_outcome": {
+        "event": "leadership_rise",
+        "outcome_type": "success",
+        "description": "Leadership role during Gaj Kesari yoga activation."
+      },
+      "ground_truth": {
+        "planets": [
+          "Moon",
+          "Jupiter",
+          "Sun"
+        ],
+        "houses": [
+          1,
+          9,
+          10
+        ],
+        "dasha_lords": [
+          "Jupiter",
+          "Moon"
+        ],
+        "transit_indicators": [
+          "support"
+        ],
+        "remedies": [
+          "jupiter_remedy",
+          "moon_remedy"
+        ],
+        "consensus_outcome": "strong_support"
+      },
+      "match_profile": "high",
+      "category": "raj_yoga",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Moon",
+            "Jupiter",
+            "Sun"
+          ],
+          "affected_houses": [
+            1,
+            9,
+            10
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Moon",
+              "Jupiter"
+            ],
+            "shadow": [
+              "Sun"
+            ]
+          },
+          "houses": {
+            "primary": [
+              1
+            ],
+            "secondary": [
+              9,
+              10
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Jupiter"
+            },
+            "antardasha": {
+              "lord": "Moon"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "support",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "jupiter_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            },
+            {
+              "remedy": {
+                "remedy_id": "moon_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "strong_support"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    },
+    {
+      "case_id": "raj_yoga_002",
+      "title": "Raj yoga blocked by Saturn",
+      "problem_text": "Leadership opportunity missed",
+      "actual_outcome": {
+        "event": "missed_opportunity",
+        "outcome_type": "delay",
+        "description": "Raj yoga present but Saturn dasha delayed results."
+      },
+      "ground_truth": {
+        "planets": [
+          "Saturn",
+          "Sun",
+          "Jupiter"
+        ],
+        "houses": [
+          10,
+          11
+        ],
+        "dasha_lords": [
+          "Saturn",
+          "Sun"
+        ],
+        "transit_indicators": [
+          "sade_sati_phase"
+        ],
+        "remedies": [
+          "saturn_remedy",
+          "sun_remedy"
+        ],
+        "consensus_outcome": "delayed_outcome"
+      },
+      "match_profile": "medium",
+      "category": "raj_yoga",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Saturn",
+            "Sun"
+          ],
+          "affected_houses": [
+            10
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Saturn",
+              "Sun"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              10
+            ],
+            "secondary": []
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Saturn"
+            },
+            "antardasha": {
+              "lord": "Sun"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "sade_sati_phase",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "saturn_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "delayed_outcome"
+          },
+          "confidence": {
+            "overall_score": 48
+          }
+        }
+      }
+    }
+  ]
+}

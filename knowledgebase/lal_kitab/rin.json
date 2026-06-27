@@ -1,0 +1,332 @@
+{
+  "system": "lal_kitab",
+  "database": "rin",
+  "count": 25,
+  "entries": [
+    {
+      "rin_id": "pitra_rin_house_4",
+      "name": "Pitra Rin",
+      "meaning": "Sun-Saturn ancestral karmic debt",
+      "house": 4,
+      "effects": [
+        "Pitra Rin activated when linked to house 4."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Pitra Rin."
+      ],
+      "severity": 0.6
+    },
+    {
+      "rin_id": "pitra_rin_house_5",
+      "name": "Pitra Rin",
+      "meaning": "Sun-Saturn ancestral karmic debt",
+      "house": 5,
+      "effects": [
+        "Pitra Rin activated when linked to house 5."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Pitra Rin."
+      ],
+      "severity": 0.6
+    },
+    {
+      "rin_id": "pitra_rin_house_7",
+      "name": "Pitra Rin",
+      "meaning": "Sun-Saturn ancestral karmic debt",
+      "house": 7,
+      "effects": [
+        "Pitra Rin activated when linked to house 7."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Pitra Rin."
+      ],
+      "severity": 0.6
+    },
+    {
+      "rin_id": "pitra_rin_house_9",
+      "name": "Pitra Rin",
+      "meaning": "Sun-Saturn ancestral karmic debt",
+      "house": 9,
+      "effects": [
+        "Pitra Rin activated when linked to house 9."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Pitra Rin."
+      ],
+      "severity": 0.6
+    },
+    {
+      "rin_id": "pitra_rin_house_12",
+      "name": "Pitra Rin",
+      "meaning": "Sun-Saturn ancestral karmic debt",
+      "house": 12,
+      "effects": [
+        "Pitra Rin activated when linked to house 12."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Pitra Rin."
+      ],
+      "severity": 0.6
+    },
+    {
+      "rin_id": "matri_rin_house_4",
+      "name": "Matri Rin",
+      "meaning": "Moon-Rahu maternal karmic debt",
+      "house": 4,
+      "effects": [
+        "Matri Rin activated when linked to house 4."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Matri Rin."
+      ],
+      "severity": 0.7
+    },
+    {
+      "rin_id": "matri_rin_house_5",
+      "name": "Matri Rin",
+      "meaning": "Moon-Rahu maternal karmic debt",
+      "house": 5,
+      "effects": [
+        "Matri Rin activated when linked to house 5."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Matri Rin."
+      ],
+      "severity": 0.7
+    },
+    {
+      "rin_id": "matri_rin_house_7",
+      "name": "Matri Rin",
+      "meaning": "Moon-Rahu maternal karmic debt",
+      "house": 7,
+      "effects": [
+        "Matri Rin activated when linked to house 7."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Matri Rin."
+      ],
+      "severity": 0.7
+    },
+    {
+      "rin_id": "matri_rin_house_9",
+      "name": "Matri Rin",
+      "meaning": "Moon-Rahu maternal karmic debt",
+      "house": 9,
+      "effects": [
+        "Matri Rin activated when linked to house 9."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Matri Rin."
+      ],
+      "severity": 0.7
+    },
+    {
+      "rin_id": "matri_rin_house_12",
+      "name": "Matri Rin",
+      "meaning": "Moon-Rahu maternal karmic debt",
+      "house": 12,
+      "effects": [
+        "Matri Rin activated when linked to house 12."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Matri Rin."
+      ],
+      "severity": 0.7
+    },
+    {
+      "rin_id": "stree_rin_house_4",
+      "name": "Stree Rin",
+      "meaning": "Venus-Mars relationship karmic debt",
+      "house": 4,
+      "effects": [
+        "Stree Rin activated when linked to house 4."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Stree Rin."
+      ],
+      "severity": 0.8
+    },
+    {
+      "rin_id": "stree_rin_house_5",
+      "name": "Stree Rin",
+      "meaning": "Venus-Mars relationship karmic debt",
+      "house": 5,
+      "effects": [
+        "Stree Rin activated when linked to house 5."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Stree Rin."
+      ],
+      "severity": 0.8
+    },
+    {
+      "rin_id": "stree_rin_house_7",
+      "name": "Stree Rin",
+      "meaning": "Venus-Mars relationship karmic debt",
+      "house": 7,
+      "effects": [
+        "Stree Rin activated when linked to house 7."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Stree Rin."
+      ],
+      "severity": 0.8
+    },
+    {
+      "rin_id": "stree_rin_house_9",
+      "name": "Stree Rin",
+      "meaning": "Venus-Mars relationship karmic debt",
+      "house": 9,
+      "effects": [
+        "Stree Rin activated when linked to house 9."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Stree Rin."
+      ],
+      "severity": 0.8
+    },
+    {
+      "rin_id": "stree_rin_house_12",
+      "name": "Stree Rin",
+      "meaning": "Venus-Mars relationship karmic debt",
+      "house": 12,
+      "effects": [
+        "Stree Rin activated when linked to house 12."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Stree Rin."
+      ],
+      "severity": 0.8
+    },
+    {
+      "rin_id": "bhratri_rin_house_4",
+      "name": "Bhratri Rin",
+      "meaning": "Mars-Mercury sibling karmic debt",
+      "house": 4,
+      "effects": [
+        "Bhratri Rin activated when linked to house 4."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Bhratri Rin."
+      ],
+      "severity": 0.6
+    },
+    {
+      "rin_id": "bhratri_rin_house_5",
+      "name": "Bhratri Rin",
+      "meaning": "Mars-Mercury sibling karmic debt",
+      "house": 5,
+      "effects": [
+        "Bhratri Rin activated when linked to house 5."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Bhratri Rin."
+      ],
+      "severity": 0.6
+    },
+    {
+      "rin_id": "bhratri_rin_house_7",
+      "name": "Bhratri Rin",
+      "meaning": "Mars-Mercury sibling karmic debt",
+      "house": 7,
+      "effects": [
+        "Bhratri Rin activated when linked to house 7."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Bhratri Rin."
+      ],
+      "severity": 0.6
+    },
+    {
+      "rin_id": "bhratri_rin_house_9",
+      "name": "Bhratri Rin",
+      "meaning": "Mars-Mercury sibling karmic debt",
+      "house": 9,
+      "effects": [
+        "Bhratri Rin activated when linked to house 9."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Bhratri Rin."
+      ],
+      "severity": 0.6
+    },
+    {
+      "rin_id": "bhratri_rin_house_12",
+      "name": "Bhratri Rin",
+      "meaning": "Mars-Mercury sibling karmic debt",
+      "house": 12,
+      "effects": [
+        "Bhratri Rin activated when linked to house 12."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Bhratri Rin."
+      ],
+      "severity": 0.6
+    },
+    {
+      "rin_id": "rnanubandh_rin_house_4",
+      "name": "Rnanubandh Rin",
+      "meaning": "Saturn-Rahu bondage karmic debt",
+      "house": 4,
+      "effects": [
+        "Rnanubandh Rin activated when linked to house 4."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Rnanubandh Rin."
+      ],
+      "severity": 0.7
+    },
+    {
+      "rin_id": "rnanubandh_rin_house_5",
+      "name": "Rnanubandh Rin",
+      "meaning": "Saturn-Rahu bondage karmic debt",
+      "house": 5,
+      "effects": [
+        "Rnanubandh Rin activated when linked to house 5."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Rnanubandh Rin."
+      ],
+      "severity": 0.7
+    },
+    {
+      "rin_id": "rnanubandh_rin_house_7",
+      "name": "Rnanubandh Rin",
+      "meaning": "Saturn-Rahu bondage karmic debt",
+      "house": 7,
+      "effects": [
+        "Rnanubandh Rin activated when linked to house 7."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Rnanubandh Rin."
+      ],
+      "severity": 0.7
+    },
+    {
+      "rin_id": "rnanubandh_rin_house_9",
+      "name": "Rnanubandh Rin",
+      "meaning": "Saturn-Rahu bondage karmic debt",
+      "house": 9,
+      "effects": [
+        "Rnanubandh Rin activated when linked to house 9."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Rnanubandh Rin."
+      ],
+      "severity": 0.7
+    },
+    {
+      "rin_id": "rnanubandh_rin_house_12",
+      "name": "Rnanubandh Rin",
+      "meaning": "Saturn-Rahu bondage karmic debt",
+      "house": 12,
+      "effects": [
+        "Rnanubandh Rin activated when linked to house 12."
+      ],
+      "indicators": [
+        "Check Lal Kitab planet-house placement for Rnanubandh Rin."
+      ],
+      "severity": 0.7
+    }
+  ]
+}

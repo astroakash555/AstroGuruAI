@@ -1,0 +1,215 @@
+{
+  "category": "foreign_settlement",
+  "version": "1.0",
+  "count": 2,
+  "cases": [
+    {
+      "case_id": "foreign_settlement_001",
+      "title": "Foreign settlement via 9th-12th linkage",
+      "problem_text": "Moved abroad for work",
+      "actual_outcome": {
+        "event": "foreign_relocation",
+        "outcome_type": "success",
+        "description": "Settlement abroad during Rahu dasha with 9th lord support."
+      },
+      "ground_truth": {
+        "planets": [
+          "Rahu",
+          "Jupiter",
+          "Moon"
+        ],
+        "houses": [
+          9,
+          12
+        ],
+        "dasha_lords": [
+          "Rahu",
+          "Jupiter"
+        ],
+        "transit_indicators": [
+          "support"
+        ],
+        "remedies": [
+          "rahu_remedy",
+          "9th_lord_remedy"
+        ],
+        "consensus_outcome": "strong_support"
+      },
+      "match_profile": "high",
+      "category": "foreign_settlement",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Rahu",
+            "Jupiter",
+            "Moon"
+          ],
+          "affected_houses": [
+            9,
+            12
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Rahu",
+              "Jupiter"
+            ],
+            "shadow": [
+              "Moon"
+            ]
+          },
+          "houses": {
+            "primary": [
+              9
+            ],
+            "secondary": [
+              12
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Rahu"
+            },
+            "antardasha": {
+              "lord": "Jupiter"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "support",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "rahu_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            },
+            {
+              "remedy": {
+                "remedy_id": "9th_lord_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "strong_support"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    },
+    {
+      "case_id": "foreign_settlement_002",
+      "title": "Visa rejection repeated",
+      "problem_text": "Visa rejected multiple times",
+      "actual_outcome": {
+        "event": "visa_rejection",
+        "outcome_type": "denial",
+        "description": "Visa denials during afflicted 12th house period."
+      },
+      "ground_truth": {
+        "planets": [
+          "Saturn",
+          "Ketu"
+        ],
+        "houses": [
+          9,
+          12
+        ],
+        "dasha_lords": [
+          "Saturn",
+          "Ketu"
+        ],
+        "transit_indicators": [
+          "block"
+        ],
+        "remedies": [
+          "saturn_remedy",
+          "ketu_remedy"
+        ],
+        "consensus_outcome": "blocked_outcome"
+      },
+      "match_profile": "low",
+      "category": "foreign_settlement",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Mercury"
+          ],
+          "affected_houses": [
+            3
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Mercury"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              3
+            ],
+            "secondary": []
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Mercury"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": []
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": []
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "mixed_signals"
+          },
+          "confidence": {
+            "overall_score": 48
+          }
+        }
+      }
+    }
+  ]
+}

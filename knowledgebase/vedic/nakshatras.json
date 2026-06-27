@@ -1,0 +1,655 @@
+{
+  "system": "vedic",
+  "entity_type": "nakshatra",
+  "count": 27,
+  "entities": [
+    {
+      "entity_id": "vedic_nakshatra_0",
+      "entity_type": "nakshatra",
+      "name": "Ashwini",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Ashwini",
+        "star lord Ketu"
+      ],
+      "strengths": [
+        "Dasha seeding through Ketu."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 0,
+        "lord": "Ketu",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_1",
+      "entity_type": "nakshatra",
+      "name": "Bharani",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Bharani",
+        "star lord Venus"
+      ],
+      "strengths": [
+        "Dasha seeding through Venus."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 1,
+        "lord": "Venus",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_2",
+      "entity_type": "nakshatra",
+      "name": "Krittika",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Krittika",
+        "star lord Sun"
+      ],
+      "strengths": [
+        "Dasha seeding through Sun."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 2,
+        "lord": "Sun",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_3",
+      "entity_type": "nakshatra",
+      "name": "Rohini",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Rohini",
+        "star lord Moon"
+      ],
+      "strengths": [
+        "Dasha seeding through Moon."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 3,
+        "lord": "Moon",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_4",
+      "entity_type": "nakshatra",
+      "name": "Mrigashira",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Mrigashira",
+        "star lord Mars"
+      ],
+      "strengths": [
+        "Dasha seeding through Mars."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 4,
+        "lord": "Mars",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_5",
+      "entity_type": "nakshatra",
+      "name": "Ardra",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Ardra",
+        "star lord Rahu"
+      ],
+      "strengths": [
+        "Dasha seeding through Rahu."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 5,
+        "lord": "Rahu",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_6",
+      "entity_type": "nakshatra",
+      "name": "Punarvasu",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Punarvasu",
+        "star lord Jupiter"
+      ],
+      "strengths": [
+        "Dasha seeding through Jupiter."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 6,
+        "lord": "Jupiter",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_7",
+      "entity_type": "nakshatra",
+      "name": "Pushya",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Pushya",
+        "star lord Saturn"
+      ],
+      "strengths": [
+        "Dasha seeding through Saturn."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 7,
+        "lord": "Saturn",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_8",
+      "entity_type": "nakshatra",
+      "name": "Ashlesha",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Ashlesha",
+        "star lord Mercury"
+      ],
+      "strengths": [
+        "Dasha seeding through Mercury."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 8,
+        "lord": "Mercury",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_9",
+      "entity_type": "nakshatra",
+      "name": "Magha",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Magha",
+        "star lord Ketu"
+      ],
+      "strengths": [
+        "Dasha seeding through Ketu."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 9,
+        "lord": "Ketu",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_10",
+      "entity_type": "nakshatra",
+      "name": "Purva Phalguni",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Purva Phalguni",
+        "star lord Venus"
+      ],
+      "strengths": [
+        "Dasha seeding through Venus."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 10,
+        "lord": "Venus",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_11",
+      "entity_type": "nakshatra",
+      "name": "Uttara Phalguni",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Uttara Phalguni",
+        "star lord Sun"
+      ],
+      "strengths": [
+        "Dasha seeding through Sun."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 11,
+        "lord": "Sun",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_12",
+      "entity_type": "nakshatra",
+      "name": "Hasta",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Hasta",
+        "star lord Moon"
+      ],
+      "strengths": [
+        "Dasha seeding through Moon."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 12,
+        "lord": "Moon",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_13",
+      "entity_type": "nakshatra",
+      "name": "Chitra",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Chitra",
+        "star lord Mars"
+      ],
+      "strengths": [
+        "Dasha seeding through Mars."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 13,
+        "lord": "Mars",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_14",
+      "entity_type": "nakshatra",
+      "name": "Swati",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Swati",
+        "star lord Rahu"
+      ],
+      "strengths": [
+        "Dasha seeding through Rahu."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 14,
+        "lord": "Rahu",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_15",
+      "entity_type": "nakshatra",
+      "name": "Vishakha",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Vishakha",
+        "star lord Jupiter"
+      ],
+      "strengths": [
+        "Dasha seeding through Jupiter."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 15,
+        "lord": "Jupiter",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_16",
+      "entity_type": "nakshatra",
+      "name": "Anuradha",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Anuradha",
+        "star lord Saturn"
+      ],
+      "strengths": [
+        "Dasha seeding through Saturn."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 16,
+        "lord": "Saturn",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_17",
+      "entity_type": "nakshatra",
+      "name": "Jyeshtha",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Jyeshtha",
+        "star lord Mercury"
+      ],
+      "strengths": [
+        "Dasha seeding through Mercury."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 17,
+        "lord": "Mercury",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_18",
+      "entity_type": "nakshatra",
+      "name": "Mula",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Mula",
+        "star lord Ketu"
+      ],
+      "strengths": [
+        "Dasha seeding through Ketu."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 18,
+        "lord": "Ketu",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_19",
+      "entity_type": "nakshatra",
+      "name": "Purva Ashadha",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Purva Ashadha",
+        "star lord Venus"
+      ],
+      "strengths": [
+        "Dasha seeding through Venus."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 19,
+        "lord": "Venus",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_20",
+      "entity_type": "nakshatra",
+      "name": "Uttara Ashadha",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Uttara Ashadha",
+        "star lord Sun"
+      ],
+      "strengths": [
+        "Dasha seeding through Sun."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 20,
+        "lord": "Sun",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_21",
+      "entity_type": "nakshatra",
+      "name": "Shravana",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Shravana",
+        "star lord Moon"
+      ],
+      "strengths": [
+        "Dasha seeding through Moon."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 21,
+        "lord": "Moon",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_22",
+      "entity_type": "nakshatra",
+      "name": "Dhanishta",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Dhanishta",
+        "star lord Mars"
+      ],
+      "strengths": [
+        "Dasha seeding through Mars."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 22,
+        "lord": "Mars",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_23",
+      "entity_type": "nakshatra",
+      "name": "Shatabhisha",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Shatabhisha",
+        "star lord Rahu"
+      ],
+      "strengths": [
+        "Dasha seeding through Rahu."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 23,
+        "lord": "Rahu",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_24",
+      "entity_type": "nakshatra",
+      "name": "Purva Bhadrapada",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Purva Bhadrapada",
+        "star lord Jupiter"
+      ],
+      "strengths": [
+        "Dasha seeding through Jupiter."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 24,
+        "lord": "Jupiter",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_25",
+      "entity_type": "nakshatra",
+      "name": "Uttara Bhadrapada",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Uttara Bhadrapada",
+        "star lord Saturn"
+      ],
+      "strengths": [
+        "Dasha seeding through Saturn."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 25,
+        "lord": "Saturn",
+        "pada_count": 4
+      }
+    },
+    {
+      "entity_id": "vedic_nakshatra_26",
+      "entity_type": "nakshatra",
+      "name": "Revati",
+      "system": "vedic",
+      "meanings": [
+        "Lunar mansion Revati",
+        "star lord Mercury"
+      ],
+      "strengths": [
+        "Dasha seeding through Mercury."
+      ],
+      "weaknesses": [
+        "Afflicted nakshatra disturbs lunar outcomes."
+      ],
+      "effects": [
+        "Fine-tunes Moon and KP star lord analysis."
+      ],
+      "metadata": {
+        "nakshatra_index": 26,
+        "lord": "Mercury",
+        "pada_count": 4
+      }
+    }
+  ]
+}

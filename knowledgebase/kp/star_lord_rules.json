@@ -1,0 +1,367 @@
+{
+  "system": "kp",
+  "database": "star_lord_rules",
+  "count": 36,
+  "rules": [
+    {
+      "rule_id": "kp_star_lord_sun_h1",
+      "planet": "Sun",
+      "reference_house": 1,
+      "description": "Star lord of Sun influencing house 1 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Sun for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_sun_h4",
+      "planet": "Sun",
+      "reference_house": 4,
+      "description": "Star lord of Sun influencing house 4 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Sun for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_sun_h7",
+      "planet": "Sun",
+      "reference_house": 7,
+      "description": "Star lord of Sun influencing house 7 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Sun for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_sun_h10",
+      "planet": "Sun",
+      "reference_house": 10,
+      "description": "Star lord of Sun influencing house 10 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Sun for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_moon_h1",
+      "planet": "Moon",
+      "reference_house": 1,
+      "description": "Star lord of Moon influencing house 1 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Moon for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_moon_h4",
+      "planet": "Moon",
+      "reference_house": 4,
+      "description": "Star lord of Moon influencing house 4 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Moon for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_moon_h7",
+      "planet": "Moon",
+      "reference_house": 7,
+      "description": "Star lord of Moon influencing house 7 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Moon for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_moon_h10",
+      "planet": "Moon",
+      "reference_house": 10,
+      "description": "Star lord of Moon influencing house 10 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Moon for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_mars_h1",
+      "planet": "Mars",
+      "reference_house": 1,
+      "description": "Star lord of Mars influencing house 1 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Mars for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_mars_h4",
+      "planet": "Mars",
+      "reference_house": 4,
+      "description": "Star lord of Mars influencing house 4 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Mars for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_mars_h7",
+      "planet": "Mars",
+      "reference_house": 7,
+      "description": "Star lord of Mars influencing house 7 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Mars for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_mars_h10",
+      "planet": "Mars",
+      "reference_house": 10,
+      "description": "Star lord of Mars influencing house 10 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Mars for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_mercury_h1",
+      "planet": "Mercury",
+      "reference_house": 1,
+      "description": "Star lord of Mercury influencing house 1 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Mercury for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_mercury_h4",
+      "planet": "Mercury",
+      "reference_house": 4,
+      "description": "Star lord of Mercury influencing house 4 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Mercury for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_mercury_h7",
+      "planet": "Mercury",
+      "reference_house": 7,
+      "description": "Star lord of Mercury influencing house 7 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Mercury for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_mercury_h10",
+      "planet": "Mercury",
+      "reference_house": 10,
+      "description": "Star lord of Mercury influencing house 10 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Mercury for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_jupiter_h1",
+      "planet": "Jupiter",
+      "reference_house": 1,
+      "description": "Star lord of Jupiter influencing house 1 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Jupiter for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_jupiter_h4",
+      "planet": "Jupiter",
+      "reference_house": 4,
+      "description": "Star lord of Jupiter influencing house 4 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Jupiter for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_jupiter_h7",
+      "planet": "Jupiter",
+      "reference_house": 7,
+      "description": "Star lord of Jupiter influencing house 7 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Jupiter for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_jupiter_h10",
+      "planet": "Jupiter",
+      "reference_house": 10,
+      "description": "Star lord of Jupiter influencing house 10 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Jupiter for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_venus_h1",
+      "planet": "Venus",
+      "reference_house": 1,
+      "description": "Star lord of Venus influencing house 1 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Venus for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_venus_h4",
+      "planet": "Venus",
+      "reference_house": 4,
+      "description": "Star lord of Venus influencing house 4 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Venus for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_venus_h7",
+      "planet": "Venus",
+      "reference_house": 7,
+      "description": "Star lord of Venus influencing house 7 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Venus for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_venus_h10",
+      "planet": "Venus",
+      "reference_house": 10,
+      "description": "Star lord of Venus influencing house 10 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Venus for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_saturn_h1",
+      "planet": "Saturn",
+      "reference_house": 1,
+      "description": "Star lord of Saturn influencing house 1 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Saturn for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_saturn_h4",
+      "planet": "Saturn",
+      "reference_house": 4,
+      "description": "Star lord of Saturn influencing house 4 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Saturn for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_saturn_h7",
+      "planet": "Saturn",
+      "reference_house": 7,
+      "description": "Star lord of Saturn influencing house 7 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Saturn for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_saturn_h10",
+      "planet": "Saturn",
+      "reference_house": 10,
+      "description": "Star lord of Saturn influencing house 10 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Saturn for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_rahu_h1",
+      "planet": "Rahu",
+      "reference_house": 1,
+      "description": "Star lord of Rahu influencing house 1 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Rahu for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_rahu_h4",
+      "planet": "Rahu",
+      "reference_house": 4,
+      "description": "Star lord of Rahu influencing house 4 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Rahu for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_rahu_h7",
+      "planet": "Rahu",
+      "reference_house": 7,
+      "description": "Star lord of Rahu influencing house 7 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Rahu for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_rahu_h10",
+      "planet": "Rahu",
+      "reference_house": 10,
+      "description": "Star lord of Rahu influencing house 10 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Rahu for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_ketu_h1",
+      "planet": "Ketu",
+      "reference_house": 1,
+      "description": "Star lord of Ketu influencing house 1 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Ketu for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_ketu_h4",
+      "planet": "Ketu",
+      "reference_house": 4,
+      "description": "Star lord of Ketu influencing house 4 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Ketu for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_ketu_h7",
+      "planet": "Ketu",
+      "reference_house": 7,
+      "description": "Star lord of Ketu influencing house 7 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Ketu for event timing."
+      ],
+      "confidence": 0.66
+    },
+    {
+      "rule_id": "kp_star_lord_ketu_h10",
+      "planet": "Ketu",
+      "reference_house": 10,
+      "description": "Star lord of Ketu influencing house 10 significator chain.",
+      "effects": [
+        "Use nakshatra lord of Ketu for event timing."
+      ],
+      "confidence": 0.66
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "category": "court_case",
+  "version": "1.0",
+  "count": 2,
+  "cases": [
+    {
+      "case_id": "court_case_001",
+      "title": "Prolonged litigation",
+      "problem_text": "Court case pending for 12 years",
+      "actual_outcome": {
+        "event": "litigation",
+        "outcome_type": "delay",
+        "description": "Case delayed with Saturn-Rahu influence on 6th and 12th."
+      },
+      "ground_truth": {
+        "planets": [
+          "Saturn",
+          "Rahu"
+        ],
+        "houses": [
+          6,
+          12
+        ],
+        "dasha_lords": [
+          "Saturn",
+          "Rahu"
+        ],
+        "transit_indicators": [
+          "sade_sati_phase",
+          "block"
+        ],
+        "remedies": [
+          "saturn_remedy",
+          "rahu_remedy"
+        ],
+        "consensus_outcome": "delayed_outcome"
+      },
+      "match_profile": "high",
+      "category": "court_case",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Saturn",
+            "Rahu"
+          ],
+          "affected_houses": [
+            6,
+            12
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Saturn",
+              "Rahu"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              6
+            ],
+            "secondary": [
+              12
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Saturn"
+            },
+            "antardasha": {
+              "lord": "Rahu"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "sade_sati_phase",
+                "strength": 0.7
+              },
+              {
+                "impact_type": "block",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "saturn_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            },
+            {
+              "remedy": {
+                "remedy_id": "rahu_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "delayed_outcome"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    },
+    {
+      "case_id": "court_case_002",
+      "title": "Favorable court verdict",
+      "problem_text": "Won court case after long battle",
+      "actual_outcome": {
+        "event": "court_victory",
+        "outcome_type": "success",
+        "description": "Verdict in favor during Jupiter antardasha."
+      },
+      "ground_truth": {
+        "planets": [
+          "Jupiter",
+          "Sun"
+        ],
+        "houses": [
+          6,
+          9,
+          11
+        ],
+        "dasha_lords": [
+          "Jupiter",
+          "Sun"
+        ],
+        "transit_indicators": [
+          "support"
+        ],
+        "remedies": [
+          "jupiter_remedy"
+        ],
+        "consensus_outcome": "moderate_support"
+      },
+      "match_profile": "medium",
+      "category": "court_case",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Jupiter"
+          ],
+          "affected_houses": [
+            6,
+            9
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Jupiter"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              6
+            ],
+            "secondary": [
+              9
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Jupiter"
+            },
+            "antardasha": {
+              "lord": "Sun"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "support",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": []
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "moderate_support"
+          },
+          "confidence": {
+            "overall_score": 48
+          }
+        }
+      }
+    }
+  ]
+}

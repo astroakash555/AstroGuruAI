@@ -1,0 +1,1255 @@
+{
+  "system": "kp",
+  "database": "event_rules",
+  "count": 96,
+  "rules": [
+    {
+      "rule_id": "kp_event_marriage_house_1",
+      "event_type": "marriage",
+      "target_houses": [
+        1
+      ],
+      "description": "KP event analysis for marriage considering house 1 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_2",
+      "event_type": "marriage",
+      "target_houses": [
+        2
+      ],
+      "description": "KP event analysis for marriage considering house 2 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_3",
+      "event_type": "marriage",
+      "target_houses": [
+        3
+      ],
+      "description": "KP event analysis for marriage considering house 3 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_4",
+      "event_type": "marriage",
+      "target_houses": [
+        4
+      ],
+      "description": "KP event analysis for marriage considering house 4 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_5",
+      "event_type": "marriage",
+      "target_houses": [
+        5
+      ],
+      "description": "KP event analysis for marriage considering house 5 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_6",
+      "event_type": "marriage",
+      "target_houses": [
+        6
+      ],
+      "description": "KP event analysis for marriage considering house 6 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_7",
+      "event_type": "marriage",
+      "target_houses": [
+        7
+      ],
+      "description": "KP event analysis for marriage considering house 7 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_8",
+      "event_type": "marriage",
+      "target_houses": [
+        8
+      ],
+      "description": "KP event analysis for marriage considering house 8 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_9",
+      "event_type": "marriage",
+      "target_houses": [
+        9
+      ],
+      "description": "KP event analysis for marriage considering house 9 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_10",
+      "event_type": "marriage",
+      "target_houses": [
+        10
+      ],
+      "description": "KP event analysis for marriage considering house 10 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_11",
+      "event_type": "marriage",
+      "target_houses": [
+        11
+      ],
+      "description": "KP event analysis for marriage considering house 11 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_marriage_house_12",
+      "event_type": "marriage",
+      "target_houses": [
+        12
+      ],
+      "description": "KP event analysis for marriage considering house 12 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_1",
+      "event_type": "career",
+      "target_houses": [
+        1
+      ],
+      "description": "KP event analysis for career considering house 1 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_2",
+      "event_type": "career",
+      "target_houses": [
+        2
+      ],
+      "description": "KP event analysis for career considering house 2 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_3",
+      "event_type": "career",
+      "target_houses": [
+        3
+      ],
+      "description": "KP event analysis for career considering house 3 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_4",
+      "event_type": "career",
+      "target_houses": [
+        4
+      ],
+      "description": "KP event analysis for career considering house 4 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_5",
+      "event_type": "career",
+      "target_houses": [
+        5
+      ],
+      "description": "KP event analysis for career considering house 5 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_6",
+      "event_type": "career",
+      "target_houses": [
+        6
+      ],
+      "description": "KP event analysis for career considering house 6 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_7",
+      "event_type": "career",
+      "target_houses": [
+        7
+      ],
+      "description": "KP event analysis for career considering house 7 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_8",
+      "event_type": "career",
+      "target_houses": [
+        8
+      ],
+      "description": "KP event analysis for career considering house 8 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_9",
+      "event_type": "career",
+      "target_houses": [
+        9
+      ],
+      "description": "KP event analysis for career considering house 9 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_10",
+      "event_type": "career",
+      "target_houses": [
+        10
+      ],
+      "description": "KP event analysis for career considering house 10 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_11",
+      "event_type": "career",
+      "target_houses": [
+        11
+      ],
+      "description": "KP event analysis for career considering house 11 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_career_house_12",
+      "event_type": "career",
+      "target_houses": [
+        12
+      ],
+      "description": "KP event analysis for career considering house 12 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_1",
+      "event_type": "health",
+      "target_houses": [
+        1
+      ],
+      "description": "KP event analysis for health considering house 1 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_2",
+      "event_type": "health",
+      "target_houses": [
+        2
+      ],
+      "description": "KP event analysis for health considering house 2 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_3",
+      "event_type": "health",
+      "target_houses": [
+        3
+      ],
+      "description": "KP event analysis for health considering house 3 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_4",
+      "event_type": "health",
+      "target_houses": [
+        4
+      ],
+      "description": "KP event analysis for health considering house 4 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_5",
+      "event_type": "health",
+      "target_houses": [
+        5
+      ],
+      "description": "KP event analysis for health considering house 5 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_6",
+      "event_type": "health",
+      "target_houses": [
+        6
+      ],
+      "description": "KP event analysis for health considering house 6 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_7",
+      "event_type": "health",
+      "target_houses": [
+        7
+      ],
+      "description": "KP event analysis for health considering house 7 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_8",
+      "event_type": "health",
+      "target_houses": [
+        8
+      ],
+      "description": "KP event analysis for health considering house 8 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_9",
+      "event_type": "health",
+      "target_houses": [
+        9
+      ],
+      "description": "KP event analysis for health considering house 9 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_10",
+      "event_type": "health",
+      "target_houses": [
+        10
+      ],
+      "description": "KP event analysis for health considering house 10 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_11",
+      "event_type": "health",
+      "target_houses": [
+        11
+      ],
+      "description": "KP event analysis for health considering house 11 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_health_house_12",
+      "event_type": "health",
+      "target_houses": [
+        12
+      ],
+      "description": "KP event analysis for health considering house 12 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_1",
+      "event_type": "finance",
+      "target_houses": [
+        1
+      ],
+      "description": "KP event analysis for finance considering house 1 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_2",
+      "event_type": "finance",
+      "target_houses": [
+        2
+      ],
+      "description": "KP event analysis for finance considering house 2 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_3",
+      "event_type": "finance",
+      "target_houses": [
+        3
+      ],
+      "description": "KP event analysis for finance considering house 3 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_4",
+      "event_type": "finance",
+      "target_houses": [
+        4
+      ],
+      "description": "KP event analysis for finance considering house 4 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_5",
+      "event_type": "finance",
+      "target_houses": [
+        5
+      ],
+      "description": "KP event analysis for finance considering house 5 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_6",
+      "event_type": "finance",
+      "target_houses": [
+        6
+      ],
+      "description": "KP event analysis for finance considering house 6 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_7",
+      "event_type": "finance",
+      "target_houses": [
+        7
+      ],
+      "description": "KP event analysis for finance considering house 7 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_8",
+      "event_type": "finance",
+      "target_houses": [
+        8
+      ],
+      "description": "KP event analysis for finance considering house 8 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_9",
+      "event_type": "finance",
+      "target_houses": [
+        9
+      ],
+      "description": "KP event analysis for finance considering house 9 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_10",
+      "event_type": "finance",
+      "target_houses": [
+        10
+      ],
+      "description": "KP event analysis for finance considering house 10 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_11",
+      "event_type": "finance",
+      "target_houses": [
+        11
+      ],
+      "description": "KP event analysis for finance considering house 11 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_finance_house_12",
+      "event_type": "finance",
+      "target_houses": [
+        12
+      ],
+      "description": "KP event analysis for finance considering house 12 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_1",
+      "event_type": "legal",
+      "target_houses": [
+        1
+      ],
+      "description": "KP event analysis for legal considering house 1 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_2",
+      "event_type": "legal",
+      "target_houses": [
+        2
+      ],
+      "description": "KP event analysis for legal considering house 2 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_3",
+      "event_type": "legal",
+      "target_houses": [
+        3
+      ],
+      "description": "KP event analysis for legal considering house 3 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_4",
+      "event_type": "legal",
+      "target_houses": [
+        4
+      ],
+      "description": "KP event analysis for legal considering house 4 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_5",
+      "event_type": "legal",
+      "target_houses": [
+        5
+      ],
+      "description": "KP event analysis for legal considering house 5 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_6",
+      "event_type": "legal",
+      "target_houses": [
+        6
+      ],
+      "description": "KP event analysis for legal considering house 6 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_7",
+      "event_type": "legal",
+      "target_houses": [
+        7
+      ],
+      "description": "KP event analysis for legal considering house 7 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_8",
+      "event_type": "legal",
+      "target_houses": [
+        8
+      ],
+      "description": "KP event analysis for legal considering house 8 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_9",
+      "event_type": "legal",
+      "target_houses": [
+        9
+      ],
+      "description": "KP event analysis for legal considering house 9 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_10",
+      "event_type": "legal",
+      "target_houses": [
+        10
+      ],
+      "description": "KP event analysis for legal considering house 10 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_11",
+      "event_type": "legal",
+      "target_houses": [
+        11
+      ],
+      "description": "KP event analysis for legal considering house 11 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_legal_house_12",
+      "event_type": "legal",
+      "target_houses": [
+        12
+      ],
+      "description": "KP event analysis for legal considering house 12 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_1",
+      "event_type": "education",
+      "target_houses": [
+        1
+      ],
+      "description": "KP event analysis for education considering house 1 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_2",
+      "event_type": "education",
+      "target_houses": [
+        2
+      ],
+      "description": "KP event analysis for education considering house 2 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_3",
+      "event_type": "education",
+      "target_houses": [
+        3
+      ],
+      "description": "KP event analysis for education considering house 3 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_4",
+      "event_type": "education",
+      "target_houses": [
+        4
+      ],
+      "description": "KP event analysis for education considering house 4 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_5",
+      "event_type": "education",
+      "target_houses": [
+        5
+      ],
+      "description": "KP event analysis for education considering house 5 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_6",
+      "event_type": "education",
+      "target_houses": [
+        6
+      ],
+      "description": "KP event analysis for education considering house 6 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_7",
+      "event_type": "education",
+      "target_houses": [
+        7
+      ],
+      "description": "KP event analysis for education considering house 7 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_8",
+      "event_type": "education",
+      "target_houses": [
+        8
+      ],
+      "description": "KP event analysis for education considering house 8 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_9",
+      "event_type": "education",
+      "target_houses": [
+        9
+      ],
+      "description": "KP event analysis for education considering house 9 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_10",
+      "event_type": "education",
+      "target_houses": [
+        10
+      ],
+      "description": "KP event analysis for education considering house 10 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_11",
+      "event_type": "education",
+      "target_houses": [
+        11
+      ],
+      "description": "KP event analysis for education considering house 11 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_education_house_12",
+      "event_type": "education",
+      "target_houses": [
+        12
+      ],
+      "description": "KP event analysis for education considering house 12 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_1",
+      "event_type": "property",
+      "target_houses": [
+        1
+      ],
+      "description": "KP event analysis for property considering house 1 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_2",
+      "event_type": "property",
+      "target_houses": [
+        2
+      ],
+      "description": "KP event analysis for property considering house 2 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_3",
+      "event_type": "property",
+      "target_houses": [
+        3
+      ],
+      "description": "KP event analysis for property considering house 3 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_4",
+      "event_type": "property",
+      "target_houses": [
+        4
+      ],
+      "description": "KP event analysis for property considering house 4 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_5",
+      "event_type": "property",
+      "target_houses": [
+        5
+      ],
+      "description": "KP event analysis for property considering house 5 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_6",
+      "event_type": "property",
+      "target_houses": [
+        6
+      ],
+      "description": "KP event analysis for property considering house 6 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_7",
+      "event_type": "property",
+      "target_houses": [
+        7
+      ],
+      "description": "KP event analysis for property considering house 7 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_8",
+      "event_type": "property",
+      "target_houses": [
+        8
+      ],
+      "description": "KP event analysis for property considering house 8 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_9",
+      "event_type": "property",
+      "target_houses": [
+        9
+      ],
+      "description": "KP event analysis for property considering house 9 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_10",
+      "event_type": "property",
+      "target_houses": [
+        10
+      ],
+      "description": "KP event analysis for property considering house 10 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_11",
+      "event_type": "property",
+      "target_houses": [
+        11
+      ],
+      "description": "KP event analysis for property considering house 11 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_property_house_12",
+      "event_type": "property",
+      "target_houses": [
+        12
+      ],
+      "description": "KP event analysis for property considering house 12 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_1",
+      "event_type": "travel",
+      "target_houses": [
+        1
+      ],
+      "description": "KP event analysis for travel considering house 1 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_2",
+      "event_type": "travel",
+      "target_houses": [
+        2
+      ],
+      "description": "KP event analysis for travel considering house 2 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_3",
+      "event_type": "travel",
+      "target_houses": [
+        3
+      ],
+      "description": "KP event analysis for travel considering house 3 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_4",
+      "event_type": "travel",
+      "target_houses": [
+        4
+      ],
+      "description": "KP event analysis for travel considering house 4 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_5",
+      "event_type": "travel",
+      "target_houses": [
+        5
+      ],
+      "description": "KP event analysis for travel considering house 5 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_6",
+      "event_type": "travel",
+      "target_houses": [
+        6
+      ],
+      "description": "KP event analysis for travel considering house 6 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_7",
+      "event_type": "travel",
+      "target_houses": [
+        7
+      ],
+      "description": "KP event analysis for travel considering house 7 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_8",
+      "event_type": "travel",
+      "target_houses": [
+        8
+      ],
+      "description": "KP event analysis for travel considering house 8 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_9",
+      "event_type": "travel",
+      "target_houses": [
+        9
+      ],
+      "description": "KP event analysis for travel considering house 9 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_10",
+      "event_type": "travel",
+      "target_houses": [
+        10
+      ],
+      "description": "KP event analysis for travel considering house 10 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_11",
+      "event_type": "travel",
+      "target_houses": [
+        11
+      ],
+      "description": "KP event analysis for travel considering house 11 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    },
+    {
+      "rule_id": "kp_event_travel_house_12",
+      "event_type": "travel",
+      "target_houses": [
+        12
+      ],
+      "description": "KP event analysis for travel considering house 12 cusp chain.",
+      "support_conditions": [
+        "Significators present in level A/B/C.",
+        "Cusp sub lord supports event type."
+      ],
+      "confidence": 0.62
+    }
+  ]
+}

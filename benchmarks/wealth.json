@@ -1,0 +1,242 @@
+{
+  "category": "wealth",
+  "version": "1.0",
+  "count": 2,
+  "cases": [
+    {
+      "case_id": "wealth_001",
+      "title": "Sudden financial loss",
+      "problem_text": "Major financial loss in business",
+      "actual_outcome": {
+        "event": "financial_loss",
+        "outcome_type": "loss",
+        "description": "Loss during 8th lord dasha with Rahu transit."
+      },
+      "ground_truth": {
+        "planets": [
+          "Rahu",
+          "Saturn",
+          "Mars"
+        ],
+        "houses": [
+          2,
+          8,
+          11
+        ],
+        "dasha_lords": [
+          "Rahu",
+          "Saturn"
+        ],
+        "transit_indicators": [
+          "affliction",
+          "block"
+        ],
+        "remedies": [
+          "rahu_remedy",
+          "saturn_remedy"
+        ],
+        "consensus_outcome": "blocked_outcome"
+      },
+      "match_profile": "high",
+      "category": "wealth",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Rahu",
+            "Saturn",
+            "Mars"
+          ],
+          "affected_houses": [
+            2,
+            8,
+            11
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Rahu",
+              "Saturn"
+            ],
+            "shadow": [
+              "Mars"
+            ]
+          },
+          "houses": {
+            "primary": [
+              2
+            ],
+            "secondary": [
+              8,
+              11
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Rahu"
+            },
+            "antardasha": {
+              "lord": "Saturn"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "affliction",
+                "strength": 0.7
+              },
+              {
+                "impact_type": "block",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "rahu_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            },
+            {
+              "remedy": {
+                "remedy_id": "saturn_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "blocked_outcome"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    },
+    {
+      "case_id": "wealth_002",
+      "title": "Inheritance received",
+      "problem_text": "Received family inheritance",
+      "actual_outcome": {
+        "event": "inheritance",
+        "outcome_type": "gain",
+        "description": "Inheritance during Jupiter dasha with 8th house activation."
+      },
+      "ground_truth": {
+        "planets": [
+          "Jupiter",
+          "Venus"
+        ],
+        "houses": [
+          2,
+          8,
+          11
+        ],
+        "dasha_lords": [
+          "Jupiter"
+        ],
+        "transit_indicators": [
+          "support"
+        ],
+        "remedies": [
+          "jupiter_remedy"
+        ],
+        "consensus_outcome": "strong_support"
+      },
+      "match_profile": "high",
+      "category": "wealth",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Jupiter",
+            "Venus"
+          ],
+          "affected_houses": [
+            2,
+            8,
+            11
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Jupiter",
+              "Venus"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              2
+            ],
+            "secondary": [
+              8,
+              11
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Jupiter"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "support",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "jupiter_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "strong_support"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    }
+  ]
+}

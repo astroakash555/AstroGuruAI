@@ -1,0 +1,226 @@
+{
+  "category": "health",
+  "version": "1.0",
+  "count": 2,
+  "cases": [
+    {
+      "case_id": "health_001",
+      "title": "Chronic illness during 6th lord dasha",
+      "problem_text": "Chronic health issues for 5 years",
+      "actual_outcome": {
+        "event": "chronic_disease",
+        "outcome_type": "illness",
+        "description": "Chronic condition during afflicted 6th house dasha."
+      },
+      "ground_truth": {
+        "planets": [
+          "Saturn",
+          "Mars",
+          "Rahu"
+        ],
+        "houses": [
+          6,
+          8,
+          12
+        ],
+        "dasha_lords": [
+          "Saturn",
+          "Mars"
+        ],
+        "transit_indicators": [
+          "affliction"
+        ],
+        "remedies": [
+          "saturn_remedy",
+          "mars_remedy"
+        ],
+        "consensus_outcome": "blocked_outcome"
+      },
+      "match_profile": "high",
+      "category": "health",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Saturn",
+            "Mars",
+            "Rahu"
+          ],
+          "affected_houses": [
+            6,
+            8,
+            12
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Saturn",
+              "Mars"
+            ],
+            "shadow": [
+              "Rahu"
+            ]
+          },
+          "houses": {
+            "primary": [
+              6
+            ],
+            "secondary": [
+              8,
+              12
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Saturn"
+            },
+            "antardasha": {
+              "lord": "Mars"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "affliction",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "saturn_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            },
+            {
+              "remedy": {
+                "remedy_id": "mars_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "blocked_outcome"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    },
+    {
+      "case_id": "health_002",
+      "title": "Surgery during Mars transit",
+      "problem_text": "Emergency surgery required",
+      "actual_outcome": {
+        "event": "surgery",
+        "outcome_type": "medical_event",
+        "description": "Surgery during Mars transit over natal 8th lord."
+      },
+      "ground_truth": {
+        "planets": [
+          "Mars",
+          "Saturn"
+        ],
+        "houses": [
+          6,
+          8
+        ],
+        "dasha_lords": [
+          "Mars"
+        ],
+        "transit_indicators": [
+          "affliction",
+          "block"
+        ],
+        "remedies": [
+          "mars_remedy"
+        ],
+        "consensus_outcome": "blocked_outcome"
+      },
+      "match_profile": "medium",
+      "category": "health",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Mars"
+          ],
+          "affected_houses": [
+            6
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Mars"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              6
+            ],
+            "secondary": []
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Mars"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "affliction",
+                "strength": 0.7
+              },
+              {
+                "impact_type": "block",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": []
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "blocked_outcome"
+          },
+          "confidence": {
+            "overall_score": 48
+          }
+        }
+      }
+    }
+  ]
+}

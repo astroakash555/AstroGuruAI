@@ -1,0 +1,1411 @@
+{
+  "system": "lal_kitab",
+  "database": "planet_house",
+  "count": 108,
+  "entries": [
+    {
+      "entry_id": "lk_ph_sun_h1",
+      "planet": "Sun",
+      "house": 1,
+      "effect_code": "karmic_test",
+      "meaning": "Sun in house 1 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h1",
+      "planet": "Moon",
+      "house": 1,
+      "effect_code": "harmony",
+      "meaning": "Moon in house 1 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h1",
+      "planet": "Mars",
+      "house": 1,
+      "effect_code": "harmony",
+      "meaning": "Mars in house 1 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h1",
+      "planet": "Mercury",
+      "house": 1,
+      "effect_code": "conflict",
+      "meaning": "Mercury in house 1 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h1",
+      "planet": "Jupiter",
+      "house": 1,
+      "effect_code": "conflict",
+      "meaning": "Jupiter in house 1 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h1",
+      "planet": "Venus",
+      "house": 1,
+      "effect_code": "restriction",
+      "meaning": "Venus in house 1 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h1",
+      "planet": "Saturn",
+      "house": 1,
+      "effect_code": "expansion",
+      "meaning": "Saturn in house 1 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h1",
+      "planet": "Rahu",
+      "house": 1,
+      "effect_code": "harmony",
+      "meaning": "Rahu in house 1 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h1",
+      "planet": "Ketu",
+      "house": 1,
+      "effect_code": "harmony",
+      "meaning": "Ketu in house 1 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h2",
+      "planet": "Sun",
+      "house": 2,
+      "effect_code": "harmony",
+      "meaning": "Sun in house 2 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h2",
+      "planet": "Moon",
+      "house": 2,
+      "effect_code": "restriction",
+      "meaning": "Moon in house 2 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h2",
+      "planet": "Mars",
+      "house": 2,
+      "effect_code": "restriction",
+      "meaning": "Mars in house 2 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h2",
+      "planet": "Mercury",
+      "house": 2,
+      "effect_code": "karmic_test",
+      "meaning": "Mercury in house 2 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h2",
+      "planet": "Jupiter",
+      "house": 2,
+      "effect_code": "karmic_test",
+      "meaning": "Jupiter in house 2 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h2",
+      "planet": "Venus",
+      "house": 2,
+      "effect_code": "expansion",
+      "meaning": "Venus in house 2 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h2",
+      "planet": "Saturn",
+      "house": 2,
+      "effect_code": "conflict",
+      "meaning": "Saturn in house 2 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h2",
+      "planet": "Rahu",
+      "house": 2,
+      "effect_code": "restriction",
+      "meaning": "Rahu in house 2 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h2",
+      "planet": "Ketu",
+      "house": 2,
+      "effect_code": "restriction",
+      "meaning": "Ketu in house 2 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h3",
+      "planet": "Sun",
+      "house": 3,
+      "effect_code": "restriction",
+      "meaning": "Sun in house 3 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h3",
+      "planet": "Moon",
+      "house": 3,
+      "effect_code": "expansion",
+      "meaning": "Moon in house 3 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h3",
+      "planet": "Mars",
+      "house": 3,
+      "effect_code": "expansion",
+      "meaning": "Mars in house 3 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h3",
+      "planet": "Mercury",
+      "house": 3,
+      "effect_code": "harmony",
+      "meaning": "Mercury in house 3 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h3",
+      "planet": "Jupiter",
+      "house": 3,
+      "effect_code": "harmony",
+      "meaning": "Jupiter in house 3 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h3",
+      "planet": "Venus",
+      "house": 3,
+      "effect_code": "conflict",
+      "meaning": "Venus in house 3 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h3",
+      "planet": "Saturn",
+      "house": 3,
+      "effect_code": "karmic_test",
+      "meaning": "Saturn in house 3 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h3",
+      "planet": "Rahu",
+      "house": 3,
+      "effect_code": "expansion",
+      "meaning": "Rahu in house 3 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h3",
+      "planet": "Ketu",
+      "house": 3,
+      "effect_code": "expansion",
+      "meaning": "Ketu in house 3 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h4",
+      "planet": "Sun",
+      "house": 4,
+      "effect_code": "expansion",
+      "meaning": "Sun in house 4 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h4",
+      "planet": "Moon",
+      "house": 4,
+      "effect_code": "conflict",
+      "meaning": "Moon in house 4 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h4",
+      "planet": "Mars",
+      "house": 4,
+      "effect_code": "conflict",
+      "meaning": "Mars in house 4 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h4",
+      "planet": "Mercury",
+      "house": 4,
+      "effect_code": "restriction",
+      "meaning": "Mercury in house 4 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h4",
+      "planet": "Jupiter",
+      "house": 4,
+      "effect_code": "restriction",
+      "meaning": "Jupiter in house 4 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h4",
+      "planet": "Venus",
+      "house": 4,
+      "effect_code": "karmic_test",
+      "meaning": "Venus in house 4 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h4",
+      "planet": "Saturn",
+      "house": 4,
+      "effect_code": "harmony",
+      "meaning": "Saturn in house 4 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h4",
+      "planet": "Rahu",
+      "house": 4,
+      "effect_code": "conflict",
+      "meaning": "Rahu in house 4 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h4",
+      "planet": "Ketu",
+      "house": 4,
+      "effect_code": "conflict",
+      "meaning": "Ketu in house 4 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h5",
+      "planet": "Sun",
+      "house": 5,
+      "effect_code": "conflict",
+      "meaning": "Sun in house 5 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h5",
+      "planet": "Moon",
+      "house": 5,
+      "effect_code": "karmic_test",
+      "meaning": "Moon in house 5 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h5",
+      "planet": "Mars",
+      "house": 5,
+      "effect_code": "karmic_test",
+      "meaning": "Mars in house 5 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h5",
+      "planet": "Mercury",
+      "house": 5,
+      "effect_code": "expansion",
+      "meaning": "Mercury in house 5 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h5",
+      "planet": "Jupiter",
+      "house": 5,
+      "effect_code": "expansion",
+      "meaning": "Jupiter in house 5 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h5",
+      "planet": "Venus",
+      "house": 5,
+      "effect_code": "harmony",
+      "meaning": "Venus in house 5 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h5",
+      "planet": "Saturn",
+      "house": 5,
+      "effect_code": "restriction",
+      "meaning": "Saturn in house 5 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h5",
+      "planet": "Rahu",
+      "house": 5,
+      "effect_code": "karmic_test",
+      "meaning": "Rahu in house 5 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h5",
+      "planet": "Ketu",
+      "house": 5,
+      "effect_code": "karmic_test",
+      "meaning": "Ketu in house 5 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h6",
+      "planet": "Sun",
+      "house": 6,
+      "effect_code": "karmic_test",
+      "meaning": "Sun in house 6 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h6",
+      "planet": "Moon",
+      "house": 6,
+      "effect_code": "harmony",
+      "meaning": "Moon in house 6 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h6",
+      "planet": "Mars",
+      "house": 6,
+      "effect_code": "harmony",
+      "meaning": "Mars in house 6 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h6",
+      "planet": "Mercury",
+      "house": 6,
+      "effect_code": "conflict",
+      "meaning": "Mercury in house 6 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h6",
+      "planet": "Jupiter",
+      "house": 6,
+      "effect_code": "conflict",
+      "meaning": "Jupiter in house 6 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h6",
+      "planet": "Venus",
+      "house": 6,
+      "effect_code": "restriction",
+      "meaning": "Venus in house 6 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h6",
+      "planet": "Saturn",
+      "house": 6,
+      "effect_code": "expansion",
+      "meaning": "Saturn in house 6 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h6",
+      "planet": "Rahu",
+      "house": 6,
+      "effect_code": "harmony",
+      "meaning": "Rahu in house 6 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h6",
+      "planet": "Ketu",
+      "house": 6,
+      "effect_code": "harmony",
+      "meaning": "Ketu in house 6 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h7",
+      "planet": "Sun",
+      "house": 7,
+      "effect_code": "harmony",
+      "meaning": "Sun in house 7 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h7",
+      "planet": "Moon",
+      "house": 7,
+      "effect_code": "restriction",
+      "meaning": "Moon in house 7 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h7",
+      "planet": "Mars",
+      "house": 7,
+      "effect_code": "restriction",
+      "meaning": "Mars in house 7 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h7",
+      "planet": "Mercury",
+      "house": 7,
+      "effect_code": "karmic_test",
+      "meaning": "Mercury in house 7 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h7",
+      "planet": "Jupiter",
+      "house": 7,
+      "effect_code": "karmic_test",
+      "meaning": "Jupiter in house 7 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h7",
+      "planet": "Venus",
+      "house": 7,
+      "effect_code": "expansion",
+      "meaning": "Venus in house 7 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h7",
+      "planet": "Saturn",
+      "house": 7,
+      "effect_code": "conflict",
+      "meaning": "Saturn in house 7 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h7",
+      "planet": "Rahu",
+      "house": 7,
+      "effect_code": "restriction",
+      "meaning": "Rahu in house 7 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h7",
+      "planet": "Ketu",
+      "house": 7,
+      "effect_code": "restriction",
+      "meaning": "Ketu in house 7 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h8",
+      "planet": "Sun",
+      "house": 8,
+      "effect_code": "restriction",
+      "meaning": "Sun in house 8 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h8",
+      "planet": "Moon",
+      "house": 8,
+      "effect_code": "expansion",
+      "meaning": "Moon in house 8 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h8",
+      "planet": "Mars",
+      "house": 8,
+      "effect_code": "expansion",
+      "meaning": "Mars in house 8 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h8",
+      "planet": "Mercury",
+      "house": 8,
+      "effect_code": "harmony",
+      "meaning": "Mercury in house 8 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h8",
+      "planet": "Jupiter",
+      "house": 8,
+      "effect_code": "harmony",
+      "meaning": "Jupiter in house 8 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h8",
+      "planet": "Venus",
+      "house": 8,
+      "effect_code": "conflict",
+      "meaning": "Venus in house 8 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h8",
+      "planet": "Saturn",
+      "house": 8,
+      "effect_code": "karmic_test",
+      "meaning": "Saturn in house 8 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h8",
+      "planet": "Rahu",
+      "house": 8,
+      "effect_code": "expansion",
+      "meaning": "Rahu in house 8 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h8",
+      "planet": "Ketu",
+      "house": 8,
+      "effect_code": "expansion",
+      "meaning": "Ketu in house 8 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h9",
+      "planet": "Sun",
+      "house": 9,
+      "effect_code": "expansion",
+      "meaning": "Sun in house 9 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h9",
+      "planet": "Moon",
+      "house": 9,
+      "effect_code": "conflict",
+      "meaning": "Moon in house 9 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h9",
+      "planet": "Mars",
+      "house": 9,
+      "effect_code": "conflict",
+      "meaning": "Mars in house 9 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h9",
+      "planet": "Mercury",
+      "house": 9,
+      "effect_code": "restriction",
+      "meaning": "Mercury in house 9 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h9",
+      "planet": "Jupiter",
+      "house": 9,
+      "effect_code": "restriction",
+      "meaning": "Jupiter in house 9 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h9",
+      "planet": "Venus",
+      "house": 9,
+      "effect_code": "karmic_test",
+      "meaning": "Venus in house 9 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h9",
+      "planet": "Saturn",
+      "house": 9,
+      "effect_code": "harmony",
+      "meaning": "Saturn in house 9 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h9",
+      "planet": "Rahu",
+      "house": 9,
+      "effect_code": "conflict",
+      "meaning": "Rahu in house 9 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h9",
+      "planet": "Ketu",
+      "house": 9,
+      "effect_code": "conflict",
+      "meaning": "Ketu in house 9 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h10",
+      "planet": "Sun",
+      "house": 10,
+      "effect_code": "conflict",
+      "meaning": "Sun in house 10 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h10",
+      "planet": "Moon",
+      "house": 10,
+      "effect_code": "karmic_test",
+      "meaning": "Moon in house 10 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h10",
+      "planet": "Mars",
+      "house": 10,
+      "effect_code": "karmic_test",
+      "meaning": "Mars in house 10 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h10",
+      "planet": "Mercury",
+      "house": 10,
+      "effect_code": "expansion",
+      "meaning": "Mercury in house 10 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h10",
+      "planet": "Jupiter",
+      "house": 10,
+      "effect_code": "expansion",
+      "meaning": "Jupiter in house 10 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h10",
+      "planet": "Venus",
+      "house": 10,
+      "effect_code": "harmony",
+      "meaning": "Venus in house 10 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h10",
+      "planet": "Saturn",
+      "house": 10,
+      "effect_code": "restriction",
+      "meaning": "Saturn in house 10 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h10",
+      "planet": "Rahu",
+      "house": 10,
+      "effect_code": "karmic_test",
+      "meaning": "Rahu in house 10 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h10",
+      "planet": "Ketu",
+      "house": 10,
+      "effect_code": "karmic_test",
+      "meaning": "Ketu in house 10 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h11",
+      "planet": "Sun",
+      "house": 11,
+      "effect_code": "karmic_test",
+      "meaning": "Sun in house 11 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h11",
+      "planet": "Moon",
+      "house": 11,
+      "effect_code": "harmony",
+      "meaning": "Moon in house 11 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h11",
+      "planet": "Mars",
+      "house": 11,
+      "effect_code": "harmony",
+      "meaning": "Mars in house 11 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h11",
+      "planet": "Mercury",
+      "house": 11,
+      "effect_code": "conflict",
+      "meaning": "Mercury in house 11 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h11",
+      "planet": "Jupiter",
+      "house": 11,
+      "effect_code": "conflict",
+      "meaning": "Jupiter in house 11 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h11",
+      "planet": "Venus",
+      "house": 11,
+      "effect_code": "restriction",
+      "meaning": "Venus in house 11 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h11",
+      "planet": "Saturn",
+      "house": 11,
+      "effect_code": "expansion",
+      "meaning": "Saturn in house 11 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h11",
+      "planet": "Rahu",
+      "house": 11,
+      "effect_code": "harmony",
+      "meaning": "Rahu in house 11 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h11",
+      "planet": "Ketu",
+      "house": 11,
+      "effect_code": "harmony",
+      "meaning": "Ketu in house 11 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_sun_h12",
+      "planet": "Sun",
+      "house": 12,
+      "effect_code": "harmony",
+      "meaning": "Sun in house 12 expresses harmony in Lal Kitab logic.",
+      "strengths": [
+        "Positive harmony when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative harmony when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_moon_h12",
+      "planet": "Moon",
+      "house": 12,
+      "effect_code": "restriction",
+      "meaning": "Moon in house 12 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mars_h12",
+      "planet": "Mars",
+      "house": 12,
+      "effect_code": "restriction",
+      "meaning": "Mars in house 12 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_mercury_h12",
+      "planet": "Mercury",
+      "house": 12,
+      "effect_code": "karmic_test",
+      "meaning": "Mercury in house 12 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_jupiter_h12",
+      "planet": "Jupiter",
+      "house": 12,
+      "effect_code": "karmic_test",
+      "meaning": "Jupiter in house 12 expresses karmic_test in Lal Kitab logic.",
+      "strengths": [
+        "Positive karmic_test when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative karmic_test when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_venus_h12",
+      "planet": "Venus",
+      "house": 12,
+      "effect_code": "expansion",
+      "meaning": "Venus in house 12 expresses expansion in Lal Kitab logic.",
+      "strengths": [
+        "Positive expansion when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative expansion when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_saturn_h12",
+      "planet": "Saturn",
+      "house": 12,
+      "effect_code": "conflict",
+      "meaning": "Saturn in house 12 expresses conflict in Lal Kitab logic.",
+      "strengths": [
+        "Positive conflict when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative conflict when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_rahu_h12",
+      "planet": "Rahu",
+      "house": 12,
+      "effect_code": "restriction",
+      "meaning": "Rahu in house 12 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    },
+    {
+      "entry_id": "lk_ph_ketu_h12",
+      "planet": "Ketu",
+      "house": 12,
+      "effect_code": "restriction",
+      "meaning": "Ketu in house 12 expresses restriction in Lal Kitab logic.",
+      "strengths": [
+        "Positive restriction when planet is supported."
+      ],
+      "weaknesses": [
+        "Negative restriction when afflicted."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "name": "AstroGuruAI Knowledge Brain",
+  "systems": [
+    "vedic",
+    "lal_kitab",
+    "kp"
+  ],
+  "domains": [
+    "marriage",
+    "career",
+    "health",
+    "finance"
+  ],
+  "files": {
+    "vedic/planets.json": 9,
+    "vedic/houses.json": 12,
+    "vedic/signs.json": 12,
+    "vedic/nakshatras.json": 27,
+    "vedic/padas.json": 108,
+    "vedic/combinations.json": 12,
+    "domains/marriage_rules.json": 320,
+    "domains/career_rules.json": 300,
+    "domains/health_rules.json": 180,
+    "domains/finance_rules.json": 225,
+    "lal_kitab/rin.json": 25,
+    "lal_kitab/dosh.json": 30,
+    "lal_kitab/remedies.json": 108,
+    "lal_kitab/planet_house.json": 108,
+    "kp/event_rules.json": 96,
+    "kp/significator_rules.json": 48,
+    "kp/star_lord_rules.json": 36,
+    "kp/sub_lord_rules.json": 108
+  },
+  "total_rule_count": 1025
+}

@@ -1,0 +1,234 @@
+{
+  "category": "government_job",
+  "version": "1.0",
+  "count": 2,
+  "cases": [
+    {
+      "case_id": "government_job_001",
+      "title": "IAS selection through Sun-Jupiter yoga",
+      "problem_text": "Selected for government civil service",
+      "actual_outcome": {
+        "event": "government_selection",
+        "outcome_type": "success",
+        "description": "Civil service selection with Sun in 10th and Jupiter support."
+      },
+      "ground_truth": {
+        "planets": [
+          "Sun",
+          "Jupiter",
+          "Saturn"
+        ],
+        "houses": [
+          6,
+          10,
+          11
+        ],
+        "dasha_lords": [
+          "Sun",
+          "Jupiter"
+        ],
+        "transit_indicators": [
+          "support"
+        ],
+        "remedies": [
+          "sun_remedy",
+          "jupiter_remedy"
+        ],
+        "consensus_outcome": "strong_support"
+      },
+      "match_profile": "high",
+      "category": "government_job",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Sun",
+            "Jupiter",
+            "Saturn"
+          ],
+          "affected_houses": [
+            6,
+            10,
+            11
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Sun",
+              "Jupiter"
+            ],
+            "shadow": [
+              "Saturn"
+            ]
+          },
+          "houses": {
+            "primary": [
+              6
+            ],
+            "secondary": [
+              10,
+              11
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Sun"
+            },
+            "antardasha": {
+              "lord": "Jupiter"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "support",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "sun_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            },
+            {
+              "remedy": {
+                "remedy_id": "jupiter_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "strong_support"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    },
+    {
+      "case_id": "government_job_002",
+      "title": "Repeated failure in government exams",
+      "problem_text": "Failed government exam three times",
+      "actual_outcome": {
+        "event": "exam_failure",
+        "outcome_type": "delay",
+        "description": "Exam failures during afflicted 6th house period."
+      },
+      "ground_truth": {
+        "planets": [
+          "Saturn",
+          "Rahu"
+        ],
+        "houses": [
+          6,
+          12
+        ],
+        "dasha_lords": [
+          "Saturn",
+          "Rahu"
+        ],
+        "transit_indicators": [
+          "block"
+        ],
+        "remedies": [
+          "saturn_remedy",
+          "6th_lord_remedy"
+        ],
+        "consensus_outcome": "delayed_outcome"
+      },
+      "match_profile": "medium",
+      "category": "government_job",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Saturn"
+          ],
+          "affected_houses": [
+            6
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Saturn"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              6
+            ],
+            "secondary": []
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Saturn"
+            },
+            "antardasha": {
+              "lord": "Rahu"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "block",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "saturn_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "delayed_outcome"
+          },
+          "confidence": {
+            "overall_score": 48
+          }
+        }
+      }
+    }
+  ]
+}

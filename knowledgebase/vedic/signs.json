@@ -1,0 +1,283 @@
+{
+  "system": "vedic",
+  "entity_type": "sign",
+  "count": 12,
+  "entities": [
+    {
+      "entity_id": "vedic_sign_aries",
+      "entity_type": "sign",
+      "name": "Aries",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Aries",
+        "ruled by Mars"
+      ],
+      "strengths": [
+        "Supports traits of Mars when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Aries distorts Mars significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Aries."
+      ],
+      "metadata": {
+        "sign_index": 0,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_taurus",
+      "entity_type": "sign",
+      "name": "Taurus",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Taurus",
+        "ruled by Venus"
+      ],
+      "strengths": [
+        "Supports traits of Venus when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Taurus distorts Venus significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Taurus."
+      ],
+      "metadata": {
+        "sign_index": 1,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_gemini",
+      "entity_type": "sign",
+      "name": "Gemini",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Gemini",
+        "ruled by Mercury"
+      ],
+      "strengths": [
+        "Supports traits of Mercury when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Gemini distorts Mercury significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Gemini."
+      ],
+      "metadata": {
+        "sign_index": 2,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_cancer",
+      "entity_type": "sign",
+      "name": "Cancer",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Cancer",
+        "ruled by Moon"
+      ],
+      "strengths": [
+        "Supports traits of Moon when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Cancer distorts Moon significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Cancer."
+      ],
+      "metadata": {
+        "sign_index": 3,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_leo",
+      "entity_type": "sign",
+      "name": "Leo",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Leo",
+        "ruled by Sun"
+      ],
+      "strengths": [
+        "Supports traits of Sun when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Leo distorts Sun significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Leo."
+      ],
+      "metadata": {
+        "sign_index": 4,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_virgo",
+      "entity_type": "sign",
+      "name": "Virgo",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Virgo",
+        "ruled by Mercury"
+      ],
+      "strengths": [
+        "Supports traits of Mercury when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Virgo distorts Mercury significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Virgo."
+      ],
+      "metadata": {
+        "sign_index": 5,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_libra",
+      "entity_type": "sign",
+      "name": "Libra",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Libra",
+        "ruled by Venus"
+      ],
+      "strengths": [
+        "Supports traits of Venus when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Libra distorts Venus significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Libra."
+      ],
+      "metadata": {
+        "sign_index": 6,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_scorpio",
+      "entity_type": "sign",
+      "name": "Scorpio",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Scorpio",
+        "ruled by Mars"
+      ],
+      "strengths": [
+        "Supports traits of Mars when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Scorpio distorts Mars significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Scorpio."
+      ],
+      "metadata": {
+        "sign_index": 7,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_sagittarius",
+      "entity_type": "sign",
+      "name": "Sagittarius",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Sagittarius",
+        "ruled by Jupiter"
+      ],
+      "strengths": [
+        "Supports traits of Jupiter when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Sagittarius distorts Jupiter significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Sagittarius."
+      ],
+      "metadata": {
+        "sign_index": 8,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_capricorn",
+      "entity_type": "sign",
+      "name": "Capricorn",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Capricorn",
+        "ruled by Saturn"
+      ],
+      "strengths": [
+        "Supports traits of Saturn when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Capricorn distorts Saturn significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Capricorn."
+      ],
+      "metadata": {
+        "sign_index": 9,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_aquarius",
+      "entity_type": "sign",
+      "name": "Aquarius",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Aquarius",
+        "ruled by Saturn"
+      ],
+      "strengths": [
+        "Supports traits of Saturn when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Aquarius distorts Saturn significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Aquarius."
+      ],
+      "metadata": {
+        "sign_index": 10,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_sign_pisces",
+      "entity_type": "sign",
+      "name": "Pisces",
+      "system": "vedic",
+      "meanings": [
+        "Rashi Pisces",
+        "ruled by Jupiter"
+      ],
+      "strengths": [
+        "Supports traits of Jupiter when unafflicted."
+      ],
+      "weaknesses": [
+        "Afflicted Pisces distorts Jupiter significations."
+      ],
+      "effects": [
+        "Modifies planetary results in Pisces."
+      ],
+      "metadata": {
+        "sign_index": 11,
+        "lord": "Jupiter"
+      }
+    }
+  ]
+}

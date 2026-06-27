@@ -1,0 +1,8 @@
+Generate prioritized remedies from this analysis JSON.
+
+Required JSON keys:
+- remedies (array of objects with remedy_type, astrology_system, title, description, planet, house, priority, confidence_score)
+- summary
+
+Input JSON:
+{{report_json}}

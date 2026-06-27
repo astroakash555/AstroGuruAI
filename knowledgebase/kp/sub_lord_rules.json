@@ -1,0 +1,1087 @@
+{
+  "system": "kp",
+  "database": "sub_lord_rules",
+  "count": 108,
+  "rules": [
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_1",
+      "planet": "Sun",
+      "cusp_house": 1,
+      "description": "Sub lord analysis when Sun appears in house 1 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_2",
+      "planet": "Sun",
+      "cusp_house": 2,
+      "description": "Sub lord analysis when Sun appears in house 2 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_3",
+      "planet": "Sun",
+      "cusp_house": 3,
+      "description": "Sub lord analysis when Sun appears in house 3 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_4",
+      "planet": "Sun",
+      "cusp_house": 4,
+      "description": "Sub lord analysis when Sun appears in house 4 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_5",
+      "planet": "Sun",
+      "cusp_house": 5,
+      "description": "Sub lord analysis when Sun appears in house 5 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_6",
+      "planet": "Sun",
+      "cusp_house": 6,
+      "description": "Sub lord analysis when Sun appears in house 6 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_7",
+      "planet": "Sun",
+      "cusp_house": 7,
+      "description": "Sub lord analysis when Sun appears in house 7 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_8",
+      "planet": "Sun",
+      "cusp_house": 8,
+      "description": "Sub lord analysis when Sun appears in house 8 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_9",
+      "planet": "Sun",
+      "cusp_house": 9,
+      "description": "Sub lord analysis when Sun appears in house 9 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_10",
+      "planet": "Sun",
+      "cusp_house": 10,
+      "description": "Sub lord analysis when Sun appears in house 10 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_11",
+      "planet": "Sun",
+      "cusp_house": 11,
+      "description": "Sub lord analysis when Sun appears in house 11 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_sun_cusp_12",
+      "planet": "Sun",
+      "cusp_house": 12,
+      "description": "Sub lord analysis when Sun appears in house 12 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_1",
+      "planet": "Moon",
+      "cusp_house": 1,
+      "description": "Sub lord analysis when Moon appears in house 1 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_2",
+      "planet": "Moon",
+      "cusp_house": 2,
+      "description": "Sub lord analysis when Moon appears in house 2 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_3",
+      "planet": "Moon",
+      "cusp_house": 3,
+      "description": "Sub lord analysis when Moon appears in house 3 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_4",
+      "planet": "Moon",
+      "cusp_house": 4,
+      "description": "Sub lord analysis when Moon appears in house 4 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_5",
+      "planet": "Moon",
+      "cusp_house": 5,
+      "description": "Sub lord analysis when Moon appears in house 5 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_6",
+      "planet": "Moon",
+      "cusp_house": 6,
+      "description": "Sub lord analysis when Moon appears in house 6 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_7",
+      "planet": "Moon",
+      "cusp_house": 7,
+      "description": "Sub lord analysis when Moon appears in house 7 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_8",
+      "planet": "Moon",
+      "cusp_house": 8,
+      "description": "Sub lord analysis when Moon appears in house 8 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_9",
+      "planet": "Moon",
+      "cusp_house": 9,
+      "description": "Sub lord analysis when Moon appears in house 9 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_10",
+      "planet": "Moon",
+      "cusp_house": 10,
+      "description": "Sub lord analysis when Moon appears in house 10 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_11",
+      "planet": "Moon",
+      "cusp_house": 11,
+      "description": "Sub lord analysis when Moon appears in house 11 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_moon_cusp_12",
+      "planet": "Moon",
+      "cusp_house": 12,
+      "description": "Sub lord analysis when Moon appears in house 12 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_1",
+      "planet": "Mars",
+      "cusp_house": 1,
+      "description": "Sub lord analysis when Mars appears in house 1 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_2",
+      "planet": "Mars",
+      "cusp_house": 2,
+      "description": "Sub lord analysis when Mars appears in house 2 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_3",
+      "planet": "Mars",
+      "cusp_house": 3,
+      "description": "Sub lord analysis when Mars appears in house 3 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_4",
+      "planet": "Mars",
+      "cusp_house": 4,
+      "description": "Sub lord analysis when Mars appears in house 4 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_5",
+      "planet": "Mars",
+      "cusp_house": 5,
+      "description": "Sub lord analysis when Mars appears in house 5 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_6",
+      "planet": "Mars",
+      "cusp_house": 6,
+      "description": "Sub lord analysis when Mars appears in house 6 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_7",
+      "planet": "Mars",
+      "cusp_house": 7,
+      "description": "Sub lord analysis when Mars appears in house 7 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_8",
+      "planet": "Mars",
+      "cusp_house": 8,
+      "description": "Sub lord analysis when Mars appears in house 8 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_9",
+      "planet": "Mars",
+      "cusp_house": 9,
+      "description": "Sub lord analysis when Mars appears in house 9 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_10",
+      "planet": "Mars",
+      "cusp_house": 10,
+      "description": "Sub lord analysis when Mars appears in house 10 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_11",
+      "planet": "Mars",
+      "cusp_house": 11,
+      "description": "Sub lord analysis when Mars appears in house 11 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mars_cusp_12",
+      "planet": "Mars",
+      "cusp_house": 12,
+      "description": "Sub lord analysis when Mars appears in house 12 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_1",
+      "planet": "Mercury",
+      "cusp_house": 1,
+      "description": "Sub lord analysis when Mercury appears in house 1 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_2",
+      "planet": "Mercury",
+      "cusp_house": 2,
+      "description": "Sub lord analysis when Mercury appears in house 2 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_3",
+      "planet": "Mercury",
+      "cusp_house": 3,
+      "description": "Sub lord analysis when Mercury appears in house 3 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_4",
+      "planet": "Mercury",
+      "cusp_house": 4,
+      "description": "Sub lord analysis when Mercury appears in house 4 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_5",
+      "planet": "Mercury",
+      "cusp_house": 5,
+      "description": "Sub lord analysis when Mercury appears in house 5 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_6",
+      "planet": "Mercury",
+      "cusp_house": 6,
+      "description": "Sub lord analysis when Mercury appears in house 6 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_7",
+      "planet": "Mercury",
+      "cusp_house": 7,
+      "description": "Sub lord analysis when Mercury appears in house 7 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_8",
+      "planet": "Mercury",
+      "cusp_house": 8,
+      "description": "Sub lord analysis when Mercury appears in house 8 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_9",
+      "planet": "Mercury",
+      "cusp_house": 9,
+      "description": "Sub lord analysis when Mercury appears in house 9 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_10",
+      "planet": "Mercury",
+      "cusp_house": 10,
+      "description": "Sub lord analysis when Mercury appears in house 10 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_11",
+      "planet": "Mercury",
+      "cusp_house": 11,
+      "description": "Sub lord analysis when Mercury appears in house 11 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_mercury_cusp_12",
+      "planet": "Mercury",
+      "cusp_house": 12,
+      "description": "Sub lord analysis when Mercury appears in house 12 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_1",
+      "planet": "Jupiter",
+      "cusp_house": 1,
+      "description": "Sub lord analysis when Jupiter appears in house 1 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_2",
+      "planet": "Jupiter",
+      "cusp_house": 2,
+      "description": "Sub lord analysis when Jupiter appears in house 2 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_3",
+      "planet": "Jupiter",
+      "cusp_house": 3,
+      "description": "Sub lord analysis when Jupiter appears in house 3 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_4",
+      "planet": "Jupiter",
+      "cusp_house": 4,
+      "description": "Sub lord analysis when Jupiter appears in house 4 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_5",
+      "planet": "Jupiter",
+      "cusp_house": 5,
+      "description": "Sub lord analysis when Jupiter appears in house 5 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_6",
+      "planet": "Jupiter",
+      "cusp_house": 6,
+      "description": "Sub lord analysis when Jupiter appears in house 6 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_7",
+      "planet": "Jupiter",
+      "cusp_house": 7,
+      "description": "Sub lord analysis when Jupiter appears in house 7 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_8",
+      "planet": "Jupiter",
+      "cusp_house": 8,
+      "description": "Sub lord analysis when Jupiter appears in house 8 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_9",
+      "planet": "Jupiter",
+      "cusp_house": 9,
+      "description": "Sub lord analysis when Jupiter appears in house 9 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_10",
+      "planet": "Jupiter",
+      "cusp_house": 10,
+      "description": "Sub lord analysis when Jupiter appears in house 10 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_11",
+      "planet": "Jupiter",
+      "cusp_house": 11,
+      "description": "Sub lord analysis when Jupiter appears in house 11 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_jupiter_cusp_12",
+      "planet": "Jupiter",
+      "cusp_house": 12,
+      "description": "Sub lord analysis when Jupiter appears in house 12 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_1",
+      "planet": "Venus",
+      "cusp_house": 1,
+      "description": "Sub lord analysis when Venus appears in house 1 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_2",
+      "planet": "Venus",
+      "cusp_house": 2,
+      "description": "Sub lord analysis when Venus appears in house 2 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_3",
+      "planet": "Venus",
+      "cusp_house": 3,
+      "description": "Sub lord analysis when Venus appears in house 3 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_4",
+      "planet": "Venus",
+      "cusp_house": 4,
+      "description": "Sub lord analysis when Venus appears in house 4 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_5",
+      "planet": "Venus",
+      "cusp_house": 5,
+      "description": "Sub lord analysis when Venus appears in house 5 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_6",
+      "planet": "Venus",
+      "cusp_house": 6,
+      "description": "Sub lord analysis when Venus appears in house 6 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_7",
+      "planet": "Venus",
+      "cusp_house": 7,
+      "description": "Sub lord analysis when Venus appears in house 7 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_8",
+      "planet": "Venus",
+      "cusp_house": 8,
+      "description": "Sub lord analysis when Venus appears in house 8 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_9",
+      "planet": "Venus",
+      "cusp_house": 9,
+      "description": "Sub lord analysis when Venus appears in house 9 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_10",
+      "planet": "Venus",
+      "cusp_house": 10,
+      "description": "Sub lord analysis when Venus appears in house 10 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_11",
+      "planet": "Venus",
+      "cusp_house": 11,
+      "description": "Sub lord analysis when Venus appears in house 11 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_venus_cusp_12",
+      "planet": "Venus",
+      "cusp_house": 12,
+      "description": "Sub lord analysis when Venus appears in house 12 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_1",
+      "planet": "Saturn",
+      "cusp_house": 1,
+      "description": "Sub lord analysis when Saturn appears in house 1 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_2",
+      "planet": "Saturn",
+      "cusp_house": 2,
+      "description": "Sub lord analysis when Saturn appears in house 2 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_3",
+      "planet": "Saturn",
+      "cusp_house": 3,
+      "description": "Sub lord analysis when Saturn appears in house 3 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_4",
+      "planet": "Saturn",
+      "cusp_house": 4,
+      "description": "Sub lord analysis when Saturn appears in house 4 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_5",
+      "planet": "Saturn",
+      "cusp_house": 5,
+      "description": "Sub lord analysis when Saturn appears in house 5 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_6",
+      "planet": "Saturn",
+      "cusp_house": 6,
+      "description": "Sub lord analysis when Saturn appears in house 6 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_7",
+      "planet": "Saturn",
+      "cusp_house": 7,
+      "description": "Sub lord analysis when Saturn appears in house 7 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_8",
+      "planet": "Saturn",
+      "cusp_house": 8,
+      "description": "Sub lord analysis when Saturn appears in house 8 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_9",
+      "planet": "Saturn",
+      "cusp_house": 9,
+      "description": "Sub lord analysis when Saturn appears in house 9 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_10",
+      "planet": "Saturn",
+      "cusp_house": 10,
+      "description": "Sub lord analysis when Saturn appears in house 10 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_11",
+      "planet": "Saturn",
+      "cusp_house": 11,
+      "description": "Sub lord analysis when Saturn appears in house 11 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_saturn_cusp_12",
+      "planet": "Saturn",
+      "cusp_house": 12,
+      "description": "Sub lord analysis when Saturn appears in house 12 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_1",
+      "planet": "Rahu",
+      "cusp_house": 1,
+      "description": "Sub lord analysis when Rahu appears in house 1 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_2",
+      "planet": "Rahu",
+      "cusp_house": 2,
+      "description": "Sub lord analysis when Rahu appears in house 2 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_3",
+      "planet": "Rahu",
+      "cusp_house": 3,
+      "description": "Sub lord analysis when Rahu appears in house 3 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_4",
+      "planet": "Rahu",
+      "cusp_house": 4,
+      "description": "Sub lord analysis when Rahu appears in house 4 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_5",
+      "planet": "Rahu",
+      "cusp_house": 5,
+      "description": "Sub lord analysis when Rahu appears in house 5 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_6",
+      "planet": "Rahu",
+      "cusp_house": 6,
+      "description": "Sub lord analysis when Rahu appears in house 6 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_7",
+      "planet": "Rahu",
+      "cusp_house": 7,
+      "description": "Sub lord analysis when Rahu appears in house 7 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_8",
+      "planet": "Rahu",
+      "cusp_house": 8,
+      "description": "Sub lord analysis when Rahu appears in house 8 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_9",
+      "planet": "Rahu",
+      "cusp_house": 9,
+      "description": "Sub lord analysis when Rahu appears in house 9 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_10",
+      "planet": "Rahu",
+      "cusp_house": 10,
+      "description": "Sub lord analysis when Rahu appears in house 10 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_11",
+      "planet": "Rahu",
+      "cusp_house": 11,
+      "description": "Sub lord analysis when Rahu appears in house 11 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_rahu_cusp_12",
+      "planet": "Rahu",
+      "cusp_house": 12,
+      "description": "Sub lord analysis when Rahu appears in house 12 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_1",
+      "planet": "Ketu",
+      "cusp_house": 1,
+      "description": "Sub lord analysis when Ketu appears in house 1 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_2",
+      "planet": "Ketu",
+      "cusp_house": 2,
+      "description": "Sub lord analysis when Ketu appears in house 2 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_3",
+      "planet": "Ketu",
+      "cusp_house": 3,
+      "description": "Sub lord analysis when Ketu appears in house 3 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_4",
+      "planet": "Ketu",
+      "cusp_house": 4,
+      "description": "Sub lord analysis when Ketu appears in house 4 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_5",
+      "planet": "Ketu",
+      "cusp_house": 5,
+      "description": "Sub lord analysis when Ketu appears in house 5 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_6",
+      "planet": "Ketu",
+      "cusp_house": 6,
+      "description": "Sub lord analysis when Ketu appears in house 6 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_7",
+      "planet": "Ketu",
+      "cusp_house": 7,
+      "description": "Sub lord analysis when Ketu appears in house 7 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_8",
+      "planet": "Ketu",
+      "cusp_house": 8,
+      "description": "Sub lord analysis when Ketu appears in house 8 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_9",
+      "planet": "Ketu",
+      "cusp_house": 9,
+      "description": "Sub lord analysis when Ketu appears in house 9 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_10",
+      "planet": "Ketu",
+      "cusp_house": 10,
+      "description": "Sub lord analysis when Ketu appears in house 10 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_11",
+      "planet": "Ketu",
+      "cusp_house": 11,
+      "description": "Sub lord analysis when Ketu appears in house 11 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    },
+    {
+      "rule_id": "kp_sub_lord_ketu_cusp_12",
+      "planet": "Ketu",
+      "cusp_house": 12,
+      "description": "Sub lord analysis when Ketu appears in house 12 cusp chain.",
+      "effects": [
+        "Sub lord determines fructification precision in KP."
+      ],
+      "confidence": 0.68
+    }
+  ]
+}

@@ -1,0 +1,2599 @@
+{
+  "system": "vedic",
+  "entity_type": "pada",
+  "count": 108,
+  "entities": [
+    {
+      "entity_id": "vedic_pada_0_1",
+      "entity_type": "pada",
+      "name": "Ashwini Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ashwini"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Ashwini",
+        "nakshatra_index": 0,
+        "pada": 1,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_0_2",
+      "entity_type": "pada",
+      "name": "Ashwini Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ashwini"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Ashwini",
+        "nakshatra_index": 0,
+        "pada": 2,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_0_3",
+      "entity_type": "pada",
+      "name": "Ashwini Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ashwini"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Ashwini",
+        "nakshatra_index": 0,
+        "pada": 3,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_0_4",
+      "entity_type": "pada",
+      "name": "Ashwini Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ashwini"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Ashwini",
+        "nakshatra_index": 0,
+        "pada": 4,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_1_1",
+      "entity_type": "pada",
+      "name": "Bharani Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Bharani"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Bharani",
+        "nakshatra_index": 1,
+        "pada": 1,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_1_2",
+      "entity_type": "pada",
+      "name": "Bharani Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Bharani"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Bharani",
+        "nakshatra_index": 1,
+        "pada": 2,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_1_3",
+      "entity_type": "pada",
+      "name": "Bharani Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Bharani"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Bharani",
+        "nakshatra_index": 1,
+        "pada": 3,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_1_4",
+      "entity_type": "pada",
+      "name": "Bharani Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Bharani"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Bharani",
+        "nakshatra_index": 1,
+        "pada": 4,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_2_1",
+      "entity_type": "pada",
+      "name": "Krittika Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Krittika"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Krittika",
+        "nakshatra_index": 2,
+        "pada": 1,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_2_2",
+      "entity_type": "pada",
+      "name": "Krittika Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Krittika"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Krittika",
+        "nakshatra_index": 2,
+        "pada": 2,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_2_3",
+      "entity_type": "pada",
+      "name": "Krittika Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Krittika"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Krittika",
+        "nakshatra_index": 2,
+        "pada": 3,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_2_4",
+      "entity_type": "pada",
+      "name": "Krittika Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Krittika"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Krittika",
+        "nakshatra_index": 2,
+        "pada": 4,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_3_1",
+      "entity_type": "pada",
+      "name": "Rohini Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Rohini"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Rohini",
+        "nakshatra_index": 3,
+        "pada": 1,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_3_2",
+      "entity_type": "pada",
+      "name": "Rohini Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Rohini"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Rohini",
+        "nakshatra_index": 3,
+        "pada": 2,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_3_3",
+      "entity_type": "pada",
+      "name": "Rohini Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Rohini"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Rohini",
+        "nakshatra_index": 3,
+        "pada": 3,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_3_4",
+      "entity_type": "pada",
+      "name": "Rohini Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Rohini"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Rohini",
+        "nakshatra_index": 3,
+        "pada": 4,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_4_1",
+      "entity_type": "pada",
+      "name": "Mrigashira Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Mrigashira"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Mrigashira",
+        "nakshatra_index": 4,
+        "pada": 1,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_4_2",
+      "entity_type": "pada",
+      "name": "Mrigashira Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Mrigashira"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Mrigashira",
+        "nakshatra_index": 4,
+        "pada": 2,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_4_3",
+      "entity_type": "pada",
+      "name": "Mrigashira Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Mrigashira"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Mrigashira",
+        "nakshatra_index": 4,
+        "pada": 3,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_4_4",
+      "entity_type": "pada",
+      "name": "Mrigashira Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Mrigashira"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Mrigashira",
+        "nakshatra_index": 4,
+        "pada": 4,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_5_1",
+      "entity_type": "pada",
+      "name": "Ardra Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ardra"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Ardra",
+        "nakshatra_index": 5,
+        "pada": 1,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_5_2",
+      "entity_type": "pada",
+      "name": "Ardra Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ardra"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Ardra",
+        "nakshatra_index": 5,
+        "pada": 2,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_5_3",
+      "entity_type": "pada",
+      "name": "Ardra Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ardra"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Ardra",
+        "nakshatra_index": 5,
+        "pada": 3,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_5_4",
+      "entity_type": "pada",
+      "name": "Ardra Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ardra"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Ardra",
+        "nakshatra_index": 5,
+        "pada": 4,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_6_1",
+      "entity_type": "pada",
+      "name": "Punarvasu Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Punarvasu"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Punarvasu",
+        "nakshatra_index": 6,
+        "pada": 1,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_6_2",
+      "entity_type": "pada",
+      "name": "Punarvasu Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Punarvasu"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Punarvasu",
+        "nakshatra_index": 6,
+        "pada": 2,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_6_3",
+      "entity_type": "pada",
+      "name": "Punarvasu Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Punarvasu"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Punarvasu",
+        "nakshatra_index": 6,
+        "pada": 3,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_6_4",
+      "entity_type": "pada",
+      "name": "Punarvasu Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Punarvasu"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Punarvasu",
+        "nakshatra_index": 6,
+        "pada": 4,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_7_1",
+      "entity_type": "pada",
+      "name": "Pushya Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Pushya"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Pushya",
+        "nakshatra_index": 7,
+        "pada": 1,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_7_2",
+      "entity_type": "pada",
+      "name": "Pushya Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Pushya"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Pushya",
+        "nakshatra_index": 7,
+        "pada": 2,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_7_3",
+      "entity_type": "pada",
+      "name": "Pushya Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Pushya"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Pushya",
+        "nakshatra_index": 7,
+        "pada": 3,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_7_4",
+      "entity_type": "pada",
+      "name": "Pushya Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Pushya"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Pushya",
+        "nakshatra_index": 7,
+        "pada": 4,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_8_1",
+      "entity_type": "pada",
+      "name": "Ashlesha Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ashlesha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Ashlesha",
+        "nakshatra_index": 8,
+        "pada": 1,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_8_2",
+      "entity_type": "pada",
+      "name": "Ashlesha Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ashlesha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Ashlesha",
+        "nakshatra_index": 8,
+        "pada": 2,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_8_3",
+      "entity_type": "pada",
+      "name": "Ashlesha Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ashlesha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Ashlesha",
+        "nakshatra_index": 8,
+        "pada": 3,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_8_4",
+      "entity_type": "pada",
+      "name": "Ashlesha Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Ashlesha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Ashlesha",
+        "nakshatra_index": 8,
+        "pada": 4,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_9_1",
+      "entity_type": "pada",
+      "name": "Magha Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Magha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Magha",
+        "nakshatra_index": 9,
+        "pada": 1,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_9_2",
+      "entity_type": "pada",
+      "name": "Magha Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Magha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Magha",
+        "nakshatra_index": 9,
+        "pada": 2,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_9_3",
+      "entity_type": "pada",
+      "name": "Magha Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Magha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Magha",
+        "nakshatra_index": 9,
+        "pada": 3,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_9_4",
+      "entity_type": "pada",
+      "name": "Magha Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Magha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Magha",
+        "nakshatra_index": 9,
+        "pada": 4,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_10_1",
+      "entity_type": "pada",
+      "name": "Purva Phalguni Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Phalguni"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Phalguni",
+        "nakshatra_index": 10,
+        "pada": 1,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_10_2",
+      "entity_type": "pada",
+      "name": "Purva Phalguni Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Phalguni"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Phalguni",
+        "nakshatra_index": 10,
+        "pada": 2,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_10_3",
+      "entity_type": "pada",
+      "name": "Purva Phalguni Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Phalguni"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Phalguni",
+        "nakshatra_index": 10,
+        "pada": 3,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_10_4",
+      "entity_type": "pada",
+      "name": "Purva Phalguni Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Phalguni"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Phalguni",
+        "nakshatra_index": 10,
+        "pada": 4,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_11_1",
+      "entity_type": "pada",
+      "name": "Uttara Phalguni Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Phalguni"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Phalguni",
+        "nakshatra_index": 11,
+        "pada": 1,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_11_2",
+      "entity_type": "pada",
+      "name": "Uttara Phalguni Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Phalguni"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Phalguni",
+        "nakshatra_index": 11,
+        "pada": 2,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_11_3",
+      "entity_type": "pada",
+      "name": "Uttara Phalguni Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Phalguni"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Phalguni",
+        "nakshatra_index": 11,
+        "pada": 3,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_11_4",
+      "entity_type": "pada",
+      "name": "Uttara Phalguni Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Phalguni"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Phalguni",
+        "nakshatra_index": 11,
+        "pada": 4,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_12_1",
+      "entity_type": "pada",
+      "name": "Hasta Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Hasta"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Hasta",
+        "nakshatra_index": 12,
+        "pada": 1,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_12_2",
+      "entity_type": "pada",
+      "name": "Hasta Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Hasta"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Hasta",
+        "nakshatra_index": 12,
+        "pada": 2,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_12_3",
+      "entity_type": "pada",
+      "name": "Hasta Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Hasta"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Hasta",
+        "nakshatra_index": 12,
+        "pada": 3,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_12_4",
+      "entity_type": "pada",
+      "name": "Hasta Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Hasta"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Hasta",
+        "nakshatra_index": 12,
+        "pada": 4,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_13_1",
+      "entity_type": "pada",
+      "name": "Chitra Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Chitra"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Chitra",
+        "nakshatra_index": 13,
+        "pada": 1,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_13_2",
+      "entity_type": "pada",
+      "name": "Chitra Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Chitra"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Chitra",
+        "nakshatra_index": 13,
+        "pada": 2,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_13_3",
+      "entity_type": "pada",
+      "name": "Chitra Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Chitra"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Chitra",
+        "nakshatra_index": 13,
+        "pada": 3,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_13_4",
+      "entity_type": "pada",
+      "name": "Chitra Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Chitra"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Chitra",
+        "nakshatra_index": 13,
+        "pada": 4,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_14_1",
+      "entity_type": "pada",
+      "name": "Swati Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Swati"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Swati",
+        "nakshatra_index": 14,
+        "pada": 1,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_14_2",
+      "entity_type": "pada",
+      "name": "Swati Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Swati"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Swati",
+        "nakshatra_index": 14,
+        "pada": 2,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_14_3",
+      "entity_type": "pada",
+      "name": "Swati Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Swati"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Swati",
+        "nakshatra_index": 14,
+        "pada": 3,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_14_4",
+      "entity_type": "pada",
+      "name": "Swati Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Swati"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Swati",
+        "nakshatra_index": 14,
+        "pada": 4,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_15_1",
+      "entity_type": "pada",
+      "name": "Vishakha Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Vishakha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Vishakha",
+        "nakshatra_index": 15,
+        "pada": 1,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_15_2",
+      "entity_type": "pada",
+      "name": "Vishakha Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Vishakha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Vishakha",
+        "nakshatra_index": 15,
+        "pada": 2,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_15_3",
+      "entity_type": "pada",
+      "name": "Vishakha Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Vishakha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Vishakha",
+        "nakshatra_index": 15,
+        "pada": 3,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_15_4",
+      "entity_type": "pada",
+      "name": "Vishakha Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Vishakha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Vishakha",
+        "nakshatra_index": 15,
+        "pada": 4,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_16_1",
+      "entity_type": "pada",
+      "name": "Anuradha Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Anuradha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Anuradha",
+        "nakshatra_index": 16,
+        "pada": 1,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_16_2",
+      "entity_type": "pada",
+      "name": "Anuradha Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Anuradha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Anuradha",
+        "nakshatra_index": 16,
+        "pada": 2,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_16_3",
+      "entity_type": "pada",
+      "name": "Anuradha Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Anuradha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Anuradha",
+        "nakshatra_index": 16,
+        "pada": 3,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_16_4",
+      "entity_type": "pada",
+      "name": "Anuradha Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Anuradha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Anuradha",
+        "nakshatra_index": 16,
+        "pada": 4,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_17_1",
+      "entity_type": "pada",
+      "name": "Jyeshtha Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Jyeshtha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Jyeshtha",
+        "nakshatra_index": 17,
+        "pada": 1,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_17_2",
+      "entity_type": "pada",
+      "name": "Jyeshtha Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Jyeshtha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Jyeshtha",
+        "nakshatra_index": 17,
+        "pada": 2,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_17_3",
+      "entity_type": "pada",
+      "name": "Jyeshtha Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Jyeshtha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Jyeshtha",
+        "nakshatra_index": 17,
+        "pada": 3,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_17_4",
+      "entity_type": "pada",
+      "name": "Jyeshtha Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Jyeshtha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Jyeshtha",
+        "nakshatra_index": 17,
+        "pada": 4,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_18_1",
+      "entity_type": "pada",
+      "name": "Mula Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Mula"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Mula",
+        "nakshatra_index": 18,
+        "pada": 1,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_18_2",
+      "entity_type": "pada",
+      "name": "Mula Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Mula"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Mula",
+        "nakshatra_index": 18,
+        "pada": 2,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_18_3",
+      "entity_type": "pada",
+      "name": "Mula Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Mula"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Mula",
+        "nakshatra_index": 18,
+        "pada": 3,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_18_4",
+      "entity_type": "pada",
+      "name": "Mula Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Mula"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Mula",
+        "nakshatra_index": 18,
+        "pada": 4,
+        "lord": "Ketu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_19_1",
+      "entity_type": "pada",
+      "name": "Purva Ashadha Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Ashadha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Ashadha",
+        "nakshatra_index": 19,
+        "pada": 1,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_19_2",
+      "entity_type": "pada",
+      "name": "Purva Ashadha Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Ashadha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Ashadha",
+        "nakshatra_index": 19,
+        "pada": 2,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_19_3",
+      "entity_type": "pada",
+      "name": "Purva Ashadha Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Ashadha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Ashadha",
+        "nakshatra_index": 19,
+        "pada": 3,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_19_4",
+      "entity_type": "pada",
+      "name": "Purva Ashadha Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Ashadha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Ashadha",
+        "nakshatra_index": 19,
+        "pada": 4,
+        "lord": "Venus"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_20_1",
+      "entity_type": "pada",
+      "name": "Uttara Ashadha Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Ashadha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Ashadha",
+        "nakshatra_index": 20,
+        "pada": 1,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_20_2",
+      "entity_type": "pada",
+      "name": "Uttara Ashadha Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Ashadha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Ashadha",
+        "nakshatra_index": 20,
+        "pada": 2,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_20_3",
+      "entity_type": "pada",
+      "name": "Uttara Ashadha Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Ashadha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Ashadha",
+        "nakshatra_index": 20,
+        "pada": 3,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_20_4",
+      "entity_type": "pada",
+      "name": "Uttara Ashadha Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Ashadha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Ashadha",
+        "nakshatra_index": 20,
+        "pada": 4,
+        "lord": "Sun"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_21_1",
+      "entity_type": "pada",
+      "name": "Shravana Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Shravana"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Shravana",
+        "nakshatra_index": 21,
+        "pada": 1,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_21_2",
+      "entity_type": "pada",
+      "name": "Shravana Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Shravana"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Shravana",
+        "nakshatra_index": 21,
+        "pada": 2,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_21_3",
+      "entity_type": "pada",
+      "name": "Shravana Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Shravana"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Shravana",
+        "nakshatra_index": 21,
+        "pada": 3,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_21_4",
+      "entity_type": "pada",
+      "name": "Shravana Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Shravana"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Shravana",
+        "nakshatra_index": 21,
+        "pada": 4,
+        "lord": "Moon"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_22_1",
+      "entity_type": "pada",
+      "name": "Dhanishta Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Dhanishta"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Dhanishta",
+        "nakshatra_index": 22,
+        "pada": 1,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_22_2",
+      "entity_type": "pada",
+      "name": "Dhanishta Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Dhanishta"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Dhanishta",
+        "nakshatra_index": 22,
+        "pada": 2,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_22_3",
+      "entity_type": "pada",
+      "name": "Dhanishta Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Dhanishta"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Dhanishta",
+        "nakshatra_index": 22,
+        "pada": 3,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_22_4",
+      "entity_type": "pada",
+      "name": "Dhanishta Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Dhanishta"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Dhanishta",
+        "nakshatra_index": 22,
+        "pada": 4,
+        "lord": "Mars"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_23_1",
+      "entity_type": "pada",
+      "name": "Shatabhisha Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Shatabhisha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Shatabhisha",
+        "nakshatra_index": 23,
+        "pada": 1,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_23_2",
+      "entity_type": "pada",
+      "name": "Shatabhisha Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Shatabhisha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Shatabhisha",
+        "nakshatra_index": 23,
+        "pada": 2,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_23_3",
+      "entity_type": "pada",
+      "name": "Shatabhisha Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Shatabhisha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Shatabhisha",
+        "nakshatra_index": 23,
+        "pada": 3,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_23_4",
+      "entity_type": "pada",
+      "name": "Shatabhisha Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Shatabhisha"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Shatabhisha",
+        "nakshatra_index": 23,
+        "pada": 4,
+        "lord": "Rahu"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_24_1",
+      "entity_type": "pada",
+      "name": "Purva Bhadrapada Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Bhadrapada"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Bhadrapada",
+        "nakshatra_index": 24,
+        "pada": 1,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_24_2",
+      "entity_type": "pada",
+      "name": "Purva Bhadrapada Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Bhadrapada"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Bhadrapada",
+        "nakshatra_index": 24,
+        "pada": 2,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_24_3",
+      "entity_type": "pada",
+      "name": "Purva Bhadrapada Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Bhadrapada"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Bhadrapada",
+        "nakshatra_index": 24,
+        "pada": 3,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_24_4",
+      "entity_type": "pada",
+      "name": "Purva Bhadrapada Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Purva Bhadrapada"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Purva Bhadrapada",
+        "nakshatra_index": 24,
+        "pada": 4,
+        "lord": "Jupiter"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_25_1",
+      "entity_type": "pada",
+      "name": "Uttara Bhadrapada Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Bhadrapada"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Bhadrapada",
+        "nakshatra_index": 25,
+        "pada": 1,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_25_2",
+      "entity_type": "pada",
+      "name": "Uttara Bhadrapada Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Bhadrapada"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Bhadrapada",
+        "nakshatra_index": 25,
+        "pada": 2,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_25_3",
+      "entity_type": "pada",
+      "name": "Uttara Bhadrapada Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Bhadrapada"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Bhadrapada",
+        "nakshatra_index": 25,
+        "pada": 3,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_25_4",
+      "entity_type": "pada",
+      "name": "Uttara Bhadrapada Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Uttara Bhadrapada"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Uttara Bhadrapada",
+        "nakshatra_index": 25,
+        "pada": 4,
+        "lord": "Saturn"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_26_1",
+      "entity_type": "pada",
+      "name": "Revati Pada 1",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Revati"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 1."
+      ],
+      "metadata": {
+        "nakshatra": "Revati",
+        "nakshatra_index": 26,
+        "pada": 1,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_26_2",
+      "entity_type": "pada",
+      "name": "Revati Pada 2",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Revati"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 2."
+      ],
+      "metadata": {
+        "nakshatra": "Revati",
+        "nakshatra_index": 26,
+        "pada": 2,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_26_3",
+      "entity_type": "pada",
+      "name": "Revati Pada 3",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Revati"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 3."
+      ],
+      "metadata": {
+        "nakshatra": "Revati",
+        "nakshatra_index": 26,
+        "pada": 3,
+        "lord": "Mercury"
+      }
+    },
+    {
+      "entity_id": "vedic_pada_26_4",
+      "entity_type": "pada",
+      "name": "Revati Pada 4",
+      "system": "vedic",
+      "meanings": [
+        "Quarter division of Revati"
+      ],
+      "strengths": [
+        "Used in naming and micro-lunar analysis."
+      ],
+      "weaknesses": [
+        "Afflicted pada affects naming and temperament nuance."
+      ],
+      "effects": [
+        "Refines birth nakshatra interpretation for pada 4."
+      ],
+      "metadata": {
+        "nakshatra": "Revati",
+        "nakshatra_index": 26,
+        "pada": 4,
+        "lord": "Mercury"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6674 @@
+{
+  "domain": "health",
+  "version": "1.0",
+  "count": 180,
+  "categories": [
+    "chronic_disease",
+    "mental_stress",
+    "surgery",
+    "accident",
+    "recovery"
+  ],
+  "rules": [
+    {
+      "rule_id": "health_chronic_disease_sun_h1_0001",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Sun in house 1",
+      "description": "Sun in dusthana-related house 1 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_sun_h6_0002",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Sun in house 6",
+      "description": "Sun in dusthana-related house 6 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_sun_h8_0003",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Sun in house 8",
+      "description": "Sun in dusthana-related house 8 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_sun_h12_0004",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Sun in house 12",
+      "description": "Sun in dusthana-related house 12 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_moon_h1_0005",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Moon in house 1",
+      "description": "Moon in dusthana-related house 1 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_moon_h6_0006",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Moon in house 6",
+      "description": "Moon in dusthana-related house 6 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_moon_h8_0007",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Moon in house 8",
+      "description": "Moon in dusthana-related house 8 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_moon_h12_0008",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Moon in house 12",
+      "description": "Moon in dusthana-related house 12 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_mars_h1_0009",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Mars in house 1",
+      "description": "Mars in dusthana-related house 1 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_mars_h6_0010",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Mars in house 6",
+      "description": "Mars in dusthana-related house 6 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_mars_h8_0011",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Mars in house 8",
+      "description": "Mars in dusthana-related house 8 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_mars_h12_0012",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Mars in house 12",
+      "description": "Mars in dusthana-related house 12 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_mercury_h1_0013",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Mercury in house 1",
+      "description": "Mercury in dusthana-related house 1 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_mercury_h6_0014",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Mercury in house 6",
+      "description": "Mercury in dusthana-related house 6 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_mercury_h8_0015",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Mercury in house 8",
+      "description": "Mercury in dusthana-related house 8 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_mercury_h12_0016",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Mercury in house 12",
+      "description": "Mercury in dusthana-related house 12 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_jupiter_h1_0017",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Jupiter in house 1",
+      "description": "Jupiter in dusthana-related house 1 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_jupiter_h6_0018",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Jupiter in house 6",
+      "description": "Jupiter in dusthana-related house 6 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_jupiter_h8_0019",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Jupiter in house 8",
+      "description": "Jupiter in dusthana-related house 8 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_jupiter_h12_0020",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Jupiter in house 12",
+      "description": "Jupiter in dusthana-related house 12 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_venus_h1_0021",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Venus in house 1",
+      "description": "Venus in dusthana-related house 1 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_venus_h6_0022",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Venus in house 6",
+      "description": "Venus in dusthana-related house 6 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_venus_h8_0023",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Venus in house 8",
+      "description": "Venus in dusthana-related house 8 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_venus_h12_0024",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Venus in house 12",
+      "description": "Venus in dusthana-related house 12 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_saturn_h1_0025",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Saturn in house 1",
+      "description": "Saturn in dusthana-related house 1 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_saturn_h6_0026",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Saturn in house 6",
+      "description": "Saturn in dusthana-related house 6 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_saturn_h8_0027",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Saturn in house 8",
+      "description": "Saturn in dusthana-related house 8 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_saturn_h12_0028",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Saturn in house 12",
+      "description": "Saturn in dusthana-related house 12 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_rahu_h1_0029",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Rahu in house 1",
+      "description": "Rahu in dusthana-related house 1 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_rahu_h6_0030",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Rahu in house 6",
+      "description": "Rahu in dusthana-related house 6 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_rahu_h8_0031",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Rahu in house 8",
+      "description": "Rahu in dusthana-related house 8 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_rahu_h12_0032",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Rahu in house 12",
+      "description": "Rahu in dusthana-related house 12 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_ketu_h1_0033",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Ketu in house 1",
+      "description": "Ketu in dusthana-related house 1 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_ketu_h6_0034",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Ketu in house 6",
+      "description": "Ketu in dusthana-related house 6 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_ketu_h8_0035",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Ketu in house 8",
+      "description": "Ketu in dusthana-related house 8 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_chronic_disease_ketu_h12_0036",
+      "system": "vedic",
+      "domain": "health",
+      "category": "chronic_disease",
+      "title": "Chronic Disease — Ketu in house 12",
+      "description": "Ketu in dusthana-related house 12 contributes to chronic_disease themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "chronic_disease",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for chronic_disease."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "chronic_disease",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_sun_h1_0037",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Sun in house 1",
+      "description": "Sun in dusthana-related house 1 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_sun_h6_0038",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Sun in house 6",
+      "description": "Sun in dusthana-related house 6 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_sun_h8_0039",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Sun in house 8",
+      "description": "Sun in dusthana-related house 8 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_sun_h12_0040",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Sun in house 12",
+      "description": "Sun in dusthana-related house 12 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_moon_h1_0041",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Moon in house 1",
+      "description": "Moon in dusthana-related house 1 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_moon_h6_0042",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Moon in house 6",
+      "description": "Moon in dusthana-related house 6 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_moon_h8_0043",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Moon in house 8",
+      "description": "Moon in dusthana-related house 8 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_moon_h12_0044",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Moon in house 12",
+      "description": "Moon in dusthana-related house 12 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_mars_h1_0045",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Mars in house 1",
+      "description": "Mars in dusthana-related house 1 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_mars_h6_0046",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Mars in house 6",
+      "description": "Mars in dusthana-related house 6 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_mars_h8_0047",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Mars in house 8",
+      "description": "Mars in dusthana-related house 8 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_mars_h12_0048",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Mars in house 12",
+      "description": "Mars in dusthana-related house 12 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_mercury_h1_0049",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Mercury in house 1",
+      "description": "Mercury in dusthana-related house 1 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_mercury_h6_0050",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Mercury in house 6",
+      "description": "Mercury in dusthana-related house 6 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_mercury_h8_0051",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Mercury in house 8",
+      "description": "Mercury in dusthana-related house 8 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_mercury_h12_0052",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Mercury in house 12",
+      "description": "Mercury in dusthana-related house 12 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_jupiter_h1_0053",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Jupiter in house 1",
+      "description": "Jupiter in dusthana-related house 1 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_jupiter_h6_0054",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Jupiter in house 6",
+      "description": "Jupiter in dusthana-related house 6 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_jupiter_h8_0055",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Jupiter in house 8",
+      "description": "Jupiter in dusthana-related house 8 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_jupiter_h12_0056",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Jupiter in house 12",
+      "description": "Jupiter in dusthana-related house 12 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_venus_h1_0057",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Venus in house 1",
+      "description": "Venus in dusthana-related house 1 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_venus_h6_0058",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Venus in house 6",
+      "description": "Venus in dusthana-related house 6 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_venus_h8_0059",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Venus in house 8",
+      "description": "Venus in dusthana-related house 8 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_venus_h12_0060",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Venus in house 12",
+      "description": "Venus in dusthana-related house 12 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_saturn_h1_0061",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Saturn in house 1",
+      "description": "Saturn in dusthana-related house 1 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_saturn_h6_0062",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Saturn in house 6",
+      "description": "Saturn in dusthana-related house 6 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_saturn_h8_0063",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Saturn in house 8",
+      "description": "Saturn in dusthana-related house 8 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_saturn_h12_0064",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Saturn in house 12",
+      "description": "Saturn in dusthana-related house 12 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_rahu_h1_0065",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Rahu in house 1",
+      "description": "Rahu in dusthana-related house 1 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_rahu_h6_0066",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Rahu in house 6",
+      "description": "Rahu in dusthana-related house 6 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_rahu_h8_0067",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Rahu in house 8",
+      "description": "Rahu in dusthana-related house 8 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_rahu_h12_0068",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Rahu in house 12",
+      "description": "Rahu in dusthana-related house 12 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_ketu_h1_0069",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Ketu in house 1",
+      "description": "Ketu in dusthana-related house 1 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_ketu_h6_0070",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Ketu in house 6",
+      "description": "Ketu in dusthana-related house 6 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_ketu_h8_0071",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Ketu in house 8",
+      "description": "Ketu in dusthana-related house 8 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_mental_stress_ketu_h12_0072",
+      "system": "vedic",
+      "domain": "health",
+      "category": "mental_stress",
+      "title": "Mental Stress — Ketu in house 12",
+      "description": "Ketu in dusthana-related house 12 contributes to mental_stress themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "mental_stress",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for mental_stress."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "mental_stress",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_sun_h1_0073",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Sun in house 1",
+      "description": "Sun in dusthana-related house 1 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_sun_h6_0074",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Sun in house 6",
+      "description": "Sun in dusthana-related house 6 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_sun_h8_0075",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Sun in house 8",
+      "description": "Sun in dusthana-related house 8 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_sun_h12_0076",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Sun in house 12",
+      "description": "Sun in dusthana-related house 12 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_moon_h1_0077",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Moon in house 1",
+      "description": "Moon in dusthana-related house 1 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_moon_h6_0078",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Moon in house 6",
+      "description": "Moon in dusthana-related house 6 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_moon_h8_0079",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Moon in house 8",
+      "description": "Moon in dusthana-related house 8 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_moon_h12_0080",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Moon in house 12",
+      "description": "Moon in dusthana-related house 12 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_mars_h1_0081",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Mars in house 1",
+      "description": "Mars in dusthana-related house 1 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_mars_h6_0082",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Mars in house 6",
+      "description": "Mars in dusthana-related house 6 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_mars_h8_0083",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Mars in house 8",
+      "description": "Mars in dusthana-related house 8 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_mars_h12_0084",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Mars in house 12",
+      "description": "Mars in dusthana-related house 12 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_mercury_h1_0085",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Mercury in house 1",
+      "description": "Mercury in dusthana-related house 1 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_mercury_h6_0086",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Mercury in house 6",
+      "description": "Mercury in dusthana-related house 6 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_mercury_h8_0087",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Mercury in house 8",
+      "description": "Mercury in dusthana-related house 8 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_mercury_h12_0088",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Mercury in house 12",
+      "description": "Mercury in dusthana-related house 12 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_jupiter_h1_0089",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Jupiter in house 1",
+      "description": "Jupiter in dusthana-related house 1 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_jupiter_h6_0090",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Jupiter in house 6",
+      "description": "Jupiter in dusthana-related house 6 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_jupiter_h8_0091",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Jupiter in house 8",
+      "description": "Jupiter in dusthana-related house 8 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_jupiter_h12_0092",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Jupiter in house 12",
+      "description": "Jupiter in dusthana-related house 12 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_venus_h1_0093",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Venus in house 1",
+      "description": "Venus in dusthana-related house 1 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_venus_h6_0094",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Venus in house 6",
+      "description": "Venus in dusthana-related house 6 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_venus_h8_0095",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Venus in house 8",
+      "description": "Venus in dusthana-related house 8 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_venus_h12_0096",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Venus in house 12",
+      "description": "Venus in dusthana-related house 12 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_saturn_h1_0097",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Saturn in house 1",
+      "description": "Saturn in dusthana-related house 1 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_saturn_h6_0098",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Saturn in house 6",
+      "description": "Saturn in dusthana-related house 6 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_saturn_h8_0099",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Saturn in house 8",
+      "description": "Saturn in dusthana-related house 8 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_saturn_h12_0100",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Saturn in house 12",
+      "description": "Saturn in dusthana-related house 12 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_rahu_h1_0101",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Rahu in house 1",
+      "description": "Rahu in dusthana-related house 1 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_rahu_h6_0102",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Rahu in house 6",
+      "description": "Rahu in dusthana-related house 6 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_rahu_h8_0103",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Rahu in house 8",
+      "description": "Rahu in dusthana-related house 8 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_rahu_h12_0104",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Rahu in house 12",
+      "description": "Rahu in dusthana-related house 12 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_ketu_h1_0105",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Ketu in house 1",
+      "description": "Ketu in dusthana-related house 1 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_ketu_h6_0106",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Ketu in house 6",
+      "description": "Ketu in dusthana-related house 6 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_ketu_h8_0107",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Ketu in house 8",
+      "description": "Ketu in dusthana-related house 8 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_surgery_ketu_h12_0108",
+      "system": "vedic",
+      "domain": "health",
+      "category": "surgery",
+      "title": "Surgery — Ketu in house 12",
+      "description": "Ketu in dusthana-related house 12 contributes to surgery themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "surgery",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for surgery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "surgery",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_sun_h1_0109",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Sun in house 1",
+      "description": "Sun in dusthana-related house 1 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_sun_h6_0110",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Sun in house 6",
+      "description": "Sun in dusthana-related house 6 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_sun_h8_0111",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Sun in house 8",
+      "description": "Sun in dusthana-related house 8 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_sun_h12_0112",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Sun in house 12",
+      "description": "Sun in dusthana-related house 12 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_moon_h1_0113",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Moon in house 1",
+      "description": "Moon in dusthana-related house 1 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_moon_h6_0114",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Moon in house 6",
+      "description": "Moon in dusthana-related house 6 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_moon_h8_0115",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Moon in house 8",
+      "description": "Moon in dusthana-related house 8 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_moon_h12_0116",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Moon in house 12",
+      "description": "Moon in dusthana-related house 12 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_mars_h1_0117",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Mars in house 1",
+      "description": "Mars in dusthana-related house 1 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_mars_h6_0118",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Mars in house 6",
+      "description": "Mars in dusthana-related house 6 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_mars_h8_0119",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Mars in house 8",
+      "description": "Mars in dusthana-related house 8 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_mars_h12_0120",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Mars in house 12",
+      "description": "Mars in dusthana-related house 12 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_mercury_h1_0121",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Mercury in house 1",
+      "description": "Mercury in dusthana-related house 1 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_mercury_h6_0122",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Mercury in house 6",
+      "description": "Mercury in dusthana-related house 6 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_mercury_h8_0123",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Mercury in house 8",
+      "description": "Mercury in dusthana-related house 8 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_mercury_h12_0124",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Mercury in house 12",
+      "description": "Mercury in dusthana-related house 12 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_jupiter_h1_0125",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Jupiter in house 1",
+      "description": "Jupiter in dusthana-related house 1 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_jupiter_h6_0126",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Jupiter in house 6",
+      "description": "Jupiter in dusthana-related house 6 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_jupiter_h8_0127",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Jupiter in house 8",
+      "description": "Jupiter in dusthana-related house 8 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_jupiter_h12_0128",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Jupiter in house 12",
+      "description": "Jupiter in dusthana-related house 12 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_venus_h1_0129",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Venus in house 1",
+      "description": "Venus in dusthana-related house 1 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_venus_h6_0130",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Venus in house 6",
+      "description": "Venus in dusthana-related house 6 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_venus_h8_0131",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Venus in house 8",
+      "description": "Venus in dusthana-related house 8 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_venus_h12_0132",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Venus in house 12",
+      "description": "Venus in dusthana-related house 12 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_saturn_h1_0133",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Saturn in house 1",
+      "description": "Saturn in dusthana-related house 1 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_saturn_h6_0134",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Saturn in house 6",
+      "description": "Saturn in dusthana-related house 6 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_saturn_h8_0135",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Saturn in house 8",
+      "description": "Saturn in dusthana-related house 8 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_saturn_h12_0136",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Saturn in house 12",
+      "description": "Saturn in dusthana-related house 12 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_rahu_h1_0137",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Rahu in house 1",
+      "description": "Rahu in dusthana-related house 1 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_rahu_h6_0138",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Rahu in house 6",
+      "description": "Rahu in dusthana-related house 6 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_rahu_h8_0139",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Rahu in house 8",
+      "description": "Rahu in dusthana-related house 8 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_rahu_h12_0140",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Rahu in house 12",
+      "description": "Rahu in dusthana-related house 12 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_ketu_h1_0141",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Ketu in house 1",
+      "description": "Ketu in dusthana-related house 1 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_ketu_h6_0142",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Ketu in house 6",
+      "description": "Ketu in dusthana-related house 6 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_ketu_h8_0143",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Ketu in house 8",
+      "description": "Ketu in dusthana-related house 8 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_accident_ketu_h12_0144",
+      "system": "vedic",
+      "domain": "health",
+      "category": "accident",
+      "title": "Accident — Ketu in house 12",
+      "description": "Ketu in dusthana-related house 12 contributes to accident themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "accident",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for accident."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "accident",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_sun_h1_0145",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Sun in house 1",
+      "description": "Sun in dusthana-related house 1 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_sun_h6_0146",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Sun in house 6",
+      "description": "Sun in dusthana-related house 6 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_sun_h8_0147",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Sun in house 8",
+      "description": "Sun in dusthana-related house 8 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_sun_h12_0148",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Sun in house 12",
+      "description": "Sun in dusthana-related house 12 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Sun"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "sun",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "sun",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_moon_h1_0149",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Moon in house 1",
+      "description": "Moon in dusthana-related house 1 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_moon_h6_0150",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Moon in house 6",
+      "description": "Moon in dusthana-related house 6 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_moon_h8_0151",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Moon in house 8",
+      "description": "Moon in dusthana-related house 8 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_moon_h12_0152",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Moon in house 12",
+      "description": "Moon in dusthana-related house 12 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Moon"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "moon",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "moon",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_mars_h1_0153",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Mars in house 1",
+      "description": "Mars in dusthana-related house 1 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_mars_h6_0154",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Mars in house 6",
+      "description": "Mars in dusthana-related house 6 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_mars_h8_0155",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Mars in house 8",
+      "description": "Mars in dusthana-related house 8 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_mars_h12_0156",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Mars in house 12",
+      "description": "Mars in dusthana-related house 12 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Mars"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "mars",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "mars",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_mercury_h1_0157",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Mercury in house 1",
+      "description": "Mercury in dusthana-related house 1 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_mercury_h6_0158",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Mercury in house 6",
+      "description": "Mercury in dusthana-related house 6 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_mercury_h8_0159",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Mercury in house 8",
+      "description": "Mercury in dusthana-related house 8 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_mercury_h12_0160",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Mercury in house 12",
+      "description": "Mercury in dusthana-related house 12 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Mercury"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "mercury",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "mercury",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_jupiter_h1_0161",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Jupiter in house 1",
+      "description": "Jupiter in dusthana-related house 1 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_jupiter_h6_0162",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Jupiter in house 6",
+      "description": "Jupiter in dusthana-related house 6 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_jupiter_h8_0163",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Jupiter in house 8",
+      "description": "Jupiter in dusthana-related house 8 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_jupiter_h12_0164",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Jupiter in house 12",
+      "description": "Jupiter in dusthana-related house 12 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Jupiter"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "jupiter",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "jupiter",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_venus_h1_0165",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Venus in house 1",
+      "description": "Venus in dusthana-related house 1 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_venus_h6_0166",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Venus in house 6",
+      "description": "Venus in dusthana-related house 6 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_venus_h8_0167",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Venus in house 8",
+      "description": "Venus in dusthana-related house 8 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_venus_h12_0168",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Venus in house 12",
+      "description": "Venus in dusthana-related house 12 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Venus"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "venus",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "venus",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_saturn_h1_0169",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Saturn in house 1",
+      "description": "Saturn in dusthana-related house 1 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_saturn_h6_0170",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Saturn in house 6",
+      "description": "Saturn in dusthana-related house 6 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_saturn_h8_0171",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Saturn in house 8",
+      "description": "Saturn in dusthana-related house 8 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_saturn_h12_0172",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Saturn in house 12",
+      "description": "Saturn in dusthana-related house 12 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Saturn"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "saturn",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "saturn",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_rahu_h1_0173",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Rahu in house 1",
+      "description": "Rahu in dusthana-related house 1 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_rahu_h6_0174",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Rahu in house 6",
+      "description": "Rahu in dusthana-related house 6 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_rahu_h8_0175",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Rahu in house 8",
+      "description": "Rahu in dusthana-related house 8 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_rahu_h12_0176",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Rahu in house 12",
+      "description": "Rahu in dusthana-related house 12 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Rahu"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "rahu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "rahu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_ketu_h1_0177",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Ketu in house 1",
+      "description": "Ketu in dusthana-related house 1 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          1
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.61,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_ketu_h6_0178",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Ketu in house 6",
+      "description": "Ketu in dusthana-related house 6 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          6
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.67,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_ketu_h8_0179",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Ketu in house 8",
+      "description": "Ketu in dusthana-related house 8 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          8
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.73,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "rule_id": "health_recovery_ketu_h12_0180",
+      "system": "vedic",
+      "domain": "health",
+      "category": "recovery",
+      "title": "Recovery — Ketu in house 12",
+      "description": "Ketu in dusthana-related house 12 contributes to recovery themes.",
+      "conditions": {
+        "planets": [
+          "Ketu"
+        ],
+        "houses": [
+          12
+        ],
+        "signs": [],
+        "nakshatras": [],
+        "aspects": [],
+        "dasha_lords": [],
+        "transits": [],
+        "tags": [
+          "recovery",
+          "ketu",
+          "health"
+        ]
+      },
+      "effects": [
+        "Check 6th/8th lord relation for recovery."
+      ],
+      "strength_weight": 0.55,
+      "confidence": 0.62,
+      "tags": [
+        "recovery",
+        "ketu",
+        "health"
+      ],
+      "severity": "moderate"
+    }
+  ]
+}

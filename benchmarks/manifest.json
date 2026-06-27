@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "name": "AstroGuruAI Benchmark Dataset",
+  "categories": [
+    "marriage",
+    "divorce",
+    "career",
+    "government_job",
+    "business",
+    "health",
+    "court_case",
+    "foreign_settlement",
+    "wealth",
+    "raj_yoga"
+  ],
+  "files": {
+    "marriage.json": 3,
+    "divorce.json": 2,
+    "career.json": 2,
+    "government_job.json": 2,
+    "business.json": 2,
+    "health.json": 2,
+    "court_case.json": 2,
+    "foreign_settlement.json": 2,
+    "wealth.json": 2,
+    "raj_yoga.json": 2
+  },
+  "total_cases": 21
+}

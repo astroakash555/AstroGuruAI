@@ -1,0 +1,347 @@
+{
+  "category": "marriage",
+  "version": "1.0",
+  "count": 3,
+  "cases": [
+    {
+      "case_id": "marriage_001",
+      "title": "Delayed marriage until age 38",
+      "problem_text": "No marriage till age 38",
+      "actual_outcome": {
+        "event": "marriage",
+        "outcome_type": "delay",
+        "description": "Marriage occurred at age 38 during Venus antardasha.",
+        "occurred_at_age": 38
+      },
+      "ground_truth": {
+        "planets": [
+          "Saturn",
+          "Mars",
+          "Venus"
+        ],
+        "houses": [
+          7,
+          8
+        ],
+        "dasha_lords": [
+          "Saturn",
+          "Venus"
+        ],
+        "transit_indicators": [
+          "sade_sati_phase"
+        ],
+        "remedies": [
+          "vedic_saturn_shani_mantra",
+          "lk_remedy_saturn"
+        ],
+        "consensus_outcome": "delayed_outcome"
+      },
+      "match_profile": "high",
+      "category": "marriage",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Saturn",
+            "Mars",
+            "Venus"
+          ],
+          "affected_houses": [
+            7,
+            8
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Saturn",
+              "Mars"
+            ],
+            "shadow": [
+              "Venus"
+            ]
+          },
+          "houses": {
+            "primary": [
+              7
+            ],
+            "secondary": [
+              8
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Saturn"
+            },
+            "antardasha": {
+              "lord": "Venus"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "sade_sati_phase",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "vedic_saturn_shani_mantra",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            },
+            {
+              "remedy": {
+                "remedy_id": "lk_remedy_saturn",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "delayed_outcome"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    },
+    {
+      "case_id": "marriage_002",
+      "title": "Early love marriage",
+      "problem_text": "Love marriage at age 22",
+      "actual_outcome": {
+        "event": "marriage",
+        "outcome_type": "early",
+        "description": "Love marriage at age 22 with strong Venus support.",
+        "occurred_at_age": 22
+      },
+      "ground_truth": {
+        "planets": [
+          "Venus",
+          "Moon"
+        ],
+        "houses": [
+          5,
+          7,
+          11
+        ],
+        "dasha_lords": [
+          "Venus",
+          "Moon"
+        ],
+        "transit_indicators": [
+          "support"
+        ],
+        "remedies": [
+          "venus_strengthening"
+        ],
+        "consensus_outcome": "strong_support"
+      },
+      "match_profile": "high",
+      "category": "marriage",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Venus",
+            "Moon"
+          ],
+          "affected_houses": [
+            5,
+            7,
+            11
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Venus",
+              "Moon"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              5
+            ],
+            "secondary": [
+              7,
+              11
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Venus"
+            },
+            "antardasha": {
+              "lord": "Moon"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "support",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "venus_strengthening",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "strong_support"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    },
+    {
+      "case_id": "marriage_003",
+      "title": "Denial of marriage indicators",
+      "problem_text": "Repeated marriage proposals fail",
+      "actual_outcome": {
+        "event": "marriage",
+        "outcome_type": "denial",
+        "description": "Multiple proposals failed due to 7th lord affliction."
+      },
+      "ground_truth": {
+        "planets": [
+          "Saturn",
+          "Rahu",
+          "Ketu"
+        ],
+        "houses": [
+          7,
+          12
+        ],
+        "dasha_lords": [
+          "Saturn",
+          "Rahu"
+        ],
+        "transit_indicators": [
+          "block"
+        ],
+        "remedies": [
+          "rahu_remedy",
+          "7th_lord_remedy"
+        ],
+        "consensus_outcome": "blocked_outcome"
+      },
+      "match_profile": "medium",
+      "category": "marriage",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Saturn",
+            "Rahu"
+          ],
+          "affected_houses": [
+            7
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Saturn",
+              "Rahu"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              7
+            ],
+            "secondary": []
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Saturn"
+            },
+            "antardasha": {
+              "lord": "Rahu"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "block",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "rahu_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "blocked_outcome"
+          },
+          "confidence": {
+            "overall_score": 48
+          }
+        }
+      }
+    }
+  ]
+}

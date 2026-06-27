@@ -1,0 +1,277 @@
+{
+  "system": "vedic",
+  "entity_type": "planet",
+  "count": 9,
+  "entities": [
+    {
+      "entity_id": "vedic_planet_sun",
+      "entity_type": "planet",
+      "name": "Sun",
+      "system": "vedic",
+      "meanings": [
+        "soul",
+        "authority",
+        "vitality",
+        "father"
+      ],
+      "strengths": [
+        "leadership",
+        "confidence",
+        "recognition"
+      ],
+      "weaknesses": [
+        "ego",
+        "dominance",
+        "pride"
+      ],
+      "effects": [
+        "career visibility",
+        "government linkage",
+        "health vitality"
+      ],
+      "metadata": {
+        "natural_significator": true
+      }
+    },
+    {
+      "entity_id": "vedic_planet_moon",
+      "entity_type": "planet",
+      "name": "Moon",
+      "system": "vedic",
+      "meanings": [
+        "mind",
+        "emotion",
+        "mother",
+        "public"
+      ],
+      "strengths": [
+        "adaptability",
+        "nurture",
+        "intuition"
+      ],
+      "weaknesses": [
+        "mood swings",
+        "dependency",
+        "restlessness"
+      ],
+      "effects": [
+        "mental peace",
+        "domestic life",
+        "public response"
+      ],
+      "metadata": {
+        "natural_significator": true
+      }
+    },
+    {
+      "entity_id": "vedic_planet_mars",
+      "entity_type": "planet",
+      "name": "Mars",
+      "system": "vedic",
+      "meanings": [
+        "energy",
+        "courage",
+        "siblings",
+        "property"
+      ],
+      "strengths": [
+        "drive",
+        "decisiveness",
+        "technical skill"
+      ],
+      "weaknesses": [
+        "anger",
+        "conflict",
+        "impulsiveness"
+      ],
+      "effects": [
+        "accidents",
+        "surgery",
+        "competition"
+      ],
+      "metadata": {
+        "natural_significator": true
+      }
+    },
+    {
+      "entity_id": "vedic_planet_mercury",
+      "entity_type": "planet",
+      "name": "Mercury",
+      "system": "vedic",
+      "meanings": [
+        "intellect",
+        "speech",
+        "trade",
+        "analysis"
+      ],
+      "strengths": [
+        "communication",
+        "learning",
+        "business acumen"
+      ],
+      "weaknesses": [
+        "nervousness",
+        "indecision",
+        "overthinking"
+      ],
+      "effects": [
+        "education",
+        "contracts",
+        "accounts"
+      ],
+      "metadata": {
+        "natural_significator": true
+      }
+    },
+    {
+      "entity_id": "vedic_planet_jupiter",
+      "entity_type": "planet",
+      "name": "Jupiter",
+      "system": "vedic",
+      "meanings": [
+        "wisdom",
+        "dharma",
+        "teacher",
+        "fortune"
+      ],
+      "strengths": [
+        "guidance",
+        "ethics",
+        "expansion"
+      ],
+      "weaknesses": [
+        "overoptimism",
+        "weight",
+        "complacency"
+      ],
+      "effects": [
+        "marriage blessing",
+        "children",
+        "wealth growth"
+      ],
+      "metadata": {
+        "natural_significator": true
+      }
+    },
+    {
+      "entity_id": "vedic_planet_venus",
+      "entity_type": "planet",
+      "name": "Venus",
+      "system": "vedic",
+      "meanings": [
+        "love",
+        "marriage",
+        "luxury",
+        "arts"
+      ],
+      "strengths": [
+        "harmony",
+        "creativity",
+        "relationship skill"
+      ],
+      "weaknesses": [
+        "indulgence",
+        "attachment",
+        "passivity"
+      ],
+      "effects": [
+        "partnership",
+        "vehicles",
+        "comfort"
+      ],
+      "metadata": {
+        "natural_significator": true
+      }
+    },
+    {
+      "entity_id": "vedic_planet_saturn",
+      "entity_type": "planet",
+      "name": "Saturn",
+      "system": "vedic",
+      "meanings": [
+        "karma",
+        "discipline",
+        "delay",
+        "service"
+      ],
+      "strengths": [
+        "perseverance",
+        "structure",
+        "maturity"
+      ],
+      "weaknesses": [
+        "delay",
+        "fear",
+        "isolation"
+      ],
+      "effects": [
+        "chronic issues",
+        "responsibility",
+        "long-term results"
+      ],
+      "metadata": {
+        "natural_significator": true
+      }
+    },
+    {
+      "entity_id": "vedic_planet_rahu",
+      "entity_type": "planet",
+      "name": "Rahu",
+      "system": "vedic",
+      "meanings": [
+        "obsession",
+        "foreign",
+        "technology",
+        "sudden change"
+      ],
+      "strengths": [
+        "ambition",
+        "innovation",
+        "breakthrough"
+      ],
+      "weaknesses": [
+        "confusion",
+        "scandal",
+        "addiction"
+      ],
+      "effects": [
+        "unconventional paths",
+        "foreign links",
+        " sudden events"
+      ],
+      "metadata": {
+        "natural_significator": true
+      }
+    },
+    {
+      "entity_id": "vedic_planet_ketu",
+      "entity_type": "planet",
+      "name": "Ketu",
+      "system": "vedic",
+      "meanings": [
+        "detachment",
+        "past karma",
+        "spirituality",
+        "research"
+      ],
+      "strengths": [
+        "intuition",
+        "moksha inclination",
+        "specialization"
+      ],
+      "weaknesses": [
+        "separation",
+        "lack of direction",
+        "isolation"
+      ],
+      "effects": [
+        "breaks",
+        "spiritual turns",
+        "hidden matters"
+      ],
+      "metadata": {
+        "natural_significator": true
+      }
+    }
+  ]
+}

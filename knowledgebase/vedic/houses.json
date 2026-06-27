@@ -1,0 +1,295 @@
+{
+  "system": "vedic",
+  "entity_type": "house",
+  "count": 12,
+  "entities": [
+    {
+      "entity_id": "vedic_house_1",
+      "entity_type": "house",
+      "name": "House 1",
+      "system": "vedic",
+      "meanings": [
+        "self",
+        "body",
+        "personality",
+        "overall life direction"
+      ],
+      "strengths": [
+        "Positive expression of self when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 1 disturbs overall life direction."
+      ],
+      "effects": [
+        "Influences life outcomes related to self, body, personality, overall life direction."
+      ],
+      "metadata": {
+        "house_number": 1
+      }
+    },
+    {
+      "entity_id": "vedic_house_2",
+      "entity_type": "house",
+      "name": "House 2",
+      "system": "vedic",
+      "meanings": [
+        "wealth",
+        "family",
+        "speech",
+        "food"
+      ],
+      "strengths": [
+        "Positive expression of wealth when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 2 disturbs food."
+      ],
+      "effects": [
+        "Influences life outcomes related to wealth, family, speech, food."
+      ],
+      "metadata": {
+        "house_number": 2
+      }
+    },
+    {
+      "entity_id": "vedic_house_3",
+      "entity_type": "house",
+      "name": "House 3",
+      "system": "vedic",
+      "meanings": [
+        "courage",
+        "siblings",
+        "communication",
+        "short travel"
+      ],
+      "strengths": [
+        "Positive expression of courage when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 3 disturbs short travel."
+      ],
+      "effects": [
+        "Influences life outcomes related to courage, siblings, communication, short travel."
+      ],
+      "metadata": {
+        "house_number": 3
+      }
+    },
+    {
+      "entity_id": "vedic_house_4",
+      "entity_type": "house",
+      "name": "House 4",
+      "system": "vedic",
+      "meanings": [
+        "home",
+        "mother",
+        "property",
+        "peace"
+      ],
+      "strengths": [
+        "Positive expression of home when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 4 disturbs peace."
+      ],
+      "effects": [
+        "Influences life outcomes related to home, mother, property, peace."
+      ],
+      "metadata": {
+        "house_number": 4
+      }
+    },
+    {
+      "entity_id": "vedic_house_5",
+      "entity_type": "house",
+      "name": "House 5",
+      "system": "vedic",
+      "meanings": [
+        "children",
+        "education",
+        "creativity",
+        "romance"
+      ],
+      "strengths": [
+        "Positive expression of children when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 5 disturbs romance."
+      ],
+      "effects": [
+        "Influences life outcomes related to children, education, creativity, romance."
+      ],
+      "metadata": {
+        "house_number": 5
+      }
+    },
+    {
+      "entity_id": "vedic_house_6",
+      "entity_type": "house",
+      "name": "House 6",
+      "system": "vedic",
+      "meanings": [
+        "enemies",
+        "disease",
+        "service",
+        "litigation"
+      ],
+      "strengths": [
+        "Positive expression of enemies when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 6 disturbs litigation."
+      ],
+      "effects": [
+        "Influences life outcomes related to enemies, disease, service, litigation."
+      ],
+      "metadata": {
+        "house_number": 6
+      }
+    },
+    {
+      "entity_id": "vedic_house_7",
+      "entity_type": "house",
+      "name": "House 7",
+      "system": "vedic",
+      "meanings": [
+        "marriage",
+        "partnership",
+        "business partner",
+        "public dealings"
+      ],
+      "strengths": [
+        "Positive expression of marriage when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 7 disturbs public dealings."
+      ],
+      "effects": [
+        "Influences life outcomes related to marriage, partnership, business partner, public dealings."
+      ],
+      "metadata": {
+        "house_number": 7
+      }
+    },
+    {
+      "entity_id": "vedic_house_8",
+      "entity_type": "house",
+      "name": "House 8",
+      "system": "vedic",
+      "meanings": [
+        "longevity",
+        "transformation",
+        "inheritance",
+        "occult"
+      ],
+      "strengths": [
+        "Positive expression of longevity when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 8 disturbs occult."
+      ],
+      "effects": [
+        "Influences life outcomes related to longevity, transformation, inheritance, occult."
+      ],
+      "metadata": {
+        "house_number": 8
+      }
+    },
+    {
+      "entity_id": "vedic_house_9",
+      "entity_type": "house",
+      "name": "House 9",
+      "system": "vedic",
+      "meanings": [
+        "fortune",
+        "father",
+        "dharma",
+        "long travel"
+      ],
+      "strengths": [
+        "Positive expression of fortune when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 9 disturbs long travel."
+      ],
+      "effects": [
+        "Influences life outcomes related to fortune, father, dharma, long travel."
+      ],
+      "metadata": {
+        "house_number": 9
+      }
+    },
+    {
+      "entity_id": "vedic_house_10",
+      "entity_type": "house",
+      "name": "House 10",
+      "system": "vedic",
+      "meanings": [
+        "career",
+        "status",
+        "authority",
+        "karma in world"
+      ],
+      "strengths": [
+        "Positive expression of career when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 10 disturbs karma in world."
+      ],
+      "effects": [
+        "Influences life outcomes related to career, status, authority, karma in world."
+      ],
+      "metadata": {
+        "house_number": 10
+      }
+    },
+    {
+      "entity_id": "vedic_house_11",
+      "entity_type": "house",
+      "name": "House 11",
+      "system": "vedic",
+      "meanings": [
+        "gains",
+        "income",
+        "friends",
+        "aspirations"
+      ],
+      "strengths": [
+        "Positive expression of gains when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 11 disturbs aspirations."
+      ],
+      "effects": [
+        "Influences life outcomes related to gains, income, friends, aspirations."
+      ],
+      "metadata": {
+        "house_number": 11
+      }
+    },
+    {
+      "entity_id": "vedic_house_12",
+      "entity_type": "house",
+      "name": "House 12",
+      "system": "vedic",
+      "meanings": [
+        "loss",
+        "expenses",
+        "foreign",
+        "moksha"
+      ],
+      "strengths": [
+        "Positive expression of loss when well supported."
+      ],
+      "weaknesses": [
+        "Affliction to house 12 disturbs moksha."
+      ],
+      "effects": [
+        "Influences life outcomes related to loss, expenses, foreign, moksha."
+      ],
+      "metadata": {
+        "house_number": 12
+      }
+    }
+  ]
+}

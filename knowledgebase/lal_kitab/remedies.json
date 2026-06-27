@@ -1,0 +1,979 @@
+{
+  "system": "lal_kitab",
+  "database": "remedy",
+  "count": 108,
+  "entries": [
+    {
+      "remedy_id": "lk_remedy_sun_h1",
+      "planet": "Sun",
+      "house": 1,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 1.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 1.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h1",
+      "planet": "Moon",
+      "house": 1,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 1.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 1.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h1",
+      "planet": "Mars",
+      "house": 1,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 1.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 1.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h1",
+      "planet": "Mercury",
+      "house": 1,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 1.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 1.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h1",
+      "planet": "Jupiter",
+      "house": 1,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 1.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 1.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h1",
+      "planet": "Venus",
+      "house": 1,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 1.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 1.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h1",
+      "planet": "Saturn",
+      "house": 1,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 1.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 1.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h1",
+      "planet": "Rahu",
+      "house": 1,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 1.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 1.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h1",
+      "planet": "Ketu",
+      "house": 1,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 1.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 1.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h2",
+      "planet": "Sun",
+      "house": 2,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 2.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 2.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h2",
+      "planet": "Moon",
+      "house": 2,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 2.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 2.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h2",
+      "planet": "Mars",
+      "house": 2,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 2.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 2.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h2",
+      "planet": "Mercury",
+      "house": 2,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 2.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 2.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h2",
+      "planet": "Jupiter",
+      "house": 2,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 2.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 2.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h2",
+      "planet": "Venus",
+      "house": 2,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 2.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 2.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h2",
+      "planet": "Saturn",
+      "house": 2,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 2.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 2.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h2",
+      "planet": "Rahu",
+      "house": 2,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 2.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 2.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h2",
+      "planet": "Ketu",
+      "house": 2,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 2.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 2.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h3",
+      "planet": "Sun",
+      "house": 3,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 3.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 3.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h3",
+      "planet": "Moon",
+      "house": 3,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 3.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 3.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h3",
+      "planet": "Mars",
+      "house": 3,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 3.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 3.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h3",
+      "planet": "Mercury",
+      "house": 3,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 3.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 3.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h3",
+      "planet": "Jupiter",
+      "house": 3,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 3.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 3.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h3",
+      "planet": "Venus",
+      "house": 3,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 3.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 3.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h3",
+      "planet": "Saturn",
+      "house": 3,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 3.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 3.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h3",
+      "planet": "Rahu",
+      "house": 3,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 3.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 3.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h3",
+      "planet": "Ketu",
+      "house": 3,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 3.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 3.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h4",
+      "planet": "Sun",
+      "house": 4,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 4.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 4.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h4",
+      "planet": "Moon",
+      "house": 4,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 4.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 4.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h4",
+      "planet": "Mars",
+      "house": 4,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 4.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 4.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h4",
+      "planet": "Mercury",
+      "house": 4,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 4.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 4.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h4",
+      "planet": "Jupiter",
+      "house": 4,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 4.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 4.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h4",
+      "planet": "Venus",
+      "house": 4,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 4.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 4.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h4",
+      "planet": "Saturn",
+      "house": 4,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 4.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 4.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h4",
+      "planet": "Rahu",
+      "house": 4,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 4.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 4.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h4",
+      "planet": "Ketu",
+      "house": 4,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 4.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 4.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h5",
+      "planet": "Sun",
+      "house": 5,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 5.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 5.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h5",
+      "planet": "Moon",
+      "house": 5,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 5.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 5.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h5",
+      "planet": "Mars",
+      "house": 5,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 5.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 5.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h5",
+      "planet": "Mercury",
+      "house": 5,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 5.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 5.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h5",
+      "planet": "Jupiter",
+      "house": 5,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 5.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 5.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h5",
+      "planet": "Venus",
+      "house": 5,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 5.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 5.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h5",
+      "planet": "Saturn",
+      "house": 5,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 5.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 5.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h5",
+      "planet": "Rahu",
+      "house": 5,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 5.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 5.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h5",
+      "planet": "Ketu",
+      "house": 5,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 5.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 5.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h6",
+      "planet": "Sun",
+      "house": 6,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 6.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 6.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h6",
+      "planet": "Moon",
+      "house": 6,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 6.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 6.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h6",
+      "planet": "Mars",
+      "house": 6,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 6.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 6.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h6",
+      "planet": "Mercury",
+      "house": 6,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 6.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 6.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h6",
+      "planet": "Jupiter",
+      "house": 6,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 6.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 6.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h6",
+      "planet": "Venus",
+      "house": 6,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 6.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 6.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h6",
+      "planet": "Saturn",
+      "house": 6,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 6.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 6.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h6",
+      "planet": "Rahu",
+      "house": 6,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 6.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 6.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h6",
+      "planet": "Ketu",
+      "house": 6,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 6.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 6.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h7",
+      "planet": "Sun",
+      "house": 7,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 7.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 7.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h7",
+      "planet": "Moon",
+      "house": 7,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 7.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 7.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h7",
+      "planet": "Mars",
+      "house": 7,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 7.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 7.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h7",
+      "planet": "Mercury",
+      "house": 7,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 7.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 7.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h7",
+      "planet": "Jupiter",
+      "house": 7,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 7.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 7.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h7",
+      "planet": "Venus",
+      "house": 7,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 7.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 7.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h7",
+      "planet": "Saturn",
+      "house": 7,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 7.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 7.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h7",
+      "planet": "Rahu",
+      "house": 7,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 7.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 7.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h7",
+      "planet": "Ketu",
+      "house": 7,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 7.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 7.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h8",
+      "planet": "Sun",
+      "house": 8,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 8.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 8.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h8",
+      "planet": "Moon",
+      "house": 8,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 8.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 8.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h8",
+      "planet": "Mars",
+      "house": 8,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 8.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 8.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h8",
+      "planet": "Mercury",
+      "house": 8,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 8.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 8.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h8",
+      "planet": "Jupiter",
+      "house": 8,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 8.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 8.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h8",
+      "planet": "Venus",
+      "house": 8,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 8.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 8.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h8",
+      "planet": "Saturn",
+      "house": 8,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 8.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 8.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h8",
+      "planet": "Rahu",
+      "house": 8,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 8.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 8.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h8",
+      "planet": "Ketu",
+      "house": 8,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 8.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 8.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h9",
+      "planet": "Sun",
+      "house": 9,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 9.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 9.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h9",
+      "planet": "Moon",
+      "house": 9,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 9.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 9.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h9",
+      "planet": "Mars",
+      "house": 9,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 9.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 9.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h9",
+      "planet": "Mercury",
+      "house": 9,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 9.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 9.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h9",
+      "planet": "Jupiter",
+      "house": 9,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 9.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 9.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h9",
+      "planet": "Venus",
+      "house": 9,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 9.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 9.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h9",
+      "planet": "Saturn",
+      "house": 9,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 9.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 9.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h9",
+      "planet": "Rahu",
+      "house": 9,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 9.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 9.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h9",
+      "planet": "Ketu",
+      "house": 9,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 9.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 9.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h10",
+      "planet": "Sun",
+      "house": 10,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 10.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 10.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h10",
+      "planet": "Moon",
+      "house": 10,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 10.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 10.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h10",
+      "planet": "Mars",
+      "house": 10,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 10.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 10.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h10",
+      "planet": "Mercury",
+      "house": 10,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 10.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 10.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h10",
+      "planet": "Jupiter",
+      "house": 10,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 10.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 10.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h10",
+      "planet": "Venus",
+      "house": 10,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 10.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 10.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h10",
+      "planet": "Saturn",
+      "house": 10,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 10.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 10.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h10",
+      "planet": "Rahu",
+      "house": 10,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 10.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 10.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h10",
+      "planet": "Ketu",
+      "house": 10,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 10.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 10.",
+      "priority": 3
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h11",
+      "planet": "Sun",
+      "house": 11,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 11.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 11.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h11",
+      "planet": "Moon",
+      "house": 11,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 11.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 11.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h11",
+      "planet": "Mars",
+      "house": 11,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 11.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 11.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h11",
+      "planet": "Mercury",
+      "house": 11,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 11.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 11.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h11",
+      "planet": "Jupiter",
+      "house": 11,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 11.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 11.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h11",
+      "planet": "Venus",
+      "house": 11,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 11.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 11.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h11",
+      "planet": "Saturn",
+      "house": 11,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 11.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 11.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h11",
+      "planet": "Rahu",
+      "house": 11,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 11.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 11.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h11",
+      "planet": "Ketu",
+      "house": 11,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 11.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 11.",
+      "priority": 4
+    },
+    {
+      "remedy_id": "lk_remedy_sun_h12",
+      "planet": "Sun",
+      "house": 12,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Sun occupies house 12.",
+      "expected_effect": "Reduce Lal Kitab affliction of Sun in house 12.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_moon_h12",
+      "planet": "Moon",
+      "house": 12,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Moon occupies house 12.",
+      "expected_effect": "Reduce Lal Kitab affliction of Moon in house 12.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_mars_h12",
+      "planet": "Mars",
+      "house": 12,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mars occupies house 12.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mars in house 12.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_mercury_h12",
+      "planet": "Mercury",
+      "house": 12,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Mercury occupies house 12.",
+      "expected_effect": "Reduce Lal Kitab affliction of Mercury in house 12.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_jupiter_h12",
+      "planet": "Jupiter",
+      "house": 12,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Jupiter occupies house 12.",
+      "expected_effect": "Reduce Lal Kitab affliction of Jupiter in house 12.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_venus_h12",
+      "planet": "Venus",
+      "house": 12,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Venus occupies house 12.",
+      "expected_effect": "Reduce Lal Kitab affliction of Venus in house 12.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_saturn_h12",
+      "planet": "Saturn",
+      "house": 12,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Saturn occupies house 12.",
+      "expected_effect": "Reduce Lal Kitab affliction of Saturn in house 12.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_rahu_h12",
+      "planet": "Rahu",
+      "house": 12,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Rahu occupies house 12.",
+      "expected_effect": "Reduce Lal Kitab affliction of Rahu in house 12.",
+      "priority": 2
+    },
+    {
+      "remedy_id": "lk_remedy_ketu_h12",
+      "planet": "Ketu",
+      "house": 12,
+      "remedy_type": "behavioral",
+      "description": "Lal Kitab corrective action when Ketu occupies house 12.",
+      "expected_effect": "Reduce Lal Kitab affliction of Ketu in house 12.",
+      "priority": 2
+    }
+  ]
+}

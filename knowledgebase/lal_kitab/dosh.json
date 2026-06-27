@@ -1,0 +1,307 @@
+{
+  "system": "lal_kitab",
+  "database": "dosh",
+  "count": 30,
+  "entries": [
+    {
+      "dosh_id": "saturn_rahu_dosh_sun",
+      "name": "Saturn-Rahu Dosh",
+      "planet": "Sun",
+      "description": "Saturn-Rahu Dosh indicator involving Sun in Lal Kitab framework.",
+      "effects": [
+        "Monitor Sun house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "saturn_rahu_dosh_moon",
+      "name": "Saturn-Rahu Dosh",
+      "planet": "Moon",
+      "description": "Saturn-Rahu Dosh indicator involving Moon in Lal Kitab framework.",
+      "effects": [
+        "Monitor Moon house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "saturn_rahu_dosh_mars",
+      "name": "Saturn-Rahu Dosh",
+      "planet": "Mars",
+      "description": "Saturn-Rahu Dosh indicator involving Mars in Lal Kitab framework.",
+      "effects": [
+        "Monitor Mars house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "saturn_rahu_dosh_mercury",
+      "name": "Saturn-Rahu Dosh",
+      "planet": "Mercury",
+      "description": "Saturn-Rahu Dosh indicator involving Mercury in Lal Kitab framework.",
+      "effects": [
+        "Monitor Mercury house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "saturn_rahu_dosh_jupiter",
+      "name": "Saturn-Rahu Dosh",
+      "planet": "Jupiter",
+      "description": "Saturn-Rahu Dosh indicator involving Jupiter in Lal Kitab framework.",
+      "effects": [
+        "Monitor Jupiter house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "saturn_rahu_dosh_venus",
+      "name": "Saturn-Rahu Dosh",
+      "planet": "Venus",
+      "description": "Saturn-Rahu Dosh indicator involving Venus in Lal Kitab framework.",
+      "effects": [
+        "Monitor Venus house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "mars_8th_dosh_sun",
+      "name": "Mars 8th House Dosh",
+      "planet": "Sun",
+      "description": "Mars 8th House Dosh indicator involving Sun in Lal Kitab framework.",
+      "effects": [
+        "Monitor Sun house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "mars_8th_dosh_moon",
+      "name": "Mars 8th House Dosh",
+      "planet": "Moon",
+      "description": "Mars 8th House Dosh indicator involving Moon in Lal Kitab framework.",
+      "effects": [
+        "Monitor Moon house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "mars_8th_dosh_mars",
+      "name": "Mars 8th House Dosh",
+      "planet": "Mars",
+      "description": "Mars 8th House Dosh indicator involving Mars in Lal Kitab framework.",
+      "effects": [
+        "Monitor Mars house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "mars_8th_dosh_mercury",
+      "name": "Mars 8th House Dosh",
+      "planet": "Mercury",
+      "description": "Mars 8th House Dosh indicator involving Mercury in Lal Kitab framework.",
+      "effects": [
+        "Monitor Mercury house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "mars_8th_dosh_jupiter",
+      "name": "Mars 8th House Dosh",
+      "planet": "Jupiter",
+      "description": "Mars 8th House Dosh indicator involving Jupiter in Lal Kitab framework.",
+      "effects": [
+        "Monitor Jupiter house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "mars_8th_dosh_venus",
+      "name": "Mars 8th House Dosh",
+      "planet": "Venus",
+      "description": "Mars 8th House Dosh indicator involving Venus in Lal Kitab framework.",
+      "effects": [
+        "Monitor Venus house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "ketu_6th_dosh_sun",
+      "name": "Ketu 6th House Dosh",
+      "planet": "Sun",
+      "description": "Ketu 6th House Dosh indicator involving Sun in Lal Kitab framework.",
+      "effects": [
+        "Monitor Sun house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "ketu_6th_dosh_moon",
+      "name": "Ketu 6th House Dosh",
+      "planet": "Moon",
+      "description": "Ketu 6th House Dosh indicator involving Moon in Lal Kitab framework.",
+      "effects": [
+        "Monitor Moon house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "ketu_6th_dosh_mars",
+      "name": "Ketu 6th House Dosh",
+      "planet": "Mars",
+      "description": "Ketu 6th House Dosh indicator involving Mars in Lal Kitab framework.",
+      "effects": [
+        "Monitor Mars house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "ketu_6th_dosh_mercury",
+      "name": "Ketu 6th House Dosh",
+      "planet": "Mercury",
+      "description": "Ketu 6th House Dosh indicator involving Mercury in Lal Kitab framework.",
+      "effects": [
+        "Monitor Mercury house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "ketu_6th_dosh_jupiter",
+      "name": "Ketu 6th House Dosh",
+      "planet": "Jupiter",
+      "description": "Ketu 6th House Dosh indicator involving Jupiter in Lal Kitab framework.",
+      "effects": [
+        "Monitor Jupiter house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "ketu_6th_dosh_venus",
+      "name": "Ketu 6th House Dosh",
+      "planet": "Venus",
+      "description": "Ketu 6th House Dosh indicator involving Venus in Lal Kitab framework.",
+      "effects": [
+        "Monitor Venus house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "sun_affliction_dosh_sun",
+      "name": "Sun Affliction Dosh",
+      "planet": "Sun",
+      "description": "Sun Affliction Dosh indicator involving Sun in Lal Kitab framework.",
+      "effects": [
+        "Monitor Sun house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "sun_affliction_dosh_moon",
+      "name": "Sun Affliction Dosh",
+      "planet": "Moon",
+      "description": "Sun Affliction Dosh indicator involving Moon in Lal Kitab framework.",
+      "effects": [
+        "Monitor Moon house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "sun_affliction_dosh_mars",
+      "name": "Sun Affliction Dosh",
+      "planet": "Mars",
+      "description": "Sun Affliction Dosh indicator involving Mars in Lal Kitab framework.",
+      "effects": [
+        "Monitor Mars house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "sun_affliction_dosh_mercury",
+      "name": "Sun Affliction Dosh",
+      "planet": "Mercury",
+      "description": "Sun Affliction Dosh indicator involving Mercury in Lal Kitab framework.",
+      "effects": [
+        "Monitor Mercury house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "sun_affliction_dosh_jupiter",
+      "name": "Sun Affliction Dosh",
+      "planet": "Jupiter",
+      "description": "Sun Affliction Dosh indicator involving Jupiter in Lal Kitab framework.",
+      "effects": [
+        "Monitor Jupiter house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "sun_affliction_dosh_venus",
+      "name": "Sun Affliction Dosh",
+      "planet": "Venus",
+      "description": "Sun Affliction Dosh indicator involving Venus in Lal Kitab framework.",
+      "effects": [
+        "Monitor Venus house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "moon_affliction_dosh_sun",
+      "name": "Moon Affliction Dosh",
+      "planet": "Sun",
+      "description": "Moon Affliction Dosh indicator involving Sun in Lal Kitab framework.",
+      "effects": [
+        "Monitor Sun house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "moon_affliction_dosh_moon",
+      "name": "Moon Affliction Dosh",
+      "planet": "Moon",
+      "description": "Moon Affliction Dosh indicator involving Moon in Lal Kitab framework.",
+      "effects": [
+        "Monitor Moon house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "moon_affliction_dosh_mars",
+      "name": "Moon Affliction Dosh",
+      "planet": "Mars",
+      "description": "Moon Affliction Dosh indicator involving Mars in Lal Kitab framework.",
+      "effects": [
+        "Monitor Mars house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "moon_affliction_dosh_mercury",
+      "name": "Moon Affliction Dosh",
+      "planet": "Mercury",
+      "description": "Moon Affliction Dosh indicator involving Mercury in Lal Kitab framework.",
+      "effects": [
+        "Monitor Mercury house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "moon_affliction_dosh_jupiter",
+      "name": "Moon Affliction Dosh",
+      "planet": "Jupiter",
+      "description": "Moon Affliction Dosh indicator involving Jupiter in Lal Kitab framework.",
+      "effects": [
+        "Monitor Jupiter house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    },
+    {
+      "dosh_id": "moon_affliction_dosh_venus",
+      "name": "Moon Affliction Dosh",
+      "planet": "Venus",
+      "description": "Moon Affliction Dosh indicator involving Venus in Lal Kitab framework.",
+      "effects": [
+        "Monitor Venus house placement and LK recommendations."
+      ],
+      "severity": 0.65
+    }
+  ]
+}

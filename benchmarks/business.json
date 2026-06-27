@@ -1,0 +1,253 @@
+{
+  "category": "business",
+  "version": "1.0",
+  "count": 2,
+  "cases": [
+    {
+      "case_id": "business_001",
+      "title": "Business partnership failure",
+      "problem_text": "Business partnership dissolved with loss",
+      "actual_outcome": {
+        "event": "partnership_loss",
+        "outcome_type": "loss",
+        "description": "Partnership break during Mercury-Saturn dasha."
+      },
+      "ground_truth": {
+        "planets": [
+          "Mercury",
+          "Saturn",
+          "Rahu"
+        ],
+        "houses": [
+          7,
+          8,
+          11
+        ],
+        "dasha_lords": [
+          "Mercury",
+          "Saturn"
+        ],
+        "transit_indicators": [
+          "affliction"
+        ],
+        "remedies": [
+          "mercury_remedy",
+          "saturn_remedy"
+        ],
+        "consensus_outcome": "blocked_outcome"
+      },
+      "match_profile": "high",
+      "category": "business",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Mercury",
+            "Saturn",
+            "Rahu"
+          ],
+          "affected_houses": [
+            7,
+            8,
+            11
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Mercury",
+              "Saturn"
+            ],
+            "shadow": [
+              "Rahu"
+            ]
+          },
+          "houses": {
+            "primary": [
+              7
+            ],
+            "secondary": [
+              8,
+              11
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Mercury"
+            },
+            "antardasha": {
+              "lord": "Saturn"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "affliction",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "mercury_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            },
+            {
+              "remedy": {
+                "remedy_id": "saturn_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "blocked_outcome"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    },
+    {
+      "case_id": "business_002",
+      "title": "Successful business expansion",
+      "problem_text": "Business expanded to new city",
+      "actual_outcome": {
+        "event": "business_growth",
+        "outcome_type": "success",
+        "description": "Expansion during Jupiter-Venus dasha."
+      },
+      "ground_truth": {
+        "planets": [
+          "Jupiter",
+          "Venus",
+          "Mercury"
+        ],
+        "houses": [
+          2,
+          10,
+          11
+        ],
+        "dasha_lords": [
+          "Jupiter",
+          "Venus"
+        ],
+        "transit_indicators": [
+          "support"
+        ],
+        "remedies": [
+          "jupiter_remedy",
+          "venus_remedy"
+        ],
+        "consensus_outcome": "strong_support"
+      },
+      "match_profile": "high",
+      "category": "business",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Jupiter",
+            "Venus",
+            "Mercury"
+          ],
+          "affected_houses": [
+            2,
+            10,
+            11
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Jupiter",
+              "Venus"
+            ],
+            "shadow": [
+              "Mercury"
+            ]
+          },
+          "houses": {
+            "primary": [
+              2
+            ],
+            "secondary": [
+              10,
+              11
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Jupiter"
+            },
+            "antardasha": {
+              "lord": "Venus"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "support",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "jupiter_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            },
+            {
+              "remedy": {
+                "remedy_id": "venus_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "strong_support"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "category": "career",
+  "version": "1.0",
+  "count": 2,
+  "cases": [
+    {
+      "case_id": "career_001",
+      "title": "Job loss during Saturn dasha",
+      "problem_text": "Lost private job during recession",
+      "actual_outcome": {
+        "event": "job_loss",
+        "outcome_type": "unemployment",
+        "description": "Unemployment period during Saturn antardasha."
+      },
+      "ground_truth": {
+        "planets": [
+          "Saturn",
+          "Rahu"
+        ],
+        "houses": [
+          6,
+          10
+        ],
+        "dasha_lords": [
+          "Saturn"
+        ],
+        "transit_indicators": [
+          "sade_sati_phase"
+        ],
+        "remedies": [
+          "saturn_remedy",
+          "10th_lord_remedy"
+        ],
+        "consensus_outcome": "delayed_outcome"
+      },
+      "match_profile": "high",
+      "category": "career",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Saturn",
+            "Rahu"
+          ],
+          "affected_houses": [
+            6,
+            10
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Saturn",
+              "Rahu"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              6
+            ],
+            "secondary": [
+              10
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Saturn"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "sade_sati_phase",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "saturn_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            },
+            {
+              "remedy": {
+                "remedy_id": "10th_lord_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "delayed_outcome"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    },
+    {
+      "case_id": "career_002",
+      "title": "Promotion in Jupiter period",
+      "problem_text": "Promotion to senior role",
+      "actual_outcome": {
+        "event": "promotion",
+        "outcome_type": "advancement",
+        "description": "Promotion during Jupiter mahadasha."
+      },
+      "ground_truth": {
+        "planets": [
+          "Jupiter",
+          "Sun"
+        ],
+        "houses": [
+          10,
+          11
+        ],
+        "dasha_lords": [
+          "Jupiter",
+          "Sun"
+        ],
+        "transit_indicators": [
+          "support"
+        ],
+        "remedies": [
+          "jupiter_remedy"
+        ],
+        "consensus_outcome": "strong_support"
+      },
+      "match_profile": "high",
+      "category": "career",
+      "source": "astrology_case_study",
+      "unified_report": {
+        "version": "unified_report_v2",
+        "astro_intelligence": {
+          "root_cause_planets": [
+            "Jupiter",
+            "Sun"
+          ],
+          "affected_houses": [
+            10,
+            11
+          ],
+          "confidence_score": 0.75
+        },
+        "problem_analysis": {
+          "category": {
+            "category": "unknown"
+          },
+          "planets": {
+            "primary": [
+              "Jupiter",
+              "Sun"
+            ],
+            "shadow": []
+          },
+          "houses": {
+            "primary": [
+              10
+            ],
+            "secondary": [
+              11
+            ]
+          }
+        },
+        "dasha": {
+          "current": {
+            "mahadasha": {
+              "lord": "Jupiter"
+            },
+            "antardasha": {
+              "lord": "Sun"
+            }
+          }
+        },
+        "transits": {
+          "saturn": {
+            "planet": "Saturn",
+            "natal_impacts": [
+              {
+                "impact_type": "support",
+                "strength": 0.7
+              }
+            ]
+          }
+        },
+        "remedy_recommendations": {
+          "matched_remedies": [
+            {
+              "remedy": {
+                "remedy_id": "jupiter_remedy",
+                "astrology_system": "vedic"
+              },
+              "match_score": 0.75
+            }
+          ]
+        },
+        "reasoning": {
+          "consensus": {
+            "final_consensus": "strong_support"
+          },
+          "confidence": {
+            "overall_score": 72
+          }
+        }
+      }
+    }
+  ]
+}

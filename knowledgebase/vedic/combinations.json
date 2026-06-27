@@ -1,0 +1,187 @@
+{
+  "system": "vedic",
+  "entity_type": "combination",
+  "count": 12,
+  "combinations": [
+    {
+      "combination_id": "vedic_saturn_house_7",
+      "system": "vedic",
+      "planets": [
+        "Saturn"
+      ],
+      "houses": [
+        7
+      ],
+      "theme": "delayed_marriage",
+      "meaning": "Saturn influencing house 7 indicates delayed marriage themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for delayed_marriage outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_mars_house_7",
+      "system": "vedic",
+      "planets": [
+        "Mars"
+      ],
+      "houses": [
+        7
+      ],
+      "theme": "marriage_conflict",
+      "meaning": "Mars influencing house 7 indicates marriage conflict themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for marriage_conflict outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_venus_house_7",
+      "system": "vedic",
+      "planets": [
+        "Venus"
+      ],
+      "houses": [
+        7
+      ],
+      "theme": "relationship_harmony",
+      "meaning": "Venus influencing house 7 indicates relationship harmony themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for relationship_harmony outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_jupiter_house_7",
+      "system": "vedic",
+      "planets": [
+        "Jupiter"
+      ],
+      "houses": [
+        7
+      ],
+      "theme": "marriage_blessing",
+      "meaning": "Jupiter influencing house 7 indicates marriage blessing themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for marriage_blessing outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_rahu_house_7",
+      "system": "vedic",
+      "planets": [
+        "Rahu"
+      ],
+      "houses": [
+        7
+      ],
+      "theme": "unconventional_marriage",
+      "meaning": "Rahu influencing house 7 indicates unconventional marriage themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for unconventional_marriage outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_saturn_house_10",
+      "system": "vedic",
+      "planets": [
+        "Saturn"
+      ],
+      "houses": [
+        10
+      ],
+      "theme": "career_delay",
+      "meaning": "Saturn influencing house 10 indicates career delay themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for career_delay outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_sun_house_10",
+      "system": "vedic",
+      "planets": [
+        "Sun"
+      ],
+      "houses": [
+        10
+      ],
+      "theme": "authority_career",
+      "meaning": "Sun influencing house 10 indicates authority career themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for authority_career outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_mercury_house_6",
+      "system": "vedic",
+      "planets": [
+        "Mercury"
+      ],
+      "houses": [
+        6
+      ],
+      "theme": "service_job",
+      "meaning": "Mercury influencing house 6 indicates service job themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for service_job outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_moon_house_4",
+      "system": "vedic",
+      "planets": [
+        "Moon"
+      ],
+      "houses": [
+        4
+      ],
+      "theme": "mental_peace_home",
+      "meaning": "Moon influencing house 4 indicates mental peace home themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for mental_peace_home outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_mars_house_8",
+      "system": "vedic",
+      "planets": [
+        "Mars"
+      ],
+      "houses": [
+        8
+      ],
+      "theme": "accident_surgery",
+      "meaning": "Mars influencing house 8 indicates accident surgery themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for accident_surgery outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_saturn_house_2",
+      "system": "vedic",
+      "planets": [
+        "Saturn"
+      ],
+      "houses": [
+        2
+      ],
+      "theme": "financial_constraint",
+      "meaning": "Saturn influencing house 2 indicates financial constraint themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for financial_constraint outcomes."
+      ]
+    },
+    {
+      "combination_id": "vedic_jupiter_house_11",
+      "system": "vedic",
+      "planets": [
+        "Jupiter"
+      ],
+      "houses": [
+        11
+      ],
+      "theme": "wealth_gain",
+      "meaning": "Jupiter influencing house 11 indicates wealth gain themes.",
+      "effects": [
+        "Check dignity, aspects, and dasha for wealth_gain outcomes."
+      ]
+    }
+  ]
+}

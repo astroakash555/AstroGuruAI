@@ -1,0 +1,14 @@
+Analyze the following unified astrology report JSON and produce a structured interpretation.
+
+Required JSON keys:
+- root_cause_explanation
+- affected_planets_explanation
+- affected_houses_explanation
+- dasha_impact_explanation
+- transit_impact_explanation
+- kp_findings_explanation
+- lal_kitab_findings_explanation
+- summary
+
+Input JSON:
+{{report_json}}

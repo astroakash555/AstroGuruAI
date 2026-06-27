@@ -1,0 +1,391 @@
+{
+  "system": "kp",
+  "database": "significator_rules",
+  "count": 48,
+  "rules": [
+    {
+      "rule_id": "kp_significator_h1_level_A",
+      "house": 1,
+      "level": "A",
+      "description": "KP significator level A for house 1.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h1_level_B",
+      "house": 1,
+      "level": "B",
+      "description": "KP significator level B for house 1.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h1_level_C",
+      "house": 1,
+      "level": "C",
+      "description": "KP significator level C for house 1.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h1_level_D",
+      "house": 1,
+      "level": "D",
+      "description": "KP significator level D for house 1.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h2_level_A",
+      "house": 2,
+      "level": "A",
+      "description": "KP significator level A for house 2.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h2_level_B",
+      "house": 2,
+      "level": "B",
+      "description": "KP significator level B for house 2.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h2_level_C",
+      "house": 2,
+      "level": "C",
+      "description": "KP significator level C for house 2.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h2_level_D",
+      "house": 2,
+      "level": "D",
+      "description": "KP significator level D for house 2.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h3_level_A",
+      "house": 3,
+      "level": "A",
+      "description": "KP significator level A for house 3.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h3_level_B",
+      "house": 3,
+      "level": "B",
+      "description": "KP significator level B for house 3.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h3_level_C",
+      "house": 3,
+      "level": "C",
+      "description": "KP significator level C for house 3.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h3_level_D",
+      "house": 3,
+      "level": "D",
+      "description": "KP significator level D for house 3.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h4_level_A",
+      "house": 4,
+      "level": "A",
+      "description": "KP significator level A for house 4.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h4_level_B",
+      "house": 4,
+      "level": "B",
+      "description": "KP significator level B for house 4.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h4_level_C",
+      "house": 4,
+      "level": "C",
+      "description": "KP significator level C for house 4.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h4_level_D",
+      "house": 4,
+      "level": "D",
+      "description": "KP significator level D for house 4.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h5_level_A",
+      "house": 5,
+      "level": "A",
+      "description": "KP significator level A for house 5.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h5_level_B",
+      "house": 5,
+      "level": "B",
+      "description": "KP significator level B for house 5.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h5_level_C",
+      "house": 5,
+      "level": "C",
+      "description": "KP significator level C for house 5.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h5_level_D",
+      "house": 5,
+      "level": "D",
+      "description": "KP significator level D for house 5.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h6_level_A",
+      "house": 6,
+      "level": "A",
+      "description": "KP significator level A for house 6.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h6_level_B",
+      "house": 6,
+      "level": "B",
+      "description": "KP significator level B for house 6.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h6_level_C",
+      "house": 6,
+      "level": "C",
+      "description": "KP significator level C for house 6.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h6_level_D",
+      "house": 6,
+      "level": "D",
+      "description": "KP significator level D for house 6.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h7_level_A",
+      "house": 7,
+      "level": "A",
+      "description": "KP significator level A for house 7.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h7_level_B",
+      "house": 7,
+      "level": "B",
+      "description": "KP significator level B for house 7.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h7_level_C",
+      "house": 7,
+      "level": "C",
+      "description": "KP significator level C for house 7.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h7_level_D",
+      "house": 7,
+      "level": "D",
+      "description": "KP significator level D for house 7.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h8_level_A",
+      "house": 8,
+      "level": "A",
+      "description": "KP significator level A for house 8.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h8_level_B",
+      "house": 8,
+      "level": "B",
+      "description": "KP significator level B for house 8.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h8_level_C",
+      "house": 8,
+      "level": "C",
+      "description": "KP significator level C for house 8.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h8_level_D",
+      "house": 8,
+      "level": "D",
+      "description": "KP significator level D for house 8.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h9_level_A",
+      "house": 9,
+      "level": "A",
+      "description": "KP significator level A for house 9.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h9_level_B",
+      "house": 9,
+      "level": "B",
+      "description": "KP significator level B for house 9.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h9_level_C",
+      "house": 9,
+      "level": "C",
+      "description": "KP significator level C for house 9.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h9_level_D",
+      "house": 9,
+      "level": "D",
+      "description": "KP significator level D for house 9.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h10_level_A",
+      "house": 10,
+      "level": "A",
+      "description": "KP significator level A for house 10.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h10_level_B",
+      "house": 10,
+      "level": "B",
+      "description": "KP significator level B for house 10.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h10_level_C",
+      "house": 10,
+      "level": "C",
+      "description": "KP significator level C for house 10.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h10_level_D",
+      "house": 10,
+      "level": "D",
+      "description": "KP significator level D for house 10.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h11_level_A",
+      "house": 11,
+      "level": "A",
+      "description": "KP significator level A for house 11.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h11_level_B",
+      "house": 11,
+      "level": "B",
+      "description": "KP significator level B for house 11.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h11_level_C",
+      "house": 11,
+      "level": "C",
+      "description": "KP significator level C for house 11.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h11_level_D",
+      "house": 11,
+      "level": "D",
+      "description": "KP significator level D for house 11.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h12_level_A",
+      "house": 12,
+      "level": "A",
+      "description": "KP significator level A for house 12.",
+      "meaning": "Occupants of the house.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h12_level_B",
+      "house": 12,
+      "level": "B",
+      "description": "KP significator level B for house 12.",
+      "meaning": "Planets in star of occupants.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h12_level_C",
+      "house": 12,
+      "level": "C",
+      "description": "KP significator level C for house 12.",
+      "meaning": "Planets in star of house lord.",
+      "confidence": 0.7
+    },
+    {
+      "rule_id": "kp_significator_h12_level_D",
+      "house": 12,
+      "level": "D",
+      "description": "KP significator level D for house 12.",
+      "meaning": "House lord itself.",
+      "confidence": 0.7
+    }
+  ]
+}
