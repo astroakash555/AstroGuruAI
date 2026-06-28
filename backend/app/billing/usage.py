@@ -9,6 +9,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from backend.app.billing.plans import get_limit, get_plan_definition
 from backend.app.billing.repositories import SubscriptionRepository, UsageQuotaRepository
+from backend.app.core.config import get_settings
 from backend.app.core.exceptions import QuotaExceededError
 from backend.app.models.enums import SubscriptionPlan, SubscriptionStatus, UsageMetric
 
@@ -91,6 +92,9 @@ class UsageService:
         }
 
     async def check_quota(self, user_id: uuid.UUID, metric: UsageMetric) -> None:
+        if not get_settings().quota_enforcement_enabled:
+            return
+
         plan = await self.get_active_plan(user_id)
         limit = get_limit(plan, metric)
         if limit is None:
@@ -104,6 +108,9 @@ class UsageService:
             )
 
     async def consume(self, user_id: uuid.UUID, metric: UsageMetric, amount: int = 1) -> None:
+        if not get_settings().quota_enforcement_enabled:
+            return
+
         await self.check_quota(user_id, metric)
         period = current_period_start()
         quota = await self._quotas.get_or_create(user_id=user_id, metric=metric, period_start=period)

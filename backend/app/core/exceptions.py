@@ -61,3 +61,11 @@ def forbidden_error(message: str = "You do not have permission to access this re
 
 def quota_exceeded_error(message: str = "Monthly usage limit reached. Upgrade your plan to continue.") -> HTTPException:
     return HTTPException(status_code=status.HTTP_402_PAYMENT_REQUIRED, detail=message)
+
+
+def validation_error(message: str) -> HTTPException:
+    """Build a standardized 422 HTTP exception for domain validation failures."""
+    return HTTPException(
+        status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+        detail=message,
+    )

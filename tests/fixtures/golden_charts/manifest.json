@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "description": "Golden chart dataset for astrology engine accuracy lockdown (Phase 16).",
+  "tolerances": {
+    "longitude_degrees": 0.01,
+    "ascendant_degrees": 0.01,
+    "dasha_dates": "exact"
+  },
+  "reference_settings": {
+    "ayanamsa": "lahiri",
+    "house_system": "whole_sign",
+    "node": "mean"
+  },
+  "charts": [
+    {
+      "id": "poorvi_sharma_2016",
+      "name": "Poorvi Sharma",
+      "file": "charts/poorvi_sharma_2016.json",
+      "source": "astrosage"
+    },
+    {
+      "id": "delhi_1990_1030",
+      "name": "Delhi Native 1990",
+      "file": "charts/delhi_1990_1030.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "mumbai_1985_0630",
+      "name": "Mumbai Native 1985",
+      "file": "charts/mumbai_1985_0630.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "chennai_1992_2145",
+      "name": "Chennai Native 1992",
+      "file": "charts/chennai_1992_2145.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "kolkata_1978_1200",
+      "name": "Kolkata Native 1978",
+      "file": "charts/kolkata_1978_1200.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "bangalore_2000_0000",
+      "name": "Bangalore Native 2000",
+      "file": "charts/bangalore_2000_0000.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "hyderabad_1988_1430",
+      "name": "Hyderabad Native 1988",
+      "file": "charts/hyderabad_1988_1430.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "pune_1995_0815",
+      "name": "Pune Native 1995",
+      "file": "charts/pune_1995_0815.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "ahmedabad_1970_1800",
+      "name": "Ahmedabad Native 1970",
+      "file": "charts/ahmedabad_1970_1800.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "jaipur_2005_1100",
+      "name": "Jaipur Native 2005",
+      "file": "charts/jaipur_2005_1100.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "lucknow_1983_0500",
+      "name": "Lucknow Native 1983",
+      "file": "charts/lucknow_1983_0500.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "chandigarh_1998_1630",
+      "name": "Chandigarh Native 1998",
+      "file": "charts/chandigarh_1998_1630.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "kochi_1975_0200",
+      "name": "Kochi Native 1975",
+      "file": "charts/kochi_1975_0200.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "bhopal_1991_0700",
+      "name": "Bhopal Native 1991",
+      "file": "charts/bhopal_1991_0700.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "noida_2010_1220",
+      "name": "Noida Native 2010",
+      "file": "charts/noida_2010_1220.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "varanasi_1965_2345",
+      "name": "Varanasi Native 1965",
+      "file": "charts/varanasi_1965_2345.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "london_1986_0900",
+      "name": "London Native 1986",
+      "file": "charts/london_1986_0900.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "new_york_1999_1700",
+      "name": "New York Native 1999",
+      "file": "charts/new_york_1999_1700.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "sydney_1980_0600",
+      "name": "Sydney Native 1980",
+      "file": "charts/sydney_1980_0600.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "dubai_1993_1200",
+      "name": "Dubai Native 1993",
+      "file": "charts/dubai_1993_1200.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "singapore_1972_1500",
+      "name": "Singapore Native 1972",
+      "file": "charts/singapore_1972_1500.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "tokyo_1989_0800",
+      "name": "Tokyo Native 1989",
+      "file": "charts/tokyo_1989_0800.json",
+      "source": "engine_locked"
+    },
+    {
+      "id": "moscow_1977_1400",
+      "name": "Moscow Native 1977",
+      "file": "charts/moscow_1977_1400.json",
+      "source": "engine_locked"
+    }
+  ]
+}

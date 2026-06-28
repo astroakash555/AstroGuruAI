@@ -8,6 +8,9 @@ from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from backend.app.models.report import Report
+from backend.app.services.report_engine.client_report_persistence import (
+    prepare_client_report_for_persistence,
+)
 
 
 class ReportRepository:
@@ -31,6 +34,7 @@ class ReportRepository:
         pdf_path: str | None,
         generated_at,
     ) -> Report:
+        prepare_client_report_for_persistence(client_report_json)
         report = Report(
             owner_id=owner_id,
             client_id=client_id,

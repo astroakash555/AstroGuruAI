@@ -22,6 +22,14 @@ async def lifespan(_: FastAPI) -> AsyncIterator[None]:
     """Application startup and shutdown lifecycle hooks."""
     validate_secret_key(settings)
     logger.info("Starting %s (%s)", settings.app_name, settings.app_env)
+    logger.info(
+        "Runtime Settings",
+        extra={
+            "app_env": settings.app_env,
+            "debug": settings.debug,
+            "quota_enforcement_enabled": settings.quota_enforcement_enabled,
+        },
+    )
     yield
     await close_redis_client()
     logger.info("Shutdown complete")

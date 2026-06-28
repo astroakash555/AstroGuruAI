@@ -25,9 +25,13 @@ describe("schemas", () => {
     const { reportGenerateSchema } = await import("@/lib/schemas");
     const result = reportGenerateSchema.safeParse({
       date_of_birth: "1990-01-15",
-      birth_time: "05:00:00",
-      birth_place: "Delhi",
+      birth_time: "10:30:00",
+      birth_place: "New Delhi, India",
       timezone: "Asia/Kolkata",
+      latitude: "28.6139",
+      longitude: "77.2090",
+      place_id: "R1942586",
+      place_resolved: true,
       preferred_language: "en",
       include_pdf: true,
     });

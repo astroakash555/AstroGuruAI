@@ -11,6 +11,7 @@ from backend.app.core.exceptions import (
     ConflictError,
     ForbiddenError,
     NotFoundError,
+    ValidationError,
     conflict_error,
     forbidden_error,
     not_found_error,
@@ -47,6 +48,11 @@ async def create_client(
         return response
     except ConflictError as exc:
         raise conflict_error(exc.message) from exc
+    except ValidationError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=exc.message,
+        ) from exc
 
 
 @router.get(
@@ -119,6 +125,11 @@ async def update_client(
         raise not_found_error("Client", str(client_id)) from None
     except ConflictError as exc:
         raise conflict_error(exc.message) from exc
+    except ValidationError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=exc.message,
+        ) from exc
     except ForbiddenError as exc:
         raise forbidden_error(exc.message) from exc
 

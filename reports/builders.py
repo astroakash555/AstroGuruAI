@@ -2,12 +2,32 @@
 
 from __future__ import annotations
 
+from dataclasses import dataclass
 from datetime import date, datetime, time, timezone
+from decimal import Decimal
+from typing import TYPE_CHECKING
+from zoneinfo import ZoneInfo
 
 from astrology_engine.core.base import BirthData
 from astrology_engine.core.types import VedicChartBundle
 from astrology_engine.dasha.types import DashaBirthInput
-from astrology_engine.utilities.datetime_utils import resolve_timezone
+from astrology_engine.utilities.datetime_utils import ensure_utc, resolve_timezone
+
+if TYPE_CHECKING:
+    from backend.app.models.birth_detail import BirthDetail
+
+
+@dataclass(frozen=True)
+class BirthContext:
+    """Normalized birth inputs used across chart, dasha, and transit pipelines."""
+
+    date_of_birth: date
+    birth_time: time
+    birth_place: str
+    timezone_name: str
+    latitude: float
+    longitude: float
+    birth_detail_id: str | None = None
 
 
 def build_birth_data(
@@ -55,6 +75,54 @@ def build_dasha_input_from_chart(
     )
 
 
+def build_birth_context_from_birth_detail(birth_detail: BirthDetail) -> BirthContext:
+    """Extract localized birth fields from a persisted BirthDetail row."""
+    localized = birth_detail.birth_datetime.astimezone(ZoneInfo(birth_detail.timezone))
+    return BirthContext(
+        date_of_birth=localized.date(),
+        birth_time=localized.time().replace(microsecond=0),
+        birth_place=birth_detail.birth_place_name,
+        timezone_name=birth_detail.timezone,
+        latitude=float(birth_detail.latitude),
+        longitude=float(birth_detail.longitude),
+        birth_detail_id=str(birth_detail.id),
+    )
+
+
+def build_birth_context_from_payload(
+    *,
+    date_of_birth: date,
+    birth_time: time,
+    birth_place: str,
+    timezone_name: str,
+    latitude: float | Decimal,
+    longitude: float | Decimal,
+    birth_detail_id: str | None = None,
+) -> BirthContext:
+    """Build birth context from explicit API payload values."""
+    return BirthContext(
+        date_of_birth=date_of_birth,
+        birth_time=birth_time.replace(microsecond=0),
+        birth_place=birth_place,
+        timezone_name=timezone_name,
+        latitude=float(latitude),
+        longitude=float(longitude),
+        birth_detail_id=birth_detail_id,
+    )
+
+
+def build_birth_data_from_context(context: BirthContext) -> BirthData:
+    """Convert a BirthContext to canonical UTC BirthData for Swiss Ephemeris."""
+    localized = datetime.combine(context.date_of_birth, context.birth_time)
+    localized = localized.replace(tzinfo=resolve_timezone(context.timezone_name))
+    return BirthData(
+        datetime_utc=ensure_utc(localized),
+        latitude=context.latitude,
+        longitude=context.longitude,
+        timezone=context.timezone_name,
+    )
+
+
 def build_birth_data_from_report(
     *,
     date_of_birth: date,
@@ -64,11 +132,12 @@ def build_birth_data_from_report(
     timezone_name: str,
 ) -> BirthData:
     """Construct birth data from localized birth date and time."""
-    localized = datetime.combine(date_of_birth, birth_time.replace(microsecond=0))
-    localized = localized.replace(tzinfo=resolve_timezone(timezone_name))
-    return BirthData(
-        datetime_utc=localized.astimezone(timezone.utc),
+    context = build_birth_context_from_payload(
+        date_of_birth=date_of_birth,
+        birth_time=birth_time,
+        birth_place="",
+        timezone_name=timezone_name,
         latitude=latitude,
         longitude=longitude,
-        timezone=timezone_name,
     )
+    return build_birth_data_from_context(context)

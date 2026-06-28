@@ -22,8 +22,11 @@ function toPayload(values: ClientFormValues) {
     birth_time: values.birth_time.length === 5 ? `${values.birth_time}:00` : values.birth_time,
     birth_place: values.birth_place,
     timezone: values.timezone,
-    latitude: values.latitude || undefined,
-    longitude: values.longitude || undefined,
+    latitude: values.latitude,
+    longitude: values.longitude,
+    place_id: values.place_id || undefined,
+    country: values.country || undefined,
+    state: values.state || undefined,
     preferred_language: values.preferred_language,
     email: values.email || undefined,
     phone: values.phone || undefined,
@@ -43,12 +46,16 @@ export function ClientForm({ client }: { client?: Client }) {
       phone: client?.phone ?? "",
       notes: client?.notes ?? "",
       preferred_language: client?.preferred_language ?? "en",
-      timezone: client?.birth_detail?.timezone ?? client?.timezone ?? "UTC",
+      timezone: client?.birth_detail?.timezone ?? client?.timezone ?? "",
       date_of_birth: client?.birth_detail?.date_of_birth ?? "",
       birth_time: client?.birth_detail?.birth_time?.slice(0, 5) ?? "",
       birth_place: client?.birth_detail?.birth_place ?? "",
       latitude: client?.birth_detail?.latitude ?? "",
       longitude: client?.birth_detail?.longitude ?? "",
+      country: client?.birth_detail?.country ?? "",
+      state: client?.birth_detail?.state ?? "",
+      place_id: client?.birth_detail?.place_id ?? "",
+      place_resolved: Boolean(client?.birth_detail?.latitude && client?.birth_detail?.longitude),
       is_active: client?.is_active ?? true,
     },
   });
@@ -64,6 +71,8 @@ export function ClientForm({ client }: { client?: Client }) {
     handleSubmit,
     setValue,
     watch,
+    clearErrors,
+    trigger,
     formState: { errors },
   } = form;
 
@@ -122,6 +131,8 @@ export function ClientForm({ client }: { client?: Client }) {
             register={register}
             setValue={setValue}
             watch={watch}
+            clearErrors={clearErrors}
+            trigger={trigger}
             errors={errors}
           />
         </CardContent>

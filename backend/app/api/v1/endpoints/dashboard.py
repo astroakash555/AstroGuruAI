@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import uuid
-from datetime import time
+from decimal import Decimal
 from pathlib import Path
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
@@ -13,7 +13,14 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from backend.app.api.deps import get_current_user, get_db, get_settings_dep, get_usage_service, require_usage, user_owner_id
 from backend.app.billing.usage import UsageService
 from backend.app.core.config import Settings
-from backend.app.core.exceptions import ForbiddenError, NotFoundError, forbidden_error, not_found_error
+from backend.app.core.exceptions import (
+    ForbiddenError,
+    NotFoundError,
+    ValidationError,
+    forbidden_error,
+    not_found_error,
+    validation_error,
+)
 from backend.app.models.enums import UsageMetric
 from backend.app.models.user import User
 from backend.app.repositories.report_repository import ReportRepository
@@ -65,25 +72,27 @@ async def generate_report(
     service: ReportService = Depends(get_report_service),
     usage_service: UsageService = Depends(get_usage_service),
 ) -> ReportGenerateResponse:
-    if not payload.date_of_birth or not payload.birth_time or not payload.birth_place:
-        raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
-            detail="date_of_birth, birth_time, and birth_place are required.",
-        )
-    if payload.latitude is None or payload.longitude is None:
-        raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
-            detail="latitude and longitude are required for report generation.",
-        )
+    uses_persisted_birth = payload.client_id is not None or payload.birth_detail_id is not None
+    if not uses_persisted_birth:
+        if not payload.date_of_birth or not payload.birth_time or not payload.birth_place:
+            raise HTTPException(
+                status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+                detail="date_of_birth, birth_time, and birth_place are required.",
+            )
+        if payload.latitude is None or payload.longitude is None:
+            raise HTTPException(
+                status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+                detail="latitude and longitude are required for report generation.",
+            )
 
     try:
         result = await service.generate_report(
             date_of_birth=payload.date_of_birth,
             birth_time=payload.birth_time,
-            birth_place=payload.birth_place,
+            birth_place=payload.birth_place or "",
             birth_timezone=payload.timezone,
-            latitude=payload.latitude,
-            longitude=payload.longitude,
+            latitude=payload.latitude if payload.latitude is not None else Decimal("0"),
+            longitude=payload.longitude if payload.longitude is not None else Decimal("0"),
             problem_text=payload.problem_text,
             target_date=payload.target_date,
             include_pdf=payload.include_pdf,
@@ -92,10 +101,12 @@ async def generate_report(
             owner_id=current_user.id,
             scoped_owner_id=user_owner_id(current_user),
         )
+    except ValidationError as exc:
+        raise validation_error(exc.message) from exc
     except ForbiddenError as exc:
         raise forbidden_error(exc.message) from exc
     except NotFoundError as exc:
-        raise not_found_error("Client", str(payload.client_id)) from exc
+        raise not_found_error("Client", str(payload.client_id or payload.birth_detail_id)) from exc
     await usage_service.consume(current_user.id, UsageMetric.REPORTS)
     return ReportGenerateResponse(**result)
 

@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getErrorMessage, reportsApi } from "@/lib/api";
+import { resolveCurrentMahadashaLord } from "@/lib/dasha";
 import { formatDate } from "@/lib/utils";
 
 export function ReportViewerPage() {
@@ -24,6 +25,9 @@ export function ReportViewerPage() {
 
   const report = query.data;
   const summary = report.unified_report.summary as Record<string, unknown> | undefined;
+  const dasha = report.unified_report.dasha as Parameters<typeof resolveCurrentMahadashaLord>[0];
+  const currentMahadasha =
+    resolveCurrentMahadashaLord(dasha) ?? (summary?.current_mahadasha as string | undefined);
   const consultation = report.unified_report.consultation_brain as Record<string, unknown> | undefined;
   const clientReport = report.client_report as Record<string, unknown>;
 
@@ -71,7 +75,7 @@ export function ReportViewerPage() {
         </Card>
         <Card>
           <CardHeader><CardTitle className="text-sm">Mahadasha</CardTitle></CardHeader>
-          <CardContent className="text-2xl font-bold">{String(summary?.current_mahadasha ?? "—")}</CardContent>
+          <CardContent className="text-2xl font-bold">{currentMahadasha ?? "—"}</CardContent>
         </Card>
         <Card>
           <CardHeader><CardTitle className="text-sm">Problem</CardTitle></CardHeader>
@@ -106,14 +110,32 @@ export function ReportViewerPage() {
             </Card>
           ))}
         </TabsContent>
-        <TabsContent value="client">
+        <TabsContent value="client" className="space-y-4">
+          {((clientReport.sections as Array<Record<string, unknown>>) ?? []).map((section) => (
+            <Card key={String(section.section_id)}>
+              <CardHeader>
+                <CardTitle>{String(section.title)}</CardTitle>
+                <CardDescription>
+                  Confidence {String(section.confidence_label ?? section.confidence ?? "—")}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-3 text-sm leading-6">
+                <p>{String(section.narrative ?? "")}</p>
+                {(Array.isArray(section.facts) ? section.facts : []).map((line, index) => (
+                  <p key={`${String(section.section_id)}-fact-${index}`} className="text-muted-foreground">
+                    {String(line)}
+                  </p>
+                ))}
+              </CardContent>
+            </Card>
+          ))}
           <Card>
             <CardHeader>
-              <CardTitle>Client-facing narrative</CardTitle>
+              <CardTitle>Legacy summary fields</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-sm leading-6">
               {Object.entries(clientReport)
-                .filter(([key]) => !["metadata", "generated_at", "remedies"].includes(key))
+                .filter(([key]) => !["metadata", "generated_at", "remedies", "sections", "language"].includes(key))
                 .map(([key, value]) => (
                   <div key={key}>
                     <p className="font-medium capitalize">{key.replaceAll("_", " ")}</p>

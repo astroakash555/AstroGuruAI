@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any
 
 from astrology_engine.calculations.ephemeris import EphemerisConfig, EphemerisService
@@ -54,7 +54,11 @@ class VimshottariDashaEngine:
         balance = compute_balance_at_birth(moon_context.longitude)
         mahadashas = build_mahadashas(birth_datetime, balance, max_years=max_years)
 
-        reference = ensure_utc(reference_datetime) if reference_datetime else birth_datetime
+        reference = (
+            ensure_utc(reference_datetime)
+            if reference_datetime is not None
+            else datetime.now(timezone.utc)
+        )
         current = find_active_periods(mahadashas, reference)
 
         return VimshottariDashaResult(

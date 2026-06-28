@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import { AppLayout } from "@/components/layout/app-layout";
 import { BirthDetailsPage } from "@/pages/birth-details-page";
+import { AdminAnalyticsPage } from "@/pages/admin/admin-analytics-page";
 import { AdminBillingPage } from "@/pages/admin-billing-page";
 import { BillingHistoryPage } from "@/pages/billing-history-page";
 import { ChatPage } from "@/pages/chat-page";
@@ -57,6 +58,7 @@ export function AppRoutes() {
             <Route path="/billing/history" element={<BillingHistoryPage />} />
             <Route element={<AdminRoute />}>
               <Route path="/admin/billing" element={<AdminBillingPage />} />
+              <Route path="/admin/analytics" element={<AdminAnalyticsPage />} />
             </Route>
           </Route>
         </Route>

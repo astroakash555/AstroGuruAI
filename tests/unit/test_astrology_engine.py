@@ -80,6 +80,36 @@ def test_navamsha_sign_calculation():
     assert get_navamsha_sign_index(40.0) == 0
 
 
+POORVI_BIRTH_DATA = BirthData(
+    datetime_utc=datetime(2016, 6, 14, 9, 45, tzinfo=timezone.utc),
+    latitude=28.6138954,
+    longitude=77.2090057,
+    timezone="Asia/Kolkata",
+)
+
+
+def test_poorvi_sharma_ascendant_is_sidereal_libra(engine: VedicAstrologyEngine) -> None:
+    """Regression: swe.houses ascendant must be converted from tropical to sidereal."""
+    bundle = engine.compute_chart(POORVI_BIRTH_DATA)
+    asc = bundle.lagna_kundali.ascendant
+
+    assert asc.sign.name_en == "Libra"
+    assert asc.sign.index == 6
+    assert 187.0 <= asc.longitude <= 188.5
+    assert 7.0 <= asc.sign.degree_in_sign <= 8.5
+
+
+def test_poorvi_sharma_moon_unchanged_after_ascendant_fix(engine: VedicAstrologyEngine) -> None:
+    """Planetary sidereal positions must not be altered by the house conversion fix."""
+    bundle = engine.compute_chart(POORVI_BIRTH_DATA)
+    moon = next(planet for planet in bundle.lagna_kundali.planets if planet.name == "Moon")
+
+    assert moon.sign.name_en == "Virgo"
+    assert moon.nakshatra.name == "Hasta"
+    assert moon.nakshatra.pada == 4
+    assert 172.0 <= moon.longitude <= 173.0
+
+
 def test_ascendant_has_valid_sign(engine: VedicAstrologyEngine, sample_birth_data: BirthData):
     bundle = engine.compute_chart(sample_birth_data)
     asc = bundle.lagna_kundali.ascendant

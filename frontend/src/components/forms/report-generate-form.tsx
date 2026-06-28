@@ -36,12 +36,17 @@ export function ReportGenerateForm() {
     resolver: zodResolver(reportGenerateSchema),
     defaultValues: {
       client_id: preselectedClientId,
+      birth_detail_id: "",
       date_of_birth: "",
       birth_time: "",
       birth_place: "",
-      timezone: "Asia/Kolkata",
+      timezone: "",
       latitude: "",
       longitude: "",
+      country: "",
+      state: "",
+      place_id: "",
+      place_resolved: false,
       preferred_language: "en",
       problem_text: "",
       target_date: "",
@@ -59,32 +64,45 @@ export function ReportGenerateForm() {
     handleSubmit,
     setValue,
     watch,
+    clearErrors,
+    trigger,
     formState: { errors },
   } = form;
+
+  const setValueOptions = { shouldDirty: true, shouldValidate: false } as const;
+  const birthPlaceFieldKeys = ["birth_place", "latitude", "longitude", "timezone", "place_resolved"] as const;
 
   const selectedClientId = watch("client_id");
 
   const applyClient = (clientId: string) => {
     const client = clientsQuery.data?.items.find((item) => item.id === clientId);
     if (!client?.birth_detail) return;
-    setValue("client_id", clientId);
-    setValue("date_of_birth", client.birth_detail.date_of_birth);
-    setValue("birth_time", client.birth_detail.birth_time.slice(0, 8));
-    setValue("birth_place", client.birth_detail.birth_place);
-    setValue("timezone", client.birth_detail.timezone);
-    setValue("latitude", client.birth_detail.latitude);
-    setValue("longitude", client.birth_detail.longitude);
+    setValue("client_id", clientId, setValueOptions);
+    setValue("birth_detail_id", client.birth_detail.id, setValueOptions);
+    setValue("date_of_birth", client.birth_detail.date_of_birth, setValueOptions);
+    setValue("birth_time", client.birth_detail.birth_time.slice(0, 8), setValueOptions);
+    setValue("birth_place", client.birth_detail.birth_place, setValueOptions);
+    setValue("timezone", client.birth_detail.timezone, setValueOptions);
+    setValue("latitude", client.birth_detail.latitude, setValueOptions);
+    setValue("longitude", client.birth_detail.longitude, setValueOptions);
+    setValue("country", client.birth_detail.country ?? "", setValueOptions);
+    setValue("state", client.birth_detail.state ?? "", setValueOptions);
+    setValue("place_id", client.birth_detail.place_id ?? "", setValueOptions);
+    setValue("place_resolved", true, setValueOptions);
+    clearErrors(birthPlaceFieldKeys);
+    void trigger(birthPlaceFieldKeys);
   };
 
   const onSubmit = (values: ReportGenerateFormValues) => {
     mutation.mutate({
       client_id: values.client_id || undefined,
-      date_of_birth: values.date_of_birth,
-      birth_time: values.birth_time.length === 5 ? `${values.birth_time}:00` : values.birth_time,
-      birth_place: values.birth_place,
-      timezone: values.timezone,
-      latitude: values.latitude || undefined,
-      longitude: values.longitude || undefined,
+      birth_detail_id: values.birth_detail_id || undefined,
+      date_of_birth: values.client_id ? undefined : values.date_of_birth,
+      birth_time: values.client_id ? undefined : values.birth_time,
+      birth_place: values.client_id ? undefined : values.birth_place,
+      timezone: values.client_id ? undefined : values.timezone,
+      latitude: values.client_id ? undefined : values.latitude,
+      longitude: values.client_id ? undefined : values.longitude,
       problem_text: values.problem_text || undefined,
       target_date: values.target_date || undefined,
       include_pdf: values.include_pdf,
@@ -123,7 +141,14 @@ export function ReportGenerateForm() {
             </div>
           )}
 
-          <BirthDetailsFields register={register} setValue={setValue} watch={watch} errors={errors} />
+          <BirthDetailsFields
+            register={register}
+            setValue={setValue}
+            watch={watch}
+            clearErrors={clearErrors}
+            trigger={trigger}
+            errors={errors}
+          />
 
           <div className="space-y-2">
             <Label htmlFor="problem_text">Client problem / question</Label>

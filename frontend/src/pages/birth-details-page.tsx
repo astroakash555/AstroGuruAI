@@ -12,6 +12,8 @@ export function BirthDetailsPage() {
     handleSubmit,
     setValue,
     watch,
+    clearErrors,
+    trigger,
     formState: { errors },
   } = useForm<BirthDetailsFormValues>({
     resolver: zodResolver(birthDetailsSchema),
@@ -19,9 +21,13 @@ export function BirthDetailsPage() {
       date_of_birth: "",
       birth_time: "",
       birth_place: "",
-      timezone: "Asia/Kolkata",
+      timezone: "",
       latitude: "",
       longitude: "",
+      country: "",
+      state: "",
+      place_id: "",
+      place_resolved: false,
       preferred_language: "en",
     },
   });
@@ -38,7 +44,14 @@ export function BirthDetailsPage() {
           <CardDescription>Validated with Zod and shared across client/report flows.</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-          <BirthDetailsFields register={register} setValue={setValue} watch={watch} errors={errors} />
+          <BirthDetailsFields
+            register={register}
+            setValue={setValue}
+            watch={watch}
+            clearErrors={clearErrors}
+            trigger={trigger}
+            errors={errors}
+          />
           <Button type="button" onClick={handleSubmit((values) => console.info(values))}>
             Validate birth details
           </Button>

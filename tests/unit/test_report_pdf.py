@@ -34,7 +34,7 @@ def _patch_report_engines(service: ReportService):
     }
     service._interpretation_engine.interpret_json = AsyncMock(return_value={"summary": "ok"})
     service._remedy_engine.generate_json = AsyncMock(return_value={"remedies": []})
-    service._client_writer.write_json.return_value = {
+    service._report_builder.build_json.return_value = {
         "problem_summary": "Marriage delay",
         "astrological_root_cause": "Saturn in 7th",
     }
@@ -64,7 +64,7 @@ async def test_generate_report_with_pdf_success(tmp_path, mock_session, mock_rep
     with patch("backend.app.services.report_service.ReportOrchestrator"), \
          patch("backend.app.services.report_service.AstroInterpretationEngine"), \
          patch("backend.app.services.report_service.RemedyGenerationEngine"), \
-         patch("backend.app.services.report_service.ClientReportWriter"), \
+         patch("backend.app.services.report_service.ProfessionalReportBuilder"), \
          patch("backend.app.services.report_service.ConsultationEngine"):
         service = ReportService(
             reports_output_path=str(pdf_dir),
@@ -126,7 +126,7 @@ async def test_generate_report_pdf_failure_still_returns_report(tmp_path, mock_s
     with patch("backend.app.services.report_service.ReportOrchestrator"), \
          patch("backend.app.services.report_service.AstroInterpretationEngine"), \
          patch("backend.app.services.report_service.RemedyGenerationEngine"), \
-         patch("backend.app.services.report_service.ClientReportWriter"), \
+         patch("backend.app.services.report_service.ProfessionalReportBuilder"), \
          patch("backend.app.services.report_service.ConsultationEngine"):
         service = ReportService(
             reports_output_path=str(pdf_dir),

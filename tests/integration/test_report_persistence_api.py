@@ -52,7 +52,7 @@ async def persistence_client(mock_persistence_stack, test_user):
     with patch("backend.app.services.report_service.ReportOrchestrator") as orchestrator_cls, \
          patch("backend.app.services.report_service.AstroInterpretationEngine") as interpretation_cls, \
          patch("backend.app.services.report_service.RemedyGenerationEngine") as remedy_cls, \
-         patch("backend.app.services.report_service.ClientReportWriter") as client_writer_cls, \
+         patch("backend.app.services.report_service.ProfessionalReportBuilder") as client_writer_cls, \
          patch("backend.app.services.report_service.PDFReportGenerator"), \
          patch("backend.app.services.report_service.ConsultationEngine") as consultation_cls:
         orchestrator = MagicMock()
@@ -71,7 +71,7 @@ async def persistence_client(mock_persistence_stack, test_user):
         remedy_cls.return_value = remedy
 
         client_writer = MagicMock()
-        client_writer.write_json.return_value = {"problem_summary": "Marriage delay"}
+        client_writer.build_json.return_value = {"problem_summary": "Marriage delay"}
         client_writer_cls.return_value = client_writer
 
         consultation = MagicMock()

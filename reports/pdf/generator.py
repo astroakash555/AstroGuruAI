@@ -1,16 +1,13 @@
-"""PDF report generator using ReportLab."""
+"""PDF report generator using the premium PDF engine."""
 
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import datetime, timezone
-from pathlib import Path
+from datetime import datetime
 from typing import Any
-from uuid import uuid4
 
-from reportlab.lib.pagesizes import A4
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
+from backend.app.services.pdf_engine.pdf_builder import PremiumPDFBuilder
+from backend.app.services.pdf_engine.types import PDFBuildInput
 
 
 @dataclass(frozen=True)
@@ -22,11 +19,10 @@ class PDFGenerationResult:
 
 
 class PDFReportGenerator:
-    """Generate downloadable PDF reports from client report JSON."""
+    """Generate downloadable premium PDF reports from professional report JSON."""
 
-    def __init__(self, output_dir: str | Path = "reports/generated") -> None:
-        self._output_dir = Path(output_dir)
-        self._output_dir.mkdir(parents=True, exist_ok=True)
+    def __init__(self, output_dir: str = "reports/generated") -> None:
+        self._builder = PremiumPDFBuilder(output_dir=output_dir)
 
     def generate(
         self,
@@ -34,63 +30,25 @@ class PDFReportGenerator:
         client_report_json: dict[str, Any],
         unified_report_json: dict[str, Any] | None = None,
         file_prefix: str = "astroguru_report",
+        report_id: str | None = None,
+        client_name: str | None = None,
+        online_report_url: str | None = None,
+        ai_chat_url: str | None = None,
     ) -> PDFGenerationResult:
-        file_name = f"{file_prefix}_{uuid4().hex[:10]}.pdf"
-        file_path = self._output_dir / file_name
-        styles = getSampleStyleSheet()
-        story: list[Any] = [
-            Paragraph("AstroGuruAI Client Report", styles["Title"]),
-            Spacer(1, 12),
-            Paragraph(f"<b>Generated:</b> {datetime.now(timezone.utc).isoformat()}", styles["Normal"]),
-            Spacer(1, 12),
-        ]
-
-        sections = [
-            ("Problem Summary", client_report_json.get("problem_summary", "")),
-            ("Astrological Root Cause", client_report_json.get("astrological_root_cause", "")),
-            ("Planet Analysis", client_report_json.get("planet_analysis", "")),
-            ("Dasha Analysis", client_report_json.get("dasha_analysis", "")),
-            ("Transit Analysis", client_report_json.get("transit_analysis", "")),
-            ("KP Analysis", client_report_json.get("kp_analysis", "")),
-            ("Lal Kitab Analysis", client_report_json.get("lal_kitab_analysis", "")),
-            ("Short Term Outlook", client_report_json.get("short_term_outlook", "")),
-            ("Long Term Outlook", client_report_json.get("long_term_outlook", "")),
-        ]
-        for title, content in sections:
-            story.append(Paragraph(f"<b>{title}</b>", styles["Heading2"]))
-            story.append(Paragraph(str(content).replace("\n", "<br/>"), styles["BodyText"]))
-            story.append(Spacer(1, 10))
-
-        remedies = client_report_json.get("remedies", [])
-        if remedies:
-            story.append(Paragraph("<b>Remedies</b>", styles["Heading2"]))
-            for remedy in remedies[:10]:
-                line = (
-                    f"{remedy.get('title')} ({remedy.get('astrology_system')}, "
-                    f"priority {remedy.get('priority')}): {remedy.get('description')}"
-                )
-                story.append(Paragraph(line, styles["BodyText"]))
-                story.append(Spacer(1, 6))
-
-        if unified_report_json:
-            summary = unified_report_json.get("summary", {})
-            story.append(Paragraph("<b>Chart Summary</b>", styles["Heading2"]))
-            story.append(
-                Paragraph(
-                    (
-                        f"Lagna: {summary.get('lagna_sign')} | Moon: {summary.get('moon_sign')} | "
-                        f"Nakshatra: {summary.get('moon_nakshatra')}"
-                    ),
-                    styles["BodyText"],
-                )
+        result = self._builder.build(
+            PDFBuildInput(
+                client_report_json=client_report_json,
+                unified_report_json=unified_report_json,
+                file_prefix=file_prefix,
+                report_id=report_id,
+                client_name=client_name,
+                online_report_url=online_report_url,
+                ai_chat_url=ai_chat_url,
             )
-
-        doc = SimpleDocTemplate(str(file_path), pagesize=A4)
-        doc.build(story)
-        size = file_path.stat().st_size
+        )
         return PDFGenerationResult(
-            file_path=str(file_path),
-            file_name=file_name,
-            file_size_bytes=size,
-            generated_at=datetime.now(timezone.utc),
+            file_path=result.file_path,
+            file_name=result.file_name,
+            file_size_bytes=result.file_size_bytes,
+            generated_at=result.generated_at,
         )

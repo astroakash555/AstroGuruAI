@@ -56,7 +56,10 @@ def test_engine_json_output_structure():
         moon_nakshatra="Ashwini",
         moon_longitude=0.5,
     )
-    payload = engine.compute_json(birth_input)
+    payload = engine.compute_json(
+        birth_input,
+        reference_datetime=datetime(1990, 1, 15, 5, 0, tzinfo=timezone.utc),
+    )
 
     assert payload["system"] == "vimshottari"
     assert payload["moon"]["nakshatra"] == "Ashwini"
@@ -66,6 +69,25 @@ def test_engine_json_output_structure():
     assert "antardashas" in payload["mahadashas"][0]
     assert "pratyantar_dashas" in payload["mahadashas"][0]["antardashas"][0]
     assert payload["current"]["mahadasha"]["lord"] == "Ketu"
+
+
+def test_poorvi_sharma_current_mahadasha_is_rahu_in_2026():
+    """Current period lookup uses reference time, not birth balance dasha."""
+    engine = VimshottariDashaEngine()
+    birth_input = DashaBirthInput(
+        date_of_birth=datetime(2016, 6, 14).date(),
+        birth_time=datetime(2016, 6, 14, 15, 15).time(),
+        birth_place="New Delhi, India",
+        timezone="Asia/Kolkata",
+        moon_nakshatra="Hasta",
+        moon_longitude=172.34664,
+    )
+    reference = datetime(2026, 6, 28, 12, 0, tzinfo=timezone.utc)
+    payload = engine.compute_json(birth_input, reference_datetime=reference)
+
+    assert payload["balance"]["lord"] == "Moon"
+    assert payload["mahadashas"][0]["lord"] == "Moon"
+    assert payload["current"]["mahadasha"]["lord"] == "Rahu"
 
 
 def test_json_serializer_roundtrip_fields():

@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-06-28 04:31 UTC",
+  "charts": 23,
+  "passed": 23,
+  "failed": 0,
+  "total_mismatches": 0,
+  "results": [
+    {
+      "chart_id": "poorvi_sharma_2016",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "astrosage"
+    },
+    {
+      "chart_id": "delhi_1990_1030",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "mumbai_1985_0630",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "chennai_1992_2145",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "kolkata_1978_1200",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "bangalore_2000_0000",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "hyderabad_1988_1430",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "pune_1995_0815",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "ahmedabad_1970_1800",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "jaipur_2005_1100",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "lucknow_1983_0500",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "chandigarh_1998_1630",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "kochi_1975_0200",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "bhopal_1991_0700",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "noida_2010_1220",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "varanasi_1965_2345",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "london_1986_0900",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "new_york_1999_1700",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "sydney_1980_0600",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "dubai_1993_1200",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "singapore_1972_1500",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "tokyo_1989_0800",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    },
+    {
+      "chart_id": "moscow_1977_1400",
+      "passed": true,
+      "mismatch_count": 0,
+      "source": "engine_locked"
+    }
+  ]
+}

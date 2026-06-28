@@ -129,6 +129,15 @@ class Settings(BaseSettings):
     def is_production(self) -> bool:
         return self.app_env == "production"
 
+    @property
+    def quota_enforcement_enabled(self) -> bool:
+        """Enforce subscription limits in staging/production/test; skip in local development."""
+        if self.debug:
+            return False
+        if self.app_env == "development":
+            return False
+        return True
+
 
 @lru_cache
 def get_settings() -> Settings:

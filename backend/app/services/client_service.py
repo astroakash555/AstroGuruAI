@@ -18,20 +18,29 @@ from backend.app.models.birth_detail import BirthDetail
 from backend.app.models.client import Client
 from backend.app.models.enums import RelationshipType
 from backend.app.schemas.client import ClientCreate, ClientListResponse, ClientResponse, ClientUpdate
+from backend.app.services.place_resolution_service import PlaceResolutionService
+from backend.app.utils.coordinates import validate_birth_coordinates
 
 
 class ClientService:
     """Service layer for client CRUD operations."""
 
-    def __init__(self, session: AsyncSession) -> None:
+    def __init__(
+        self,
+        session: AsyncSession,
+        *,
+        place_service: PlaceResolutionService | None = None,
+    ) -> None:
         self._session = session
+        self._place_service = place_service or PlaceResolutionService()
 
     async def create_client(self, payload: ClientCreate, *, owner_id: uuid.UUID) -> ClientResponse:
         """Create a client with a primary birth profile."""
+        resolved = await self._resolve_birth_location(payload)
         birth_datetime = self._combine_birth_datetime(
             payload.date_of_birth,
             payload.birth_time,
-            payload.timezone,
+            resolved.timezone,
         )
 
         client = Client(
@@ -41,7 +50,7 @@ class ClientService:
             email=str(payload.email) if payload.email else None,
             phone=payload.phone,
             preferred_language=payload.preferred_language,
-            timezone=payload.timezone,
+            timezone=resolved.timezone,
             notes=payload.notes,
             is_active=True,
         )
@@ -50,11 +59,12 @@ class ClientService:
             person_name=payload.name,
             relationship_to_client=RelationshipType.SELF,
             birth_datetime=birth_datetime,
-            birth_place_name=payload.birth_place,
-            latitude=payload.latitude if payload.latitude is not None else Decimal("0"),
-            longitude=payload.longitude if payload.longitude is not None else Decimal("0"),
-            timezone=payload.timezone,
+            birth_place_name=resolved.birth_place,
+            latitude=Decimal(str(resolved.latitude)),
+            longitude=Decimal(str(resolved.longitude)),
+            timezone=resolved.timezone,
             is_primary=True,
+            metadata_=resolved.metadata or None,
         )
 
         self._session.add(client)
@@ -144,8 +154,6 @@ class ClientService:
             client.phone = update_data["phone"]
         if "preferred_language" in update_data:
             client.preferred_language = update_data["preferred_language"]
-        if "timezone" in update_data:
-            client.timezone = update_data["timezone"]
         if "notes" in update_data:
             client.notes = update_data["notes"]
         if "is_active" in update_data:
@@ -158,37 +166,51 @@ class ClientService:
             "timezone",
             "latitude",
             "longitude",
+            "place_id",
+            "country",
+            "state",
         }
         if birth_fields.intersection(update_data):
             birth_detail = self._get_primary_birth_detail(client)
             if birth_detail is None:
                 raise NotFoundError("Primary birth profile not found for client.")
 
-            timezone_name = update_data.get("timezone", birth_detail.timezone)
-            date_of_birth = update_data.get(
-                "date_of_birth",
-                birth_detail.birth_datetime.astimezone(ZoneInfo(birth_detail.timezone)).date(),
+            partial_create = ClientCreate(
+                name=update_data.get("name", client.full_name),
+                gender=update_data.get("gender", client.gender),
+                date_of_birth=update_data.get(
+                    "date_of_birth",
+                    birth_detail.birth_datetime.astimezone(ZoneInfo(birth_detail.timezone)).date(),
+                ),
+                birth_time=update_data.get(
+                    "birth_time",
+                    birth_detail.birth_datetime.astimezone(ZoneInfo(birth_detail.timezone)).time(),
+                ),
+                birth_place=update_data.get("birth_place", birth_detail.birth_place_name),
+                timezone=update_data.get("timezone", birth_detail.timezone),
+                latitude=update_data.get("latitude", birth_detail.latitude),
+                longitude=update_data.get("longitude", birth_detail.longitude),
+                place_id=update_data.get("place_id"),
+                country=update_data.get("country"),
+                state=update_data.get("state"),
             )
-            birth_time = update_data.get(
-                "birth_time",
-                birth_detail.birth_datetime.astimezone(ZoneInfo(birth_detail.timezone)).time(),
-            )
+            resolved = await self._resolve_birth_location(partial_create)
 
             birth_detail.birth_datetime = self._combine_birth_datetime(
-                date_of_birth,
-                birth_time,
-                timezone_name,
+                partial_create.date_of_birth,
+                partial_create.birth_time,
+                resolved.timezone,
             )
-            if "birth_place" in update_data:
-                birth_detail.birth_place_name = update_data["birth_place"]
-            if "timezone" in update_data:
-                birth_detail.timezone = update_data["timezone"]
-            if "latitude" in update_data and update_data["latitude"] is not None:
-                birth_detail.latitude = update_data["latitude"]
-            if "longitude" in update_data and update_data["longitude"] is not None:
-                birth_detail.longitude = update_data["longitude"]
+            birth_detail.birth_place_name = resolved.birth_place
+            birth_detail.timezone = resolved.timezone
+            birth_detail.latitude = Decimal(str(resolved.latitude))
+            birth_detail.longitude = Decimal(str(resolved.longitude))
+            birth_detail.metadata_ = resolved.metadata or birth_detail.metadata_
+            client.timezone = resolved.timezone
             if "name" in update_data:
                 birth_detail.person_name = update_data["name"]
+        elif "timezone" in update_data:
+            client.timezone = update_data["timezone"]
 
         try:
             await self._session.commit()
@@ -208,6 +230,89 @@ class ClientService:
     async def ensure_client_access(self, client_id: uuid.UUID, *, owner_id: uuid.UUID | None) -> Client:
         """Verify the caller can access a client record."""
         return await self._get_client_or_raise(client_id, owner_id=owner_id)
+
+    async def get_birth_detail_for_client(
+        self,
+        *,
+        client_id: uuid.UUID,
+        birth_detail_id: uuid.UUID | None,
+        owner_id: uuid.UUID | None,
+    ) -> BirthDetail:
+        """Load a birth detail row for report generation."""
+        client = await self._get_client_or_raise(client_id, owner_id=owner_id)
+        if birth_detail_id is not None:
+            for birth_detail in client.birth_details:
+                if birth_detail.id == birth_detail_id:
+                    return birth_detail
+            raise NotFoundError(f"Birth detail with id '{birth_detail_id}' was not found for client.")
+
+        birth_detail = self._get_primary_birth_detail(client)
+        if birth_detail is None:
+            raise NotFoundError("Primary birth profile not found for client.")
+        return birth_detail
+
+    async def _resolve_birth_location(self, payload: ClientCreate):
+        """Resolve coordinates and timezone from payload or geocoding service."""
+        from backend.app.services.place_resolution_service import ResolvedPlace
+
+        if payload.latitude is not None and payload.longitude is not None:
+            latitude = float(payload.latitude)
+            longitude = float(payload.longitude)
+            validate_birth_coordinates(
+                latitude,
+                longitude,
+                birth_place=payload.birth_place,
+            )
+            timezone_name = payload.timezone
+            if timezone_name in {"UTC", "GMT", "Etc/UTC"}:
+                resolved_tz = self._place_service.timezone_at(latitude, longitude)
+                if resolved_tz:
+                    timezone_name = resolved_tz
+            metadata = self._location_metadata(payload)
+            return _ResolvedBirthLocation(
+                birth_place=payload.birth_place,
+                latitude=latitude,
+                longitude=longitude,
+                timezone=timezone_name,
+                metadata=metadata,
+            )
+
+        if payload.place_id:
+            resolved = await self._place_service.resolve(
+                place_id=payload.place_id,
+                query=payload.birth_place,
+            )
+        else:
+            resolved = await self._place_service.resolve(query=payload.birth_place)
+
+        metadata = self._location_metadata(payload, resolved=resolved)
+        return _ResolvedBirthLocation(
+            birth_place=resolved.birth_place,
+            latitude=resolved.latitude,
+            longitude=resolved.longitude,
+            timezone=resolved.timezone,
+            metadata=metadata,
+        )
+
+    @staticmethod
+    def _location_metadata(
+        payload: ClientCreate,
+        *,
+        resolved: ResolvedPlace | None = None,
+    ) -> dict[str, str]:
+        metadata: dict[str, str] = {}
+        if payload.place_id:
+            metadata["place_id"] = payload.place_id
+        elif resolved is not None:
+            metadata["place_id"] = resolved.place_id
+
+        country = payload.country or (resolved.country if resolved else None)
+        state = payload.state or (resolved.state if resolved else None)
+        if country:
+            metadata["country"] = country
+        if state:
+            metadata["state"] = state
+        return metadata
 
     async def _get_client_or_raise(
         self,
@@ -270,6 +375,7 @@ class ClientService:
         birth_response = None
         if birth_detail is not None:
             localized = birth_detail.birth_datetime.astimezone(ZoneInfo(birth_detail.timezone))
+            metadata = birth_detail.metadata_ or {}
             birth_response = {
                 "id": birth_detail.id,
                 "date_of_birth": localized.date(),
@@ -279,6 +385,9 @@ class ClientService:
                 "timezone": birth_detail.timezone,
                 "latitude": birth_detail.latitude,
                 "longitude": birth_detail.longitude,
+                "country": metadata.get("country"),
+                "state": metadata.get("state"),
+                "place_id": metadata.get("place_id"),
                 "is_primary": birth_detail.is_primary,
             }
 
@@ -296,3 +405,22 @@ class ClientService:
             created_at=client.created_at,
             updated_at=client.updated_at,
         )
+
+
+class _ResolvedBirthLocation:
+    __slots__ = ("birth_place", "latitude", "longitude", "timezone", "metadata")
+
+    def __init__(
+        self,
+        *,
+        birth_place: str,
+        latitude: float,
+        longitude: float,
+        timezone: str,
+        metadata: dict[str, str],
+    ) -> None:
+        self.birth_place = birth_place
+        self.latitude = latitude
+        self.longitude = longitude
+        self.timezone = timezone
+        self.metadata = metadata

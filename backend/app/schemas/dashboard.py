@@ -19,7 +19,7 @@ class ReportGenerateRequest(BaseSchema):
     date_of_birth: date | None = None
     birth_time: time | None = None
     birth_place: str | None = Field(default=None, min_length=2, max_length=512)
-    timezone: str = Field(default="UTC", min_length=1, max_length=64)
+    timezone: str = Field(default="Asia/Kolkata", min_length=1, max_length=64)
     latitude: Decimal | None = Field(default=None, ge=Decimal("-90"), le=Decimal("90"))
     longitude: Decimal | None = Field(default=None, ge=Decimal("-180"), le=Decimal("180"))
     problem_text: str | None = Field(default=None, max_length=5000)

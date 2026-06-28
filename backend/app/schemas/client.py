@@ -25,7 +25,7 @@ class BirthInfoBase(BaseSchema):
     birth_time: time = Field(..., description="Client birth time (local)")
     birth_place: str = Field(..., min_length=2, max_length=512, description="City/place of birth")
     timezone: str = Field(
-        default="UTC",
+        default="Asia/Kolkata",
         min_length=1,
         max_length=64,
         description="IANA timezone for birth datetime",
@@ -34,14 +34,17 @@ class BirthInfoBase(BaseSchema):
         default=None,
         ge=Decimal("-90"),
         le=Decimal("90"),
-        description="Birth place latitude (optional until geocoding)",
+        description="Birth place latitude (required unless place_id or resolvable birth_place is provided)",
     )
     longitude: Decimal | None = Field(
         default=None,
         ge=Decimal("-180"),
         le=Decimal("180"),
-        description="Birth place longitude (optional until geocoding)",
+        description="Birth place longitude (required unless place_id or resolvable birth_place is provided)",
     )
+    place_id: str | None = Field(default=None, min_length=1, max_length=64)
+    country: str | None = Field(default=None, max_length=128)
+    state: str | None = Field(default=None, max_length=128)
 
     @field_validator("date_of_birth")
     @classmethod
@@ -69,9 +72,12 @@ class ClientCreate(BaseSchema):
     birth_place: str = Field(..., min_length=2, max_length=512, description="Birth place")
     email: EmailStr | None = Field(default=None, description="Optional contact email")
     phone: str | None = Field(default=None, max_length=32, description="Optional contact phone")
-    timezone: str = Field(default="UTC", min_length=1, max_length=64)
+    timezone: str = Field(default="Asia/Kolkata", min_length=1, max_length=64)
     latitude: Decimal | None = Field(default=None, ge=Decimal("-90"), le=Decimal("90"))
     longitude: Decimal | None = Field(default=None, ge=Decimal("-180"), le=Decimal("180"))
+    place_id: str | None = Field(default=None, min_length=1, max_length=64)
+    country: str | None = Field(default=None, max_length=128)
+    state: str | None = Field(default=None, max_length=128)
     preferred_language: str = Field(default="en", min_length=2, max_length=10)
     notes: str | None = Field(default=None, max_length=5000)
 
@@ -121,6 +127,9 @@ class ClientUpdate(BaseSchema):
     timezone: str | None = Field(default=None, min_length=1, max_length=64)
     latitude: Decimal | None = Field(default=None, ge=Decimal("-90"), le=Decimal("90"))
     longitude: Decimal | None = Field(default=None, ge=Decimal("-180"), le=Decimal("180"))
+    place_id: str | None = Field(default=None, min_length=1, max_length=64)
+    country: str | None = Field(default=None, max_length=128)
+    state: str | None = Field(default=None, max_length=128)
     preferred_language: str | None = Field(default=None, min_length=2, max_length=10)
     notes: str | None = Field(default=None, max_length=5000)
     is_active: bool | None = None
@@ -177,6 +186,9 @@ class BirthDetailResponse(BaseSchema):
     timezone: str
     latitude: Decimal
     longitude: Decimal
+    country: str | None = None
+    state: str | None = None
+    place_id: str | None = None
     is_primary: bool
 
 

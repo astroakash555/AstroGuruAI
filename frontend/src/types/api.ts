@@ -9,6 +9,9 @@ export interface BirthDetail {
   timezone: string;
   latitude: string;
   longitude: string;
+  country?: string | null;
+  state?: string | null;
+  place_id?: string | null;
   is_primary: boolean;
 }
 
@@ -46,6 +49,9 @@ export interface ClientCreatePayload {
   timezone?: string;
   latitude?: string;
   longitude?: string;
+  place_id?: string;
+  country?: string;
+  state?: string;
   preferred_language?: string;
   notes?: string;
 }

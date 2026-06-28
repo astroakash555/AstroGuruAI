@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import {
   Bot,
+  BarChart3,
   CreditCard,
   FileText,
   LayoutDashboard,
@@ -28,12 +29,15 @@ const baseNavItems = [
   { to: "/settings", label: "Settings", icon: Settings },
 ];
 
-const adminNavItem = { to: "/admin/billing", label: "Admin Billing", icon: Shield };
+const adminNavItems = [
+  { to: "/admin/analytics", label: "Admin Analytics", icon: BarChart3 },
+  { to: "/admin/billing", label: "Admin Billing", icon: Shield },
+];
 
 export function AppLayout() {
   const { user, logout } = useAuth();
   const { theme, toggleTheme } = useTheme();
-  const navItems = user?.role === "admin" ? [...baseNavItems, adminNavItem] : baseNavItems;
+  const navItems = user?.role === "admin" ? [...baseNavItems, ...adminNavItems] : baseNavItems;
 
   return (
     <div className="min-h-screen bg-background lg:flex">

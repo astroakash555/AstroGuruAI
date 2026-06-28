@@ -114,14 +114,23 @@ def get_usage_service(session: AsyncSession = Depends(get_db)) -> UsageService:
     return UsageService(session)
 
 
+def get_analytics_service(session: AsyncSession = Depends(get_db)) -> "AnalyticsService":
+    from backend.app.services.analytics.analytics_service import AnalyticsService
+
+    return AnalyticsService(session)
+
+
 def require_usage(metric: UsageMetric) -> Callable[..., User]:
     """Dependency factory that enforces monthly subscription quotas."""
 
     async def _require(
         current_user: User = Depends(get_current_user),
         usage_service: UsageService = Depends(get_usage_service),
+        settings: Settings = Depends(get_settings_dep),
     ) -> User:
         if current_user.role == UserRole.ADMIN:
+            return current_user
+        if not settings.quota_enforcement_enabled:
             return current_user
         try:
             await usage_service.check_quota(current_user.id, metric)

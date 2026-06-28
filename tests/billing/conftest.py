@@ -12,9 +12,19 @@ from backend.app.billing.razorpay_client import MockRazorpayGateway, RazorpayOrd
 from backend.app.billing.repositories import OrderRepository, PaymentRepository, SubscriptionRepository, UsageQuotaRepository
 from backend.app.billing.service import BillingService
 from backend.app.billing.usage import UsageService
-from backend.app.core.config import Settings
+from backend.app.core.config import Settings, get_settings
 from backend.app.models.enums import SubscriptionPlan, UserRole
 from backend.app.models.user import User
+
+
+@pytest.fixture(autouse=True)
+def enforce_quotas_in_billing_tests(monkeypatch):
+    """Billing tests must exercise production quota rules, not local dev bypass."""
+    monkeypatch.setenv("APP_ENV", "production")
+    monkeypatch.setenv("DEBUG", "false")
+    get_settings.cache_clear()
+    yield
+    get_settings.cache_clear()
 
 
 @pytest.fixture

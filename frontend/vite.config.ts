@@ -22,5 +22,15 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: ["./src/test/setup.ts"],
     globals: true,
+    coverage: {
+      provider: "v8",
+      include: [
+        "src/api/analytics.ts",
+        "src/components/admin/**",
+        "src/hooks/useAnalytics.ts",
+        "src/lib/analytics-format.ts",
+        "src/pages/admin/**",
+      ],
+    },
   },
 });

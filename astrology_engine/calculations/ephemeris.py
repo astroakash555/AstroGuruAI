@@ -22,6 +22,7 @@ from astrology_engine.core.constants import (
     SE_SIDM_YUKTESHWAR,
 )
 from astrology_engine.core.types import AyanamsaType, HouseSystemType
+from astrology_engine.utilities.angles import normalize_longitude
 from astrology_engine.utilities.datetime_utils import datetime_to_julian_day
 
 AYANAMSA_MAP: Final[dict[AyanamsaType, int]] = {
@@ -95,10 +96,26 @@ class EphemerisService:
         longitude: float,
         house_system: HouseSystemType | None = None,
     ) -> tuple[tuple[float, ...], tuple[float, ...]]:
-        """Return house cusps (1-12) and ascmc points from Swiss Ephemeris."""
+        """
+        Return sidereal house cusps (1-12) and ascmc points from Swiss Ephemeris.
+
+        swe.houses() returns tropical longitudes even when set_sid_mode() is active.
+        Planets use SEFLG_SIDEREAL in calc_ut; house angles must be converted here
+        by subtracting the Lahiri ayanamsa exactly once.
+        """
         hsys = HOUSE_SYSTEM_MAP[house_system or self.config.house_system]
         cusps, ascmc = self._swe.houses(julian_day, latitude, longitude, hsys)
-        return cusps, ascmc
+        ayanamsa = self.get_ayanamsa(julian_day)
+        sidereal_cusps = tuple(self._tropical_to_sidereal_longitude(cusp, ayanamsa) for cusp in cusps)
+        sidereal_ascmc = tuple(
+            self._tropical_to_sidereal_longitude(value, ayanamsa) for value in ascmc
+        )
+        return sidereal_cusps, sidereal_ascmc
+
+    @staticmethod
+    def _tropical_to_sidereal_longitude(tropical_longitude: float, ayanamsa: float) -> float:
+        """Convert a tropical ecliptic longitude to sidereal using ayanamsa at UT."""
+        return normalize_longitude(tropical_longitude - ayanamsa)
 
     def node_planet_id(self) -> int:
         return SE_TRUE_NODE if self.config.use_true_node else SE_MEAN_NODE

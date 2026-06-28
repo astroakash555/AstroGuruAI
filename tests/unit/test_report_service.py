@@ -11,7 +11,7 @@ import pytest
 from backend.app.models.report import Report
 from backend.app.repositories.report_repository import ReportRepository
 from backend.app.services.report_service import ReportService
-from backend.app.core.exceptions import NotFoundError
+from backend.app.core.exceptions import NotFoundError, ValidationError
 
 
 @pytest.fixture
@@ -31,7 +31,7 @@ def report_service(mock_session, mock_repository):
     with patch("backend.app.services.report_service.ReportOrchestrator"), \
          patch("backend.app.services.report_service.AstroInterpretationEngine"), \
          patch("backend.app.services.report_service.RemedyGenerationEngine"), \
-         patch("backend.app.services.report_service.ClientReportWriter"), \
+         patch("backend.app.services.report_service.ProfessionalReportBuilder"), \
          patch("backend.app.services.report_service.PDFReportGenerator"), \
          patch("backend.app.services.report_service.ConsultationEngine"):
         service = ReportService(session=mock_session, repository=mock_repository)
@@ -62,31 +62,100 @@ async def test_generate_report_persists_and_returns_database_id(
     )
     mock_repository.create_report.return_value = persisted_report
 
+    valid_client_report = {
+        "sections": [
+            {
+                "section_id": "birth_details",
+                "title": "Birth",
+                "narrative": "Narrative",
+                "facts": ["Birth place: New Delhi, India"],
+                "confidence": 0.8,
+                "confidence_label": "80%",
+            }
+        ],
+        "problem_summary": "Marriage delay",
+    }
+
     report_service._orchestrator.generate_json.return_value = {
         "version": "unified_report_v2",
         "summary": {},
     }
     report_service._interpretation_engine.interpret_json = AsyncMock(return_value={"summary": "ok"})
     report_service._remedy_engine.generate_json = AsyncMock(return_value={"remedies": []})
-    report_service._client_writer.write_json.return_value = {"problem_summary": "Marriage delay"}
+    report_service._report_builder.build.return_value = MagicMock()
     report_service._consultation_engine.consult_json.return_value = {
         "metadata": {"engine": "consultation_v1"},
     }
 
-    result = await report_service.generate_report(
-        date_of_birth=date(1990, 1, 15),
-        birth_time=time(5, 0),
-        birth_place="New Delhi, India",
-        birth_timezone="Asia/Kolkata",
-        latitude=28.6139,
-        longitude=77.2090,
-        problem_text="Marriage delay",
-    )
+    with patch(
+        "backend.app.services.report_service.professional_report_to_client_json",
+        return_value=valid_client_report,
+    ):
+        result = await report_service.generate_report(
+            date_of_birth=date(1990, 1, 15),
+            birth_time=time(5, 0),
+            birth_place="New Delhi, India",
+            birth_timezone="Asia/Kolkata",
+            latitude=28.6139,
+            longitude=77.2090,
+            problem_text="Marriage delay",
+        )
 
     assert result["report_id"] == str(persisted_id)
     assert result["version"] == "unified_report_v2"
     mock_repository.create_report.assert_awaited_once()
+    persisted_payload = mock_repository.create_report.await_args.kwargs["client_report_json"]
+    assert isinstance(persisted_payload["sections"][0]["facts"], list)
     mock_session.commit.assert_awaited_once()
+
+
+@pytest.mark.asyncio
+async def test_generate_report_blocks_persistence_when_section_facts_are_objects(
+    report_service,
+    mock_session,
+    mock_repository,
+):
+    report_service._orchestrator.generate_json.return_value = {
+        "version": "unified_report_v2",
+        "summary": {},
+    }
+    report_service._interpretation_engine.interpret_json = AsyncMock(return_value={"summary": "ok"})
+    report_service._remedy_engine.generate_json = AsyncMock(return_value={"remedies": []})
+    report_service._report_builder.build.return_value = MagicMock()
+    report_service._consultation_engine.consult_json.return_value = {
+        "metadata": {"engine": "consultation_v1"},
+    }
+
+    invalid_client_report = {
+        "sections": [
+            {
+                "section_id": "birth_details",
+                "title": "Birth",
+                "narrative": "Narrative",
+                "facts": {"birth_place": "Delhi"},
+                "confidence": 0.8,
+                "confidence_label": "80%",
+            }
+        ],
+        "problem_summary": "Marriage delay",
+    }
+
+    with patch(
+        "backend.app.services.report_service.professional_report_to_client_json",
+        return_value=invalid_client_report,
+    ):
+        with pytest.raises(ValidationError, match="must be a list"):
+            await report_service.generate_report(
+                date_of_birth=date(1990, 1, 15),
+                birth_time=time(5, 0),
+                birth_place="New Delhi, India",
+                birth_timezone="Asia/Kolkata",
+                latitude=28.6139,
+                longitude=77.2090,
+                problem_text="Marriage delay",
+            )
+
+    mock_repository.create_report.assert_not_awaited()
 
 
 @pytest.mark.asyncio
@@ -94,7 +163,7 @@ async def test_generate_report_without_repository_raises():
     with patch("backend.app.services.report_service.ReportOrchestrator"), \
          patch("backend.app.services.report_service.AstroInterpretationEngine"), \
          patch("backend.app.services.report_service.RemedyGenerationEngine"), \
-         patch("backend.app.services.report_service.ClientReportWriter"), \
+         patch("backend.app.services.report_service.ProfessionalReportBuilder"), \
          patch("backend.app.services.report_service.PDFReportGenerator"), \
          patch("backend.app.services.report_service.ConsultationEngine"):
         service = ReportService()
@@ -115,7 +184,7 @@ async def test_list_reports_returns_pagination(mock_repository):
     with patch("backend.app.services.report_service.ReportOrchestrator"), \
          patch("backend.app.services.report_service.AstroInterpretationEngine"), \
          patch("backend.app.services.report_service.RemedyGenerationEngine"), \
-         patch("backend.app.services.report_service.ClientReportWriter"), \
+         patch("backend.app.services.report_service.ProfessionalReportBuilder"), \
          patch("backend.app.services.report_service.PDFReportGenerator"), \
          patch("backend.app.services.report_service.ConsultationEngine"):
         service = ReportService(repository=mock_repository)
@@ -148,7 +217,7 @@ async def test_get_report_raises_not_found(mock_repository):
     with patch("backend.app.services.report_service.ReportOrchestrator"), \
          patch("backend.app.services.report_service.AstroInterpretationEngine"), \
          patch("backend.app.services.report_service.RemedyGenerationEngine"), \
-         patch("backend.app.services.report_service.ClientReportWriter"), \
+         patch("backend.app.services.report_service.ProfessionalReportBuilder"), \
          patch("backend.app.services.report_service.PDFReportGenerator"), \
          patch("backend.app.services.report_service.ConsultationEngine"):
         service = ReportService(repository=mock_repository)
@@ -163,7 +232,7 @@ async def test_delete_report_commits(mock_session, mock_repository):
     with patch("backend.app.services.report_service.ReportOrchestrator"), \
          patch("backend.app.services.report_service.AstroInterpretationEngine"), \
          patch("backend.app.services.report_service.RemedyGenerationEngine"), \
-         patch("backend.app.services.report_service.ClientReportWriter"), \
+         patch("backend.app.services.report_service.ProfessionalReportBuilder"), \
          patch("backend.app.services.report_service.PDFReportGenerator"), \
          patch("backend.app.services.report_service.ConsultationEngine"):
         service = ReportService(session=mock_session, repository=mock_repository)
