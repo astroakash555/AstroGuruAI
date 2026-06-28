@@ -10,7 +10,7 @@ from unittest.mock import AsyncMock
 import pytest
 from httpx import ASGITransport, AsyncClient
 
-from backend.app.api.deps import get_auth_service, get_current_user
+from backend.app.api.deps import get_auth_service, get_billing_service, get_current_user
 from backend.app.models.enums import UserRole
 from backend.app.models.user import User
 from backend.app.schemas.auth import AuthResponse, TokenResponse, UserResponse
@@ -40,8 +40,16 @@ def mock_auth_service():
 
 
 @pytest.fixture
-async def auth_client(app, mock_auth_service, test_user):
+def mock_billing_service_for_auth():
+    service = AsyncMock()
+    service.initialize_new_user = AsyncMock(return_value=None)
+    return service
+
+
+@pytest.fixture
+async def auth_client(app, mock_auth_service, mock_billing_service_for_auth, test_user):
     app.dependency_overrides[get_auth_service] = lambda: mock_auth_service
+    app.dependency_overrides[get_billing_service] = lambda: mock_billing_service_for_auth
     override_current_user(app, test_user)
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as client:

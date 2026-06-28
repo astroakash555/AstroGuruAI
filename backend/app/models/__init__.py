@@ -8,10 +8,14 @@ from backend.app.models.generated_pdf import GeneratedPDF
 from backend.app.models.kp_report import KPReport
 from backend.app.models.kundali_chart import KundaliChart
 from backend.app.models.lal_kitab_report import LalKitabReport
+from backend.app.models.order import Order
+from backend.app.models.payment import Payment
 from backend.app.models.refresh_token import RefreshToken
 from backend.app.models.remedy import Remedy
 from backend.app.models.report import Report
+from backend.app.models.subscription import Subscription
 from backend.app.models.transit_report import TransitReport
+from backend.app.models.usage_quota import UsageQuota
 from backend.app.models.user import User
 from backend.app.models.user_query import UserQuery
 
@@ -24,10 +28,14 @@ __all__ = [
     "KPReport",
     "KundaliChart",
     "LalKitabReport",
+    "Order",
+    "Payment",
     "RefreshToken",
     "Remedy",
     "Report",
+    "Subscription",
     "TransitReport",
+    "UsageQuota",
     "User",
     "UserQuery",
 ]

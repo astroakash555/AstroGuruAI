@@ -16,8 +16,12 @@ from backend.app.models.types import enum_column
 if TYPE_CHECKING:
     from backend.app.models.auth_token import AuthToken
     from backend.app.models.client import Client
+    from backend.app.models.order import Order
+    from backend.app.models.payment import Payment
     from backend.app.models.refresh_token import RefreshToken
     from backend.app.models.report import Report
+    from backend.app.models.subscription import Subscription
+    from backend.app.models.usage_quota import UsageQuota
 
 
 class User(UUIDPrimaryKeyMixin, TimestampMixin, Base):
@@ -52,6 +56,30 @@ class User(UUIDPrimaryKeyMixin, TimestampMixin, Base):
     )
     auth_tokens: Mapped[list[AuthToken]] = relationship(
         "AuthToken",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
+    subscriptions: Mapped[list[Subscription]] = relationship(
+        "Subscription",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
+    orders: Mapped[list[Order]] = relationship(
+        "Order",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
+    payments: Mapped[list[Payment]] = relationship(
+        "Payment",
+        back_populates="user",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
+    usage_quotas: Mapped[list[UsageQuota]] = relationship(
+        "UsageQuota",
         back_populates="user",
         cascade="all, delete-orphan",
         passive_deletes=True,

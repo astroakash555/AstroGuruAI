@@ -18,7 +18,7 @@ from reports.intelligence_schemas import FusionReportSchema
 from reports.orchestrator import ReportOrchestrator
 from reports.schemas import UnifiedReportJSON
 from reports.types import ReportInput
-from tests.helpers import override_current_user
+from tests.helpers import override_current_user, override_usage_service
 
 
 GENERATE_URL = "/api/v1/dashboard/reports/generate"
@@ -148,6 +148,7 @@ async def pipeline_client(tmp_path, test_user):
         app = create_app()
         app.dependency_overrides[get_report_service] = lambda: service
         override_current_user(app, test_user)
+        override_usage_service(app)
         transport = ASGITransport(app=app)
         async with AsyncClient(transport=transport, base_url="http://test") as client:
             yield client, service, repository, session, report_id

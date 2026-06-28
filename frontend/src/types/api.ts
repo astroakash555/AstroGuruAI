@@ -170,3 +170,73 @@ export interface AuthSession {
 export interface MessageResponse {
   message: string;
 }
+
+export type SubscriptionPlan = "free" | "pro" | "premium";
+
+export interface PlanDefinition {
+  plan: SubscriptionPlan;
+  name: string;
+  description: string;
+  price_paise: number;
+  currency: string;
+  features: string[];
+  limits: Record<string, number | null>;
+}
+
+export interface UsageMetricSummary {
+  metric: string;
+  used: number;
+  limit: number | null;
+  remaining: number | null;
+}
+
+export interface UsageSummary {
+  plan: SubscriptionPlan;
+  period_start: string;
+  metrics: UsageMetricSummary[];
+}
+
+export interface SubscriptionInfo {
+  subscription_id: string;
+  plan: SubscriptionPlan;
+  status: string;
+  current_period_start: string;
+  current_period_end: string;
+  usage: UsageSummary;
+}
+
+export interface CheckoutOrder {
+  order_id: string;
+  razorpay_order_id: string;
+  amount_paise: number;
+  currency: string;
+  key_id: string;
+  plan: SubscriptionPlan;
+  receipt: string;
+}
+
+export interface PaymentHistoryItem {
+  payment_id: string;
+  user_id: string;
+  order_id: string | null;
+  subscription_id: string | null;
+  amount_paise: number;
+  currency: string;
+  status: string;
+  razorpay_payment_id: string;
+  razorpay_order_id: string;
+  method: string | null;
+  paid_at: string | null;
+  created_at: string;
+}
+
+export interface AdminSubscriptionItem {
+  subscription_id: string;
+  user_id: string;
+  plan: SubscriptionPlan;
+  status: string;
+  current_period_start: string;
+  current_period_end: string;
+  cancelled_at: string | null;
+  created_at: string;
+}

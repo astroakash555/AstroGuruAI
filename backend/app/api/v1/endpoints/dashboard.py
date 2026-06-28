@@ -10,9 +10,11 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from fastapi.responses import FileResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_current_user, get_db, get_settings_dep, user_owner_id
+from backend.app.api.deps import get_current_user, get_db, get_settings_dep, get_usage_service, require_usage, user_owner_id
+from backend.app.billing.usage import UsageService
 from backend.app.core.config import Settings
 from backend.app.core.exceptions import ForbiddenError, NotFoundError, forbidden_error, not_found_error
+from backend.app.models.enums import UsageMetric
 from backend.app.models.user import User
 from backend.app.repositories.report_repository import ReportRepository
 from backend.app.schemas.dashboard import (
@@ -59,8 +61,9 @@ def get_naming_service() -> NamingService:
 )
 async def generate_report(
     payload: ReportGenerateRequest,
-    current_user: User = Depends(get_current_user),
+    current_user: User = Depends(require_usage(UsageMetric.REPORTS)),
     service: ReportService = Depends(get_report_service),
+    usage_service: UsageService = Depends(get_usage_service),
 ) -> ReportGenerateResponse:
     if not payload.date_of_birth or not payload.birth_time or not payload.birth_place:
         raise HTTPException(
@@ -93,6 +96,7 @@ async def generate_report(
         raise forbidden_error(exc.message) from exc
     except NotFoundError as exc:
         raise not_found_error("Client", str(payload.client_id)) from exc
+    await usage_service.consume(current_user.id, UsageMetric.REPORTS)
     return ReportGenerateResponse(**result)
 
 

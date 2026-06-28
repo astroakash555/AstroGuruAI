@@ -5,7 +5,8 @@ import uuid
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.app.api.deps import get_current_user, get_db, user_owner_id
+from backend.app.api.deps import get_current_user, get_db, get_usage_service, require_usage, user_owner_id
+from backend.app.billing.usage import UsageService
 from backend.app.core.exceptions import (
     ConflictError,
     ForbiddenError,
@@ -14,6 +15,7 @@ from backend.app.core.exceptions import (
     forbidden_error,
     not_found_error,
 )
+from backend.app.models.enums import UsageMetric
 from backend.app.models.user import User
 from backend.app.schemas.client import ClientCreate, ClientListResponse, ClientResponse, ClientUpdate
 from backend.app.services.client_service import ClientService
@@ -34,12 +36,15 @@ def get_client_service(session: AsyncSession = Depends(get_db)) -> ClientService
 )
 async def create_client(
     payload: ClientCreate,
-    current_user: User = Depends(get_current_user),
+    current_user: User = Depends(require_usage(UsageMetric.CLIENTS)),
     service: ClientService = Depends(get_client_service),
+    usage_service: UsageService = Depends(get_usage_service),
 ) -> ClientResponse:
     """Create a new client with validated birth details."""
     try:
-        return await service.create_client(payload, owner_id=current_user.id)
+        response = await service.create_client(payload, owner_id=current_user.id)
+        await usage_service.consume(current_user.id, UsageMetric.CLIENTS)
+        return response
     except ConflictError as exc:
         raise conflict_error(exc.message) from exc
 

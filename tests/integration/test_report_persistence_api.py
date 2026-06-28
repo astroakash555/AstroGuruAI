@@ -14,7 +14,7 @@ from backend.app.main import create_app
 from backend.app.models.report import Report
 from backend.app.repositories.report_repository import ReportRepository
 from backend.app.services.report_service import ReportService
-from tests.helpers import override_current_user
+from tests.helpers import override_current_user, override_usage_service
 
 
 @pytest.fixture
@@ -83,6 +83,7 @@ async def persistence_client(mock_persistence_stack, test_user):
         app = create_app()
         app.dependency_overrides[get_report_service] = lambda: service
         override_current_user(app, test_user)
+        override_usage_service(app)
         transport = ASGITransport(app=app)
         async with AsyncClient(transport=transport, base_url="http://test") as client:
             yield client, service, repository, session

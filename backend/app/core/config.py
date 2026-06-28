@@ -33,6 +33,13 @@ class Settings(BaseSettings):
     email_verification_expire_hours: int = Field(default=24, alias="EMAIL_VERIFICATION_EXPIRE_HOURS")
     auth_frontend_url: str = Field(default="http://localhost:5173", alias="AUTH_FRONTEND_URL")
 
+    # Razorpay (India)
+    razorpay_enabled: bool = Field(default=False, alias="RAZORPAY_ENABLED")
+    razorpay_key_id: str | None = Field(default=None, alias="RAZORPAY_KEY_ID")
+    razorpay_key_secret: str | None = Field(default=None, alias="RAZORPAY_KEY_SECRET")
+    razorpay_webhook_secret: str | None = Field(default=None, alias="RAZORPAY_WEBHOOK_SECRET")
+    billing_frontend_url: str = Field(default="http://localhost:5173", alias="BILLING_FRONTEND_URL")
+
     # Server
     host: str = Field(default="0.0.0.0", alias="HOST")
     port: int = Field(default=8000, alias="PORT")

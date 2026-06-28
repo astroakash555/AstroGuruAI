@@ -1,11 +1,13 @@
 import { NavLink, Outlet } from "react-router-dom";
 import {
   Bot,
+  CreditCard,
   FileText,
   LayoutDashboard,
   LogOut,
   Moon,
   Settings,
+  Shield,
   Sun,
   Users,
 } from "lucide-react";
@@ -15,19 +17,23 @@ import { useAuth } from "@/providers/auth-provider";
 import { useTheme } from "@/providers/theme-provider";
 import { cn } from "@/lib/utils";
 
-const navItems = [
+const baseNavItems = [
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { to: "/clients", label: "Clients", icon: Users },
   { to: "/birth-details", label: "Birth Details", icon: FileText },
   { to: "/reports/generate", label: "Generate Report", icon: FileText },
   { to: "/chat", label: "AI Chat", icon: Bot },
+  { to: "/billing/subscription", label: "Subscription", icon: CreditCard },
   { to: "/profile", label: "Profile", icon: Settings },
   { to: "/settings", label: "Settings", icon: Settings },
 ];
 
+const adminNavItem = { to: "/admin/billing", label: "Admin Billing", icon: Shield };
+
 export function AppLayout() {
   const { user, logout } = useAuth();
   const { theme, toggleTheme } = useTheme();
+  const navItems = user?.role === "admin" ? [...baseNavItems, adminNavItem] : baseNavItems;
 
   return (
     <div className="min-h-screen bg-background lg:flex">

@@ -14,11 +14,13 @@ from backend.app.auth.email import EmailDeliveryService
 from backend.app.auth.repositories import AuthTokenRepository, RefreshTokenRepository, UserRepository
 from backend.app.auth.security import decode_token
 from backend.app.auth.service import AuthService
+from backend.app.billing.service import BillingService
+from backend.app.billing.usage import UsageService
 from backend.app.core.config import Settings, get_settings
-from backend.app.core.exceptions import forbidden_error, unauthorized_error
+from backend.app.core.exceptions import QuotaExceededError, forbidden_error, quota_exceeded_error, unauthorized_error
 from backend.app.db.redis import get_redis_client
 from backend.app.db.session import get_db_session
-from backend.app.models.enums import UserRole
+from backend.app.models.enums import UsageMetric, UserRole
 from backend.app.models.user import User
 
 bearer_scheme = HTTPBearer(auto_error=False)
@@ -97,3 +99,34 @@ def user_owner_id(user: User) -> uuid.UUID | None:
     if user.role == UserRole.ADMIN:
         return None
     return user.id
+
+
+def get_billing_service(
+    session: AsyncSession = Depends(get_db),
+    settings: Settings = Depends(get_settings_dep),
+) -> BillingService:
+    from backend.app.billing.service import BillingService
+
+    return BillingService(session=session, settings=settings)
+
+
+def get_usage_service(session: AsyncSession = Depends(get_db)) -> UsageService:
+    return UsageService(session)
+
+
+def require_usage(metric: UsageMetric) -> Callable[..., User]:
+    """Dependency factory that enforces monthly subscription quotas."""
+
+    async def _require(
+        current_user: User = Depends(get_current_user),
+        usage_service: UsageService = Depends(get_usage_service),
+    ) -> User:
+        if current_user.role == UserRole.ADMIN:
+            return current_user
+        try:
+            await usage_service.check_quota(current_user.id, metric)
+        except QuotaExceededError as exc:
+            raise quota_exceeded_error(exc.message) from exc
+        return current_user
+
+    return _require

@@ -17,9 +17,14 @@ from backend.app.models import (  # noqa: F401
     KPReport,
     KundaliChart,
     LalKitabReport,
+    Order,
+    Payment,
     Remedy,
     Report,
+    Subscription,
     TransitReport,
+    UsageQuota,
+    User,
     UserQuery,
 )
 

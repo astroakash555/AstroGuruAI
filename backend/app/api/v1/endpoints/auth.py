@@ -4,8 +4,9 @@ from __future__ import annotations
 
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from backend.app.api.deps import get_auth_service, get_current_user
+from backend.app.api.deps import get_auth_service, get_billing_service, get_current_user
 from backend.app.auth.service import AuthService
+from backend.app.billing.service import BillingService
 from backend.app.core.exceptions import (
     ConflictError,
     UnauthorizedError,
@@ -34,15 +35,21 @@ router = APIRouter(prefix="/auth", tags=["auth"])
 
 
 @router.post("/signup", response_model=AuthResponse, status_code=status.HTTP_201_CREATED)
-async def signup(payload: SignupRequest, service: AuthService = Depends(get_auth_service)) -> AuthResponse:
+async def signup(
+    payload: SignupRequest,
+    service: AuthService = Depends(get_auth_service),
+    billing: BillingService = Depends(get_billing_service),
+) -> AuthResponse:
     try:
-        return await service.signup(
+        result = await service.signup(
             email=str(payload.email),
             password=payload.password,
             full_name=payload.full_name,
         )
+        await billing.initialize_new_user(result.user.id)
     except ConflictError as exc:
         raise conflict_error(exc.message) from exc
+    return result
 
 
 @router.post("/login", response_model=AuthResponse)

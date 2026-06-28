@@ -12,7 +12,7 @@ from httpx import ASGITransport, AsyncClient
 from backend.app.api.v1.endpoints.dashboard import get_report_service
 from backend.app.main import create_app
 from backend.app.schemas.dashboard import ReportGenerateResponse
-from tests.helpers import override_current_user
+from tests.helpers import override_current_user, override_usage_service
 
 GENERATE_URL = "/api/v1/dashboard/reports/generate"
 
@@ -77,6 +77,7 @@ async def report_generate_client(mock_report_service, test_user):
     app = create_app()
     app.dependency_overrides[get_report_service] = lambda: mock_report_service
     override_current_user(app, test_user)
+    override_usage_service(app)
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as client:
         yield client

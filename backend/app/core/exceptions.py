@@ -31,6 +31,10 @@ class ForbiddenError(AppError):
     """Raised when the user lacks permission for a resource."""
 
 
+class QuotaExceededError(AppError):
+    """Raised when a subscription usage limit has been reached."""
+
+
 def not_found_error(resource: str, identifier: str) -> HTTPException:
     """Build a standardized 404 HTTP exception."""
     return HTTPException(
@@ -53,3 +57,7 @@ def unauthorized_error(message: str = "Authentication required.") -> HTTPExcepti
 
 def forbidden_error(message: str = "You do not have permission to access this resource.") -> HTTPException:
     return HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=message)
+
+
+def quota_exceeded_error(message: str = "Monthly usage limit reached. Upgrade your plan to continue.") -> HTTPException:
+    return HTTPException(status_code=status.HTTP_402_PAYMENT_REQUIRED, detail=message)

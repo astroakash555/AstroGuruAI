@@ -127,6 +127,39 @@ class AuthTokenType(str, enum.Enum):
     EMAIL_VERIFICATION = "email_verification"
 
 
+class SubscriptionPlan(str, enum.Enum):
+    FREE = "free"
+    PRO = "pro"
+    PREMIUM = "premium"
+
+
+class SubscriptionStatus(str, enum.Enum):
+    ACTIVE = "active"
+    CANCELLED = "cancelled"
+    EXPIRED = "expired"
+    PAST_DUE = "past_due"
+
+
+class OrderStatus(str, enum.Enum):
+    CREATED = "created"
+    PAID = "paid"
+    FAILED = "failed"
+    EXPIRED = "expired"
+
+
+class PaymentStatus(str, enum.Enum):
+    PENDING = "pending"
+    CAPTURED = "captured"
+    FAILED = "failed"
+    REFUNDED = "refunded"
+
+
+class UsageMetric(str, enum.Enum):
+    REPORTS = "reports"
+    CHAT_MESSAGES = "chat_messages"
+    CLIENTS = "clients"
+
+
 class RelationshipType(str, enum.Enum):
     SELF = "self"
     SPOUSE = "spouse"
