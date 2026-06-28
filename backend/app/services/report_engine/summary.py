@@ -4,8 +4,10 @@ from __future__ import annotations
 
 from typing import Any
 
+from backend.app.services.consultation_brain.narrative_models import NarrativeSectionId
 from backend.app.services.report_engine.base import join_lines, section
 from backend.app.services.report_engine.confidence import fusion_confidence, section_confidence
+from backend.app.services.report_engine.consultation_brain_integration import BrainReportContext
 from backend.app.services.report_engine.language import localize
 from backend.app.services.report_engine.presentation import scrub_client_text
 from backend.app.services.report_engine.types import ReportLanguage, ReportSection
@@ -19,7 +21,30 @@ def build_strengths_section(
     unified_report: dict[str, Any],
     *,
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
+    if brain_context is not None:
+        lines = [
+            item.summary
+            for item in brain_context.output.evidence
+            if item.weight >= 0.55 and item.summary
+        ][:6]
+        if not lines:
+            lines = brain_context.priority_lines()[:3]
+        items = [{"text": line} for line in lines if line]
+        narrative = join_lines(item["text"] for item in items) if items else localize(
+            language,
+            hi="कोई विशेष शक्ति दर्ज नहीं है।",
+            en="No explicit strengths recorded.",
+        )
+        return section(
+            section_id="strengths",
+            title=localize(language, hi="शक्तियाँ", en="Strengths"),
+            narrative=scrub_client_text(narrative),
+            facts={"items": items},
+            confidence=brain_context.overall_confidence(),
+        )
+
     consultation = unified_report.get("consultation_brain") or {}
     strengths = consultation.get("strengths") or []
     items = [{"text": _item_text(item)} for item in strengths[:8] if _item_text(item)]
@@ -50,7 +75,30 @@ def build_challenges_section(
     unified_report: dict[str, Any],
     *,
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
+    if brain_context is not None:
+        lines = brain_context.conflict_lines()
+        if not lines:
+            lines = [
+                item.summary
+                for item in brain_context.output.evidence
+                if item.weight < 0.45 and item.summary
+            ][:5]
+        items = [{"text": line} for line in lines if line]
+        narrative = join_lines(item["text"] for item in items) if items else localize(
+            language,
+            hi="कोई विशेष चुनौती दर्ज नहीं है।",
+            en="No explicit challenges recorded.",
+        )
+        return section(
+            section_id="challenges",
+            title=localize(language, hi="चुनौतियाँ", en="Challenges"),
+            narrative=scrub_client_text(narrative),
+            facts={"items": items},
+            confidence=brain_context.overall_confidence(),
+        )
+
     consultation = unified_report.get("consultation_brain") or {}
     risks = consultation.get("risks") or []
     items = [{"text": _item_text(item)} for item in risks[:8] if _item_text(item)]
@@ -81,7 +129,27 @@ def build_final_summary_section(
     unified_report: dict[str, Any],
     *,
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
+    if brain_context is not None:
+        lines: list[str] = []
+        lines.extend(brain_context.narrative_paragraphs(NarrativeSectionId.GREETING))
+        lines.extend(brain_context.narrative_paragraphs(NarrativeSectionId.CLOSING_SUMMARY))
+        lines.extend(brain_context.recommendation_fact_lines()[:3])
+        facts = {
+            "executive_summary": brain_context.output.executive_summary,
+            "recommendations": brain_context.recommendation_fact_lines()[:5],
+            "priorities": brain_context.priority_lines()[:5],
+        }
+        narrative = join_lines(lines) if lines else scrub_client_text(brain_context.output.executive_summary)
+        return section(
+            section_id="final_summary",
+            title=localize(language, hi="अंतिम सारांश", en="Final Summary"),
+            narrative=scrub_client_text(narrative),
+            facts=facts,
+            confidence=brain_context.overall_confidence(),
+        )
+
     summary = unified_report.get("summary") or {}
     consultation = unified_report.get("consultation_brain") or {}
     recommendations = [

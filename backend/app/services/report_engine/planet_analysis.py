@@ -4,8 +4,10 @@ from __future__ import annotations
 
 from typing import Any
 
+from backend.app.services.consultation_brain.narrative_models import NarrativeSectionId
 from backend.app.services.report_engine.base import join_lines, planet_lookup, section
 from backend.app.services.report_engine.confidence import section_confidence
+from backend.app.services.report_engine.consultation_brain_integration import BrainReportContext
 from backend.app.services.report_engine.language import format_degree, localize
 from backend.app.services.report_engine.presentation import format_planet_interpretation, scrub_client_text
 from backend.app.services.report_engine.types import ReportLanguage, ReportSection
@@ -62,11 +64,15 @@ def build_planetary_positions_section(
     unified_report: dict[str, Any],
     *,
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
     kundali = unified_report.get("kundali") or {}
     planets = [planet_lookup(kundali)[name] for name in PLANET_ORDER if name in planet_lookup(kundali)]
     facts = {"planets": [_planet_fact(planet) for planet in planets]}
-    narrative = join_lines([_planet_line(planet, language) for planet in planets])
+    intro = ""
+    if brain_context is not None:
+        intro = brain_context.section_narrative(NarrativeSectionId.OVERALL_CHART_IMPRESSION)
+    narrative = join_lines([part for part in (intro, *[ _planet_line(planet, language) for planet in planets]) if part])
     return section(
         section_id="planetary_positions",
         title=localize(language, hi="ग्रह स्थिति", en="Planetary Positions"),
@@ -80,7 +86,24 @@ def build_planet_wise_section(
     unified_report: dict[str, Any],
     *,
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
+    if brain_context is not None:
+        lines = brain_context.planet_interpretation_lines()
+        if lines:
+            interpretations = [
+                {"name": line.split(":", 1)[0], "observation_summary": [line.split(":", 1)[1].strip()]}
+                for line in lines
+                if ":" in line
+            ]
+            return section(
+                section_id="planet_wise_interpretation",
+                title=localize(language, hi="ग्रह-वार विश्लेषण", en="Planet-wise Interpretation"),
+                narrative=join_lines(lines),
+                facts={"planets": interpretations},
+                confidence=brain_context.overall_confidence(),
+            )
+
     kundali = unified_report.get("kundali") or {}
     lines: list[str] = []
     interpretations: list[dict[str, Any]] = []

@@ -83,14 +83,21 @@ async def test_generate_report_persists_and_returns_database_id(
     report_service._interpretation_engine.interpret_json = AsyncMock(return_value={"summary": "ok"})
     report_service._remedy_engine.generate_json = AsyncMock(return_value={"remedies": []})
     report_service._report_builder.build.return_value = MagicMock()
+    report_service._consultation_brain.run = MagicMock(return_value=MagicMock())
     report_service._consultation_engine.consult_json.return_value = {
         "metadata": {"engine": "consultation_v1"},
     }
 
     with patch(
+        "backend.app.services.report_service.MasterConsultationEngine"
+    ) as master_engine_cls, patch(
+        "backend.app.services.report_service.apply_master_consultation_delivery",
+        side_effect=lambda result, master, report_input=None: result,
+    ), patch(
         "backend.app.services.report_service.professional_report_to_client_json",
         return_value=valid_client_report,
     ):
+        master_engine_cls.return_value.generate.return_value = MagicMock()
         result = await report_service.generate_report(
             date_of_birth=date(1990, 1, 15),
             birth_time=time(5, 0),
@@ -122,6 +129,7 @@ async def test_generate_report_blocks_persistence_when_section_facts_are_objects
     report_service._interpretation_engine.interpret_json = AsyncMock(return_value={"summary": "ok"})
     report_service._remedy_engine.generate_json = AsyncMock(return_value={"remedies": []})
     report_service._report_builder.build.return_value = MagicMock()
+    report_service._consultation_brain.run = MagicMock(return_value=MagicMock())
     report_service._consultation_engine.consult_json.return_value = {
         "metadata": {"engine": "consultation_v1"},
     }
@@ -141,9 +149,15 @@ async def test_generate_report_blocks_persistence_when_section_facts_are_objects
     }
 
     with patch(
+        "backend.app.services.report_service.MasterConsultationEngine"
+    ) as master_engine_cls, patch(
+        "backend.app.services.report_service.apply_master_consultation_delivery",
+        side_effect=lambda result, master, report_input=None: result,
+    ), patch(
         "backend.app.services.report_service.professional_report_to_client_json",
         return_value=invalid_client_report,
     ):
+        master_engine_cls.return_value.generate.return_value = MagicMock()
         with pytest.raises(ValidationError, match="must be a list"):
             await report_service.generate_report(
                 date_of_birth=date(1990, 1, 15),

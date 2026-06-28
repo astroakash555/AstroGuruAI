@@ -4,8 +4,10 @@ from __future__ import annotations
 
 from typing import Any
 
+from backend.app.services.consultation_brain.narrative_models import NarrativeSectionId
 from backend.app.services.report_engine.base import join_lines, section
 from backend.app.services.report_engine.confidence import section_confidence
+from backend.app.services.report_engine.consultation_brain_integration import BrainReportContext
 from backend.app.services.report_engine.language import localize
 from backend.app.services.report_engine.presentation import scrub_client_text
 from backend.app.services.report_engine.types import ReportLanguage, ReportSection
@@ -24,7 +26,31 @@ def build_remedy_section(
     *,
     remedy_generation: dict[str, Any],
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
+    if brain_context is not None:
+        lines: list[str] = []
+        lines.extend(brain_context.narrative_paragraphs(NarrativeSectionId.PRACTICAL_GUIDANCE))
+        lines.extend(brain_context.narrative_bullets(NarrativeSectionId.PRACTICAL_GUIDANCE))
+        lines.extend(brain_context.narrative_paragraphs(NarrativeSectionId.RECOMMENDATIONS))
+        lines.extend(brain_context.narrative_bullets(NarrativeSectionId.RECOMMENDATIONS))
+        if not lines:
+            lines.extend(brain_context.recommendation_fact_lines())
+        remedies = brain_context.legacy_remedies()
+        facts = {"remedies": remedies}
+        narrative = join_lines(lines) if lines else localize(
+            language,
+            hi="इस समय कोई व्यक्तिगत उपाय उपलब्ध नहीं है।",
+            en="No personalized remedies are available at this time.",
+        )
+        return section(
+            section_id="personalized_remedies",
+            title=localize(language, hi="व्यक्तिगत उपाय", en="Personalized Remedies"),
+            narrative=scrub_client_text(narrative),
+            facts=facts,
+            confidence=brain_context.overall_confidence(),
+        )
+
     matched = (unified_report.get("remedy_recommendations") or {}).get("matched_remedies") or []
     generated = remedy_generation.get("remedies") or []
     remedies: list[dict[str, Any]] = []

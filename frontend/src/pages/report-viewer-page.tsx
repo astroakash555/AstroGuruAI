@@ -4,7 +4,7 @@ import { Bot, Download, FileText } from "lucide-react";
 
 import { ErrorState } from "@/components/error-state";
 import { LoadingSpinner } from "@/components/loading-spinner";
-import { Badge } from "@/components/ui/badge";
+import { MasterConsultationView } from "@/components/master-consultation-view";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -28,7 +28,9 @@ export function ReportViewerPage() {
   const dasha = report.unified_report.dasha as Parameters<typeof resolveCurrentMahadashaLord>[0];
   const currentMahadasha =
     resolveCurrentMahadashaLord(dasha) ?? (summary?.current_mahadasha as string | undefined);
-  const consultation = report.unified_report.consultation_brain as Record<string, unknown> | undefined;
+  const masterConsultation =
+    report.master_consultation ??
+    (report.client_report.master_consultation as typeof report.master_consultation);
   const clientReport = report.client_report as Record<string, unknown>;
 
   return (
@@ -89,37 +91,16 @@ export function ReportViewerPage() {
           <TabsTrigger value="client">Client report</TabsTrigger>
           <TabsTrigger value="raw">Unified JSON</TabsTrigger>
         </TabsList>
-        <TabsContent value="consultation" className="space-y-4">
-          <Card>
-            <CardHeader>
-              <CardTitle>Executive summary</CardTitle>
-              <CardDescription>{String(consultation?.executive_summary ?? "No consultation brain attached.")}</CardDescription>
-            </CardHeader>
-          </Card>
-          {((consultation?.sections as Array<Record<string, unknown>>) ?? []).map((section) => (
-            <Card key={String(section.section_id)}>
-              <CardHeader>
-                <CardTitle>{String(section.title)}</CardTitle>
-                <Badge className="w-fit">Confidence {String(section.confidence ?? "—")}</Badge>
-              </CardHeader>
-              <CardContent className="space-y-2 text-sm">
-                <p><span className="font-medium">Current:</span> {String(section.current_situation)}</p>
-                <p><span className="font-medium">Root cause:</span> {String(section.root_cause)}</p>
-                <p><span className="font-medium">Timeline:</span> {String(section.timeline)}</p>
-              </CardContent>
-            </Card>
-          ))}
+        <TabsContent value="consultation">
+          <MasterConsultationView consultation={masterConsultation} />
         </TabsContent>
         <TabsContent value="client" className="space-y-4">
           {((clientReport.sections as Array<Record<string, unknown>>) ?? []).map((section) => (
             <Card key={String(section.section_id)}>
               <CardHeader>
                 <CardTitle>{String(section.title)}</CardTitle>
-                <CardDescription>
-                  Confidence {String(section.confidence_label ?? section.confidence ?? "—")}
-                </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-3 text-sm leading-6">
+              <CardContent className="space-y-3 text-sm leading-7">
                 <p>{String(section.narrative ?? "")}</p>
                 {(Array.isArray(section.facts) ? section.facts : []).map((line, index) => (
                   <p key={`${String(section.section_id)}-fact-${index}`} className="text-muted-foreground">
@@ -129,21 +110,6 @@ export function ReportViewerPage() {
               </CardContent>
             </Card>
           ))}
-          <Card>
-            <CardHeader>
-              <CardTitle>Legacy summary fields</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4 text-sm leading-6">
-              {Object.entries(clientReport)
-                .filter(([key]) => !["metadata", "generated_at", "remedies", "sections", "language"].includes(key))
-                .map(([key, value]) => (
-                  <div key={key}>
-                    <p className="font-medium capitalize">{key.replaceAll("_", " ")}</p>
-                    <p className="text-muted-foreground">{String(value)}</p>
-                  </div>
-                ))}
-            </CardContent>
-          </Card>
         </TabsContent>
         <TabsContent value="raw">
           <Card>

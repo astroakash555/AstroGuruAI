@@ -43,6 +43,7 @@ class ReportGenerateResponse(BaseSchema):
     interpretation: dict[str, Any]
     remedy_generation: dict[str, Any]
     client_report: dict[str, Any]
+    master_consultation: dict[str, Any] | None = None
     pdf: ReportPdfResponse | None = None
     generated_at: datetime
 
@@ -73,6 +74,7 @@ class ReportDetailResponse(BaseSchema):
     interpretation: dict[str, Any]
     remedy_generation: dict[str, Any]
     client_report: dict[str, Any]
+    master_consultation: dict[str, Any] | None = None
     pdf: ReportPdfResponse | None = None
     generated_at: datetime
     updated_at: datetime

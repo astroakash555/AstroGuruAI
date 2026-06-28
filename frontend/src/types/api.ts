@@ -65,6 +65,18 @@ export interface ReportPdfMeta {
   download_url?: string;
 }
 
+export interface MasterConsultationSection {
+  section_id: string;
+  title: string;
+  paragraphs?: string[];
+  body?: string;
+}
+
+export interface MasterConsultationPayload {
+  language?: string;
+  sections: MasterConsultationSection[];
+}
+
 export interface ReportSummary {
   report_id: string;
   client_id?: string;
@@ -87,6 +99,7 @@ export interface ReportDetail {
   interpretation: Record<string, unknown>;
   remedy_generation: Record<string, unknown>;
   client_report: Record<string, unknown>;
+  master_consultation?: MasterConsultationPayload | null;
   pdf?: ReportPdfMeta | null;
   generated_at: string;
   updated_at: string;

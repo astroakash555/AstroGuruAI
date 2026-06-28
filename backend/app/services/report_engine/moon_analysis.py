@@ -7,6 +7,7 @@ from typing import Any
 from backend.app.services.report_engine.base import moon_planet, section
 from backend.app.services.report_engine.confidence import section_confidence
 from backend.app.services.report_engine.language import format_degree, localize
+from backend.app.services.report_engine.consultation_brain_integration import BrainReportContext
 from backend.app.services.report_engine.types import ReportLanguage, ReportSection
 
 
@@ -14,6 +15,7 @@ def build_ascendant_section(
     unified_report: dict[str, Any],
     *,
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
     kundali = unified_report.get("kundali") or {}
     ascendant = kundali.get("ascendant") or {}
@@ -51,6 +53,7 @@ def build_moon_section(
     unified_report: dict[str, Any],
     *,
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
     kundali = unified_report.get("kundali") or {}
     dasha = unified_report.get("dasha") or {}

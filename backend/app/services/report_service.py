@@ -19,6 +19,16 @@ from ai_engine.interpreters.remedy import RemedyGenerationEngine, RemedyGenerati
 from backend.app.services.report_engine import ProfessionalReportBuilder, ProfessionalReportInput, ReportLanguage
 from backend.app.services.report_engine.client_report_persistence import prepare_client_report_for_persistence
 from backend.app.services.report_engine.serializers import professional_report_to_client_json
+from backend.app.services.consultation_brain import ConsultationBrain, ConsultationInput, MasterConsultationEngine
+from backend.app.services.report_engine.human_astrologer_client_polish import (
+    polish_client_report_for_human_delivery,
+)
+from backend.app.services.report_engine.master_consultation_delivery import (
+    apply_master_consultation_delivery,
+    attach_master_consultation_to_client_report,
+    report_language_to_master_code,
+    resolve_master_consultation_payload,
+)
 from consultation_layer import ConsultationEngine, consultation_input_from_unified_report
 from reports.builders import (
     BirthContext,
@@ -57,6 +67,7 @@ class ReportService:
         self._interpretation_engine = AstroInterpretationEngine()
         self._remedy_engine = RemedyGenerationEngine()
         self._report_builder = ProfessionalReportBuilder()
+        self._consultation_brain = ConsultationBrain()
         self._pdf_output_dir = Path(reports_output_path)
         self._pdf_generator = PDFReportGenerator(output_dir=self._pdf_output_dir)
         self._consultation_engine = ConsultationEngine()
@@ -111,16 +122,50 @@ class ReportService:
         remedy_generation = await self._remedy_engine.generate_json(
             RemedyGenerationInput(report_json=unified_json)
         )
+        consultation_brain_output = self._consultation_brain.run(
+            ConsultationInput(
+                unified_report=unified_json,
+                professional_report=None,
+                problem_text=problem_text,
+                language="hi",
+            )
+        )
+        master_consultation = MasterConsultationEngine().generate(
+            consultation_brain_output,
+            None,
+            unified_json,
+            language=report_language_to_master_code(ReportLanguage.HINDI),
+            problem_text=problem_text,
+        )
         professional_input = ProfessionalReportInput(
             unified_report=unified_json,
             remedy_generation=remedy_generation,
             problem_text=problem_text,
             language=ReportLanguage.HINDI,
+            consultation_brain_output=consultation_brain_output,
+            master_consultation=master_consultation,
         )
         report_result = self._report_builder.build(professional_input)
+        report_result = apply_master_consultation_delivery(
+            report_result,
+            master_consultation,
+            report_input=professional_input,
+        )
         client_report = professional_report_to_client_json(
             report_result,
             report_input=professional_input,
+        )
+        attach_master_consultation_to_client_report(
+            client_report,
+            master_consultation,
+            brain_output=consultation_brain_output,
+            problem_text=problem_text,
+            language="hi",
+        )
+        polish_client_report_for_human_delivery(
+            client_report,
+            consultation_brain_output,
+            problem_text=problem_text,
         )
         prepare_client_report_for_persistence(client_report)
 
@@ -164,6 +209,7 @@ class ReportService:
             "interpretation": interpretation,
             "remedy_generation": remedy_generation,
             "client_report": client_report,
+            "master_consultation": client_report.get("master_consultation"),
             "consultation": consultation,
             "pdf": pdf_payload,
             "generated_at": persisted.generated_at,
@@ -411,6 +457,12 @@ class ReportService:
 
     @classmethod
     def _report_to_detail(cls, report: Report) -> dict[str, Any]:
+        master_consultation = resolve_master_consultation_payload(
+            unified_report=report.unified_report_json,
+            client_report=report.client_report_json,
+            problem_text=report.problem_text,
+            language="hi",
+        )
         return {
             "report_id": str(report.id),
             "client_id": report.client_id,
@@ -421,6 +473,7 @@ class ReportService:
             "interpretation": report.interpretation_json,
             "remedy_generation": report.remedy_json,
             "client_report": report.client_report_json,
+            "master_consultation": master_consultation,
             "pdf": cls._pdf_payload_from_path(report.pdf_path),
             "generated_at": report.generated_at,
             "updated_at": report.updated_at,

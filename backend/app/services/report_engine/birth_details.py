@@ -7,6 +7,7 @@ from typing import Any
 from backend.app.services.report_engine.base import section
 from backend.app.services.report_engine.confidence import section_confidence
 from backend.app.services.report_engine.language import localize
+from backend.app.services.report_engine.consultation_brain_integration import BrainReportContext
 from backend.app.services.report_engine.types import ReportLanguage, ReportSection
 
 
@@ -15,6 +16,7 @@ def build_birth_details_section(
     *,
     problem_text: str | None,
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
     subject = unified_report.get("subject") or {}
     dasha = unified_report.get("dasha") or {}

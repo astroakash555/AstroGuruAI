@@ -4,8 +4,11 @@ from __future__ import annotations
 
 from typing import Any
 
+from backend.app.services.consultation_brain.constants import EvidenceSource
+from backend.app.services.consultation_brain.narrative_models import NarrativeSectionId
 from backend.app.services.report_engine.base import join_lines, section
 from backend.app.services.report_engine.confidence import section_confidence
+from backend.app.services.report_engine.consultation_brain_integration import BrainReportContext
 from backend.app.services.report_engine.language import localize
 from backend.app.services.report_engine.types import ReportLanguage, ReportSection
 
@@ -16,6 +19,7 @@ def build_transit_section(
     unified_report: dict[str, Any],
     *,
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
     transits = unified_report.get("transits") or {}
     facts: list[dict[str, Any]] = []
@@ -48,6 +52,14 @@ def build_transit_section(
         hi="कोई transit विवरण engine output में उपलब्ध नहीं।",
         en="No transit details available in engine output.",
     )
+    if brain_context is not None:
+        brain_narrative = brain_context.section_narrative(NarrativeSectionId.TRANSIT_DISCUSSION)
+        transit_evidence = [
+            item.summary for item in brain_context.evidence_for_source(EvidenceSource.TRANSIT) if item.summary
+        ]
+        extra = [line for line in (brain_narrative, *transit_evidence[:3]) if line]
+        if extra:
+            narrative = join_lines([narrative, *extra])
     return section(
         section_id="transit_analysis",
         title=localize(language, hi="गोचर विश्लेषण", en="Transit Analysis"),

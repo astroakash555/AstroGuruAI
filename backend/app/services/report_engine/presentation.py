@@ -302,6 +302,9 @@ def format_section_facts(
         if facts.get("severity"):
             lines.append(f"गंभीरता: {facts['severity']}")
         lines.extend(facts.get("root_cause_summaries") or [])
+        lines.extend(facts.get("priority_summaries") or [])
+        lines.extend(facts.get("supporting_evidence") or [])
+        lines.extend(facts.get("conflicts") or [])
         return lines
 
     generic_lines = []

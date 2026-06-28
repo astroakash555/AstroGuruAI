@@ -8,6 +8,7 @@ from backend.app.services.report_engine.base import join_lines, planet_lookup, s
 from backend.app.services.report_engine.confidence import section_confidence
 from backend.app.services.report_engine.language import localize
 from backend.app.services.report_engine.presentation import scrub_client_text
+from backend.app.services.report_engine.consultation_brain_integration import BrainReportContext
 from backend.app.services.report_engine.types import ReportLanguage, ReportSection
 
 
@@ -27,6 +28,7 @@ def build_house_wise_section(
     unified_report: dict[str, Any],
     *,
     language: ReportLanguage,
+    brain_context: BrainReportContext | None = None,
 ) -> ReportSection:
     kundali = unified_report.get("kundali") or {}
     houses = kundali.get("houses") or []
